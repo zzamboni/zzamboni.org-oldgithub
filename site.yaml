@@ -1,6 +1,6 @@
 handlers:
-- url: /(.+)/
-  static_files: /\1/index.html
+- url: /brt/
+  static_files: /brt/index.html
   upload: /.*
 - url: '/'
   static_files: 'index.html index.htm readme.txt readme.markdown readme.md'
