@@ -1,9 +1,9 @@
 handlers:
-- url: /brt
+- url: '/brt/?'
   static_files: brt/index.html
   upload: 'brt/.*'
-- url: '/brt'
-  static_dir: '/brt'
+- url: '/brt/?'
+  static_dir: 'brt'
 - url: '/'
   static_files: 'index.html index.htm readme.txt readme.markdown readme.md'
   upload: '.*'
