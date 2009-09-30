@@ -1,9 +1,9 @@
 handlers:
-- url: '/(.+)/'
+- url: /(.+)/
   static_files: \1/index.html
-  upload: '\1/.*'
-- url: '/(.+)/'
-  static_dir: '\1'
+  upload: /.*
+- url: /(.+)/
+  static_dir: \1
 - url: '/'
   static_files: 'index.html index.htm readme.txt readme.markdown readme.md'
   upload: '.*'
