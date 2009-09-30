@@ -1,0 +1,11 @@
+handlers:
+- url: /brt'
+  static_files: 'index.html index.htm readme.txt readme.markdown readme.md'
+  upload: '.*'
+- url: '/brt'
+  static_dir: '/brt'
+- url: '/'
+  static_files: 'index.html index.htm readme.txt readme.markdown readme.md'
+  upload: '.*'
+- url: '/'
+  static_dir: '/'
