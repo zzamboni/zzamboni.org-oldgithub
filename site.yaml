@@ -1,5 +1,5 @@
 handlers:
-- url: /brt'
+- url: /brt
   static_files: brt/index.html
   upload: 'brt/.*'
 - url: '/brt'
