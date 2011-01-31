@@ -1,9 +1,0 @@
-handlers:
-- url: '/brt/feed.*'
-  static_files: '/brt/feed.xml'
-  upload: '/brt/feed.xml'
-- url: '/'
-  static_files: 'index.html index.htm readme.txt readme.markdown readme.md'
-  upload: '.*'
-- url: '/'
-  static_dir: '/'
