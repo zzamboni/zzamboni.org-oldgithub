@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: development | zzamboni.org]]></title>
+  <link href="http://zzamboni.github.com/blog/categories/development/atom.xml" rel="self"/>
+  <link href="http://zzamboni.github.com/"/>
+  <updated>2013-03-24T00:01:23-06:00</updated>
+  <id>http://zzamboni.github.com/</id>
+  <author>
+    <name><![CDATA[Diego Zamboni]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Tiobe Index: C back at #1]]></title>
+    <link href="http://zzamboni.github.com/blog/tiobe-index-c-back-at-1"/>
+    <updated>2010-04-07T15:16:13-05:00</updated>
+    <id>http://zzamboni.github.com/blog/tiobe-index-c-back-at-1</id>
+    <content type="html"><![CDATA[<div class="posterous_bookmarklet_entry">
+      <blockquote><div style="margin-left: 25px;">
+
+<table border="1" align="center">
+<tr>
+<th align="center">Position<br>Apr 2010</th>
+<th align="center">Position<br>Apr 2009</th>
+<th align="center">Delta in Position</th>
+<th align="center">Programming Language</th>
+<th align="center">Ratings<br>Apr 2010</th>
+<th align="center">Delta <br>Apr 2009</th>
+<th align="center">Status</th>
+</tr>
+<tr height="25">
+<td align="center">1</td>
+    <td align="center">2</td>
+    <td align="center">
+<img src="http://www.tiobe.com/tiobe_index/images/Up.gif" border="0" height="15" width="10">
+</td>
+    <td><a href="http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html#">C</a></td>
+    <td align="center">18.058%</td>
+    <td align="center">+2.59%</td>
+    <td align="left">  A</td>
+</tr>
+<tr height="25">
+<td align="center">2</td>
+    <td align="center">1</td>
+    <td align="center">
+<img src="http://www.tiobe.com/tiobe_index/images/Down.gif" border="0" height="15" width="10">
+</td>
+    <td><a href="http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html#">Java</a></td>
+    <td align="center">18.051%</td>
+    <td align="center">-1.29%</td>
+    <td align="left">  A</td>
+</tr>
+<tr height="25">
+<td align="center">3</td>
+    <td align="center">3</td>
+    <td align="center"><img src="http://www.tiobe.com/tiobe_index/images/Same.gif" border="0" height="22" width="15"></td>
+    <td><a href="http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html#">C++</a></td>
+    <td align="center">9.707%</td>
+    <td align="center">-1.03%</td>
+    <td align="left">  A</td>
+</tr>
+<tr height="25">
+<td align="center">4</td>
+    <td align="center">4</td>
+    <td align="center"><img src="http://www.tiobe.com/tiobe_index/images/Same.gif" border="0" height="22" width="15"></td>
+    <td><a href="http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html#">PHP</a></td>
+    <td align="center">9.662%</td>
+    <td align="center">-0.23%</td>
+    <td align="left">  A</td>
+</tr>
+<tr height="25">
+<td align="center">5</td>
+    <td align="center">5</td>
+    <td align="center"><img src="http://www.tiobe.com/tiobe_index/images/Same.gif" border="0" height="22" width="15"></td>
+    <td><a href="http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html#">(Visual) Basic</a></td>
+    <td align="center">6.392%</td>
+    <td align="center">-2.70%</td>
+    <td align="left">  A</td>
+</tr>
+<tr height="25">
+<td align="center">6</td>
+    <td align="center">7</td>
+    <td align="center">
+<img src="http://www.tiobe.com/tiobe_index/images/Up.gif" border="0" height="15" width="10">
+</td>
+    <td><a href="http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html#">C#</a></td>
+    <td align="center">4.435%</td>
+    <td align="center">+0.38%</td>
+    <td align="left">  A</td>
+</tr>
+<tr height="25">
+<td align="center">7</td>
+    <td align="center">6</td>
+    <td align="center">
+<img src="http://www.tiobe.com/tiobe_index/images/Down.gif" border="0" height="15" width="10">
+</td>
+    <td><a href="http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html#">Python</a></td>
+    <td align="center">4.205%</td>
+    <td align="center">-1.88%</td>
+    <td align="left">  A</td>
+</tr>
+<tr height="25">
+<td align="center">8</td>
+    <td align="center">9</td>
+    <td align="center">
+<img src="http://www.tiobe.com/tiobe_index/images/Up.gif" border="0" height="15" width="10">
+</td>
+    <td><a href="http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html#">Perl</a></td>
+    <td align="center">3.553%</td>
+    <td align="center">+0.09%</td>
+    <td align="left">  A</td>
+</tr>
+<tr height="25">
+<td align="center">9</td>
+    <td align="center">11</td>
+    <td align="center">
+<img src="http://www.tiobe.com/tiobe_index/images/Up.gif" border="0" height="15" width="10"><img src="http://www.tiobe.com/tiobe_index/images/Up.gif" border="0" height="15" width="10">
+</td>
+    <td><a href="http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html#">Delphi</a></td>
+    <td align="center">2.715%</td>
+    <td align="center">+0.44%</td>
+    <td align="left">  A</td>
+</tr>
+<tr height="25">
+<td align="center">10</td>
+    <td align="center">8</td>
+    <td align="center">
+<img src="http://www.tiobe.com/tiobe_index/images/Down.gif" border="0" height="15" width="10"><img src="http://www.tiobe.com/tiobe_index/images/Down.gif" border="0" height="15" width="10">
+</td>
+    <td><a href="http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html#">JavaScript</a></td>
+    <td align="center">2.469%</td>
+    <td align="center">-1.21%</td>
+    <td align="left">  A</td>
+</tr>
+<tr height="25">
+<td align="center">11</td>
+    <td align="center">42</td>
+    <td align="center">
+<img src="http://www.tiobe.com/tiobe_index/images/Up.gif" border="0" height="15" width="10"><img src="http://www.tiobe.com/tiobe_index/images/Up.gif" border="0" height="15" width="10"><img src="http://www.tiobe.com/tiobe_index/images/Up.gif" border="0" height="15" width="10"><img src="http://www.tiobe.com/tiobe_index/images/Up.gif" border="0" height="15" width="10"><img src="http://www.tiobe.com/tiobe_index/images/Up.gif" border="0" height="15" width="10"><img src="http://www.tiobe.com/tiobe_index/images/Up.gif" border="0" height="15" width="10"><img src="http://www.tiobe.com/tiobe_index/images/Up.gif" border="0" height="15" width="10"><img src="http://www.tiobe.com/tiobe_index/images/Up.gif" border="0" height="15" width="10"><img src="http://www.tiobe.com/tiobe_index/images/Up.gif" border="0" height="15" width="10"><img src="http://www.tiobe.com/tiobe_index/images/Up.gif" border="0" height="15" width="10">
+</td>
+    <td><a href="http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html#">Objective-C</a></td>
+    <td align="center">2.288%</td>
+    <td align="center">+2.15%</td>
+    <td align="left">  A</td>
+</tr>
+<tr height="25">
+<td align="center">12</td>
+    <td align="center">10</td>
+    <td align="center">
+<img src="http://www.tiobe.com/tiobe_index/images/Down.gif" border="0" height="15" width="10"><img src="http://www.tiobe.com/tiobe_index/images/Down.gif" border="0" height="15" width="10">
+</td>
+    <td><a href="http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html#">Ruby</a></td>
+    <td align="center">2.221%</td>
+    <td align="center">-0.35%</td>
+    <td align="left">  A</td>
+</tr>
+<tr height="25">
+<td align="center">13</td>
+    <td align="center">14</td>
+    <td align="center">
+<img src="http://www.tiobe.com/tiobe_index/images/Up.gif" border="0" height="15" width="10">
+</td>
+    <td><a href="http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html#">SAS</a></td>
+    <td align="center">0.717%</td>
+    <td align="center">-0.07%</td>
+    <td align="left">  A</td>
+</tr>
+<tr height="25">
+<td align="center">14</td>
+    <td align="center">12</td>
+    <td align="center">
+<img src="http://www.tiobe.com/tiobe_index/images/Down.gif" border="0" height="15" width="10"><img src="http://www.tiobe.com/tiobe_index/images/Down.gif" border="0" height="15" width="10">
+</td>
+    <td><a href="http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html#">PL/SQL</a></td>
+    <td align="center">0.710%</td>
+    <td align="center">-0.38%</td>
+    <td align="left">  A</td>
+</tr>
+<tr height="25">
+<td align="center">15</td>
+    <td align="center">-</td>
+    <td align="center">
+<img src="http://www.tiobe.com/tiobe_index/images/Up.gif" border="0" height="15" width="10"><img src="http://www.tiobe.com/tiobe_index/images/Up.gif" border="0" height="15" width="10"><img src="http://www.tiobe.com/tiobe_index/images/Up.gif" border="0" height="15" width="10"><img src="http://www.tiobe.com/tiobe_index/images/Up.gif" border="0" height="15" width="10"><img src="http://www.tiobe.com/tiobe_index/images/Up.gif" border="0" height="15" width="10"><img src="http://www.tiobe.com/tiobe_index/images/Up.gif" border="0" height="15" width="10"><img src="http://www.tiobe.com/tiobe_index/images/Up.gif" border="0" height="15" width="10"><img src="http://www.tiobe.com/tiobe_index/images/Up.gif" border="0" height="15" width="10"><img src="http://www.tiobe.com/tiobe_index/images/Up.gif" border="0" height="15" width="10"><img src="http://www.tiobe.com/tiobe_index/images/Up.gif" border="0" height="15" width="10">
+</td>
+    <td><a href="http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html#">Go</a></td>
+    <td align="center">0.710%</td>
+    <td align="center">+0.71%</td>
+    <td align="left">  A</td>
+</tr>
+<tr height="25">
+<td align="center">16</td>
+    <td align="center">15</td>
+    <td align="center">
+<img src="http://www.tiobe.com/tiobe_index/images/Down.gif" border="0" height="15" width="10">
+</td>
+    <td><a href="http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html#">Pascal</a></td>
+    <td align="center">0.648%</td>
+    <td align="center">-0.07%</td>
+    <td align="left">  B</td>
+</tr>
+<tr height="25">
+<td align="center">17</td>
+    <td align="center">17</td>
+    <td align="center"><img src="http://www.tiobe.com/tiobe_index/images/Same.gif" border="0" height="22" width="15"></td>
+    <td><a href="http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html#">ABAP</a></td>
+    <td align="center">0.625%</td>
+    <td align="center">-0.03%</td>
+    <td align="left">  B</td>
+</tr>
+<tr height="25">
+<td align="center">18</td>
+    <td align="center">20</td>
+    <td align="center">
+<img src="http://www.tiobe.com/tiobe_index/images/Up.gif" border="0" height="15" width="10"><img src="http://www.tiobe.com/tiobe_index/images/Up.gif" border="0" height="15" width="10">
+</td>
+    <td><a href="http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html#">MATLAB</a></td>
+    <td align="center">0.616%</td>
+    <td align="center">+0.13%</td>
+    <td align="left">  B</td>
+</tr>
+<tr height="25">
+<td align="center">19</td>
+    <td align="center">22</td>
+    <td align="center">
+<img src="http://www.tiobe.com/tiobe_index/images/Up.gif" border="0" height="15" width="10"><img src="http://www.tiobe.com/tiobe_index/images/Up.gif" border="0" height="15" width="10"><img src="http://www.tiobe.com/tiobe_index/images/Up.gif" border="0" height="15" width="10">
+</td>
+    <td><a href="http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html#">ActionScript</a></td>
+    <td align="center">0.545%</td>
+    <td align="center">+0.09%</td>
+    <td align="left">  B</td>
+</tr>
+<tr height="25">
+<td align="center">20</td>
+    <td align="center">19</td>
+    <td align="center">
+<img src="http://www.tiobe.com/tiobe_index/images/Down.gif" border="0" height="15" width="10">
+</td>
+    <td><a href="http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html#">Lua</a></td>
+    <td align="center">0.521%</td>
+    <td align="center">+0.03%</td>
+    <td align="left">  B</td>
+</tr>
+</table>
+</div></blockquote>
+<div class="posterous_quote_citation">via <a href="http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html">tiobe.com</a>
+</div>
+    <p>Interesting information (look at the link for more stats, including long term trends, etc.) I find it interesting that Obj-C has seen such a dramatic increase in one year. A testament to the increasing popularity of Mac OS X and iPhone development? Also of note is a slight decrease in Ruby popularity.</p>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Rugged software]]></title>
+    <link href="http://zzamboni.github.com/blog/a-meme-is-born"/>
+    <updated>2010-02-17T10:03:00-06:00</updated>
+    <id>http://zzamboni.github.com/blog/a-meme-is-born</id>
+    <content type="html"><![CDATA[<div class="posterous_bookmarklet_entry">
+<blockquote>
+<div>
+<strong><br> I am rugged - and more importantly, my code is rugged.</strong>
+<p> </p>
+<p>I recognize that software has become a foundation of our modern world.</p>
+<p>I recognize the awesome responsibility that comes with this foundational role.</p>
+<p>I recognize that my code will be used in ways I cannot anticipate, in ways it was not designed, and for longer than it was ever intended.</p>
+<p>I recognize that my code will be attacked by talented and persistent adversaries who threaten our physical, economic, and national security.</p>
+<p>I recognize these things - and I choose to be rugged.</p>
+<p>I am rugged because I refuse to be a source of vulnerability or weakness.</p>
+<p>I am rugged because I assure my code will support its mission.</p>
+<p>I am rugged because my code can face these challenges and persist in spite of them.</p>
+<p>I am rugged, not because it is easy, but because it is necessary… and I am up for the challenge.</p>
+</div>
+</blockquote>
+<div class="posterous_quote_citation">via <a href="http://layer8.itsecuritygeek.com/layer8/a-meme-is-born/">layer8.itsecuritygeek.com</a>
+</div>
+<p>This is important. We need to stop building fragile software, stop repeating the same mistakes that have caused vulnerabilities and failures for decades, and we need to teach software developers the importance of building rugged software.</p>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[CopperExport development paused ]]></title>
+    <link href="http://zzamboni.github.com/blog/copperexport-development-paused"/>
+    <updated>2009-12-11T06:44:02-06:00</updated>
+    <id>http://zzamboni.github.com/blog/copperexport-development-paused</id>
+    <content type="html"><![CDATA[<p>I want to post a short update aimed at users of my iPhoto plugin <a href="http://www.zzamboni.org/brt/code/copperexport/" target="_blank">CopperExport</a>. I have received multiple reports of it failing in recent updates of Snow Leopard, and I have also verified personally that it does not work properly in iPhoto'09.<br><div class="gmail_quote"> <br>Unfortunately, since <a href="http://blog.zzamboni.org/after-the-move" target="_blank">the big move</a>, I find myself without easy access to a Mac for development (I had a Mac at my previous job, and I use Windows at my new job), which pretty much makes fixing these bugs impossible. Until I get a new machine, I will not be able to provide updates to CopperExport. Of course, if any developers out there want to make the appropriate fixes, I will happily accept patches that you submit, and produce a new release myself.<p></p> I apologize to my users for this not-so-happy state, and I want to assure you that as soon as possible, I will resume development. Thank you for your patience and your support, and for the many kind words you have sent me about the plugin itself.<p></p>  </div></p>
+]]></content>
+  </entry>
+  
+</feed>

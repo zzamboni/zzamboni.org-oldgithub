@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: keyboard | zzamboni.org]]></title>
+  <link href="http://zzamboni.github.com/blog/categories/keyboard/atom.xml" rel="self"/>
+  <link href="http://zzamboni.github.com/"/>
+  <updated>2013-03-24T00:01:23-06:00</updated>
+  <id>http://zzamboni.github.com/</id>
+  <author>
+    <name><![CDATA[Diego Zamboni]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Remapping Mac modifier keys on Emacs 23.3]]></title>
+    <link href="http://zzamboni.github.com/blog/remapping-mac-modifier-keys-on-emacs-233"/>
+    <updated>2011-11-27T01:47:00-06:00</updated>
+    <id>http://zzamboni.github.com/blog/remapping-mac-modifier-keys-on-emacs-233</id>
+    <content type="html"><![CDATA[<p>I just switched from <a href="http://homepage.mac.com/zenitani/emacs-e.html">Carbon Emacs</a> (which is old Emacs 22.x) to <a href="http://vgoulet.act.ulaval.ca/en/emacs/mac">Emacs for OS X Modified</a> on my Mac (which is a Cocoa app, and Emacs 23.3).</p>
+
+
+<p></p>
+
+
+<div>One of the unwelcome changes was that the Emacs 'Meta' modifier is now by default mapped to the Option key and not Command as before. But this gave me the opportunity to learn how to map the Mac keyboard modifier keys arbitrarily. I now have the following in my .emacs:</div>
+
+
+<p></p>
+
+
+<div>
+<div><p><a href="https://gist.github.com/1400862">https://gist.github.com/1400862</a></p></div>
+</div>
+
+
+<p></p>
+
+
+<div>I'm documenting it here just in case someone (or my future self, when I need to redo my configuration at some point) finds it useful.</div>
+
+
+<p></p>
+
+
+<div>References: <a href="http://stackoverflow.com/q/2738660">http://stackoverflow.com/q/2738660</a> and <a href="http://www.emacswiki.org/emacs/MetaKeyProblems#toc15">http://www.emacswiki.org/emacs/MetaKeyProblems#toc15</a>
+</div>
+
+]]></content>
+  </entry>
+  
+</feed>

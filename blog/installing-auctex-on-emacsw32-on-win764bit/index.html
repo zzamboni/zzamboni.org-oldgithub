@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Installing AucTeX on EmacsW32 on Win7/64bit - zzamboni.org</title>
+  <meta name="author" content="Diego Zamboni">
+
+  
+  <meta name="description" content="Today I had to install AucTeX to use on my Win7/64 machine under EmacsW32. I found the basic instructions here: http://www.sturmnet.org/blog/2007/09 &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://zzamboni.github.com/blog/installing-auctex-on-emacsw32-on-win764bit">
+  <link href="/favicon.ico" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="zzamboni.org" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">zzamboni.org</a></h1>
+  
+    <h2></h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:zzamboni.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Home</a></li>
+  <li><a href="/blog">Ideally Blue</a></li>
+  <li><a href="/code.html">Code</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about.html">About</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Installing AucTeX on EmacsW32 on Win7/64bit</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-08-17T02:36:05-05:00" pubdate data-updated="true">Aug 17<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content">      Today I had to install AucTeX to use on my Win7/64 machine under EmacsW32. I found the basic instructions here: <a href="http://www.sturmnet.org/blog/2007/09/01/installing-auctex-in-emacsw32">http://www.sturmnet.org/blog/2007/09/01/installing-auctex-in-emacsw32</a>, but I had to modify them a bit (in particular, I am using tetex installed from cygwin instead of MiKTeX). Here are the commands I used:<p></p>  <tt>$  mkdir -p /usr/local/share/texmf<br> $ ./configure &#8211;prefix=&#8217;c:/Program Files (x86)/Emacs/emacs&#8217; &#8211;with-texmf-dir=&#8217;/usr/local/share/texmf&#8217; &#8211;with-lispdir=&#8217;c:/Program Files (x86)/Emacs/emacs/site-lisp&#8217;<br> $  make<br> $  make install</tt><p></p>  I then added the following lines to my <tt>C:\Program Files (x86)\Emacs\site-lisp\site-start.el</tt> file:<p></p>  <tt>(load &#8220;auctex.el&#8221; nil t t)<br> (load &#8220;preview-latex.el&#8221; nil t t)<br> (eval-after-load &#8216;info<br>        &#8216;(add-to-list &#8216;Info-directory-list &#8220;c:/Program Files/Emacs/share/info&#8221;))<br> (setq TeX-auto-save t)<br> (setq TeX-parse-self t)</tt><p></p>  Everything seems to be working properly, even preview-mode.
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Diego Zamboni</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-08-17T02:36:05-05:00" pubdate data-updated="true">Aug 17<span>th</span>, 2010</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/emacs/'>emacs</a>, <a class='category' href='/blog/categories/latex/'>latex</a>, <a class='category' href='/blog/categories/tips/'>tips</a>, <a class='category' href='/blog/categories/windows/'>windows</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://zzamboni.github.com/blog/installing-auctex-on-emacsw32-on-win764bit" data-via="" data-counturl="http://zzamboni.github.com/blog/installing-auctex-on-emacsw32-on-win764bit" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/updated-server-and-service-setup" title="Previous Post: Updated server and service setup">&laquo; Updated server and service setup</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/emulate-vis-command-jump-to-matching-parenthe" title="Next Post: Emulate vi's % command (jump to matching parenthesis) in Emacs">Emulate vi's % command (jump to matching parenthesis) in Emacs &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/howto-changing-the-available-display-formats">HowTo: Changing the available display formats for Evernote's "Insert Date" command</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/cfengine-talks-at-picc12-conference">CFEngine talks at PICC'12 conference</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/purdue-at-night">Purdue at Night</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/blog-learning-cfengine-3">Learning CFEngine 3 has been released</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/analytics-put-to-a-good-cause">Analytics put to a good cause</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Diego Zamboni -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

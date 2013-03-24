@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: book | zzamboni.org]]></title>
+  <link href="http://zzamboni.github.com/blog/categories/book/atom.xml" rel="self"/>
+  <link href="http://zzamboni.github.com/"/>
+  <updated>2013-03-24T00:01:23-06:00</updated>
+  <id>http://zzamboni.github.com/</id>
+  <author>
+    <name><![CDATA[Diego Zamboni]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Learning CFEngine 3 has been released]]></title>
+    <link href="http://zzamboni.github.com/blog/blog-learning-cfengine-3"/>
+    <updated>2012-03-24T01:23:00-06:00</updated>
+    <id>http://zzamboni.github.com/blog/blog-learning-cfengine-3</id>
+    <content type="html"><![CDATA[<div class="posterous_bookmarklet_entry">
+<blockquote class="posterous_long_quote">
+<div><a href="http://shop.oreilly.com/product/0636920022022.do">
+<div class="posterousGalleryMainDiv p_embed p_image_embed"><img src="http://zzamboni.github.com/images/2012/03/24/blog-learning-cfengine-3/cat.gif" height="236" alt="Cat" width="180"></div>
+</a></div>
+<p>I am ecstatic to announce that the book is now officially released!</p>
+</blockquote>
+<div class="posterous_quote_citation">via <a href="http://blog.cf-learn.info/">blog.cf-learn.info</a>
+</div>
+<p>I am so happy :-)</p>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[New website for "Learning CFEngine 3"]]></title>
+    <link href="http://zzamboni.github.com/blog/new-website-for-learning-cfengine-3"/>
+    <updated>2011-12-15T02:22:00-06:00</updated>
+    <id>http://zzamboni.github.com/blog/new-website-for-learning-cfengine-3</id>
+    <content type="html"><![CDATA[<p>I'm happy to announce that the website for my book is now live at <a href="http://cf-learn.info/">http://cf-learn.info/</a>. </p>
+
+
+<p></p>
+
+
+<p> In this website you will find:</p>
+
+<ul>
+<li>General information about the book. </li>
+<li>A discussion forum for any type of questions, feedback or suggestions about the book. </li>
+<li>Downloadable code examples from the book, plus (over time) many other new examples. </li>
+<li>List of Errata, and access to the Errata system at O'Reilly </li>
+<li>A blog devoted to the book and to CFEngine. </li>
+</ul>
+
+
+<p>The site is fairly empty at the moment (the blog, the forum and the errata page are live, I encourage you to participate, particularly if you have purchased the Early Release version of the book and want to provide any sort of feedback), but content will grow over time. </p>
+
+
+<p></p>
+
+
+<p> Check it out! And of course, let me know what you think.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA["Learning CFEngine 3" Early Release now available -use AUTHD to get 40-50% off]]></title>
+    <link href="http://zzamboni.github.com/blog/learning-cfengine-3early-release-now-availabl"/>
+    <updated>2011-12-06T15:03:00-06:00</updated>
+    <id>http://zzamboni.github.com/blog/learning-cfengine-3early-release-now-availabl</id>
+    <content type="html"><![CDATA[<div class="posterous_bookmarklet_entry">
+<div>
+<div style="float: left;">
+<div class="detailimgcontainer"><a href="http://shop.oreilly.com/product/0636920022022.do?sortby=publicationDate" target="_parent"> <img src="http://akamaicovers.oreilly.com/images/0636920022022/cat.gif" border="0" height="236" alt="Automated system administration for sites of any size" width="180"></a></div>
+<p> </p>
+</div>
+<div class="detailheader"><a href="http://shop.oreilly.com/product/0636920022022.do">Learning CFEngine 3</a></div>
+<div class="detailSubHeader">Automated system administration for sites of any size</div>
+<div>
+<div class="AuthorName">By <a href="http://shop.oreilly.com/product/0636920022022.do#tab_03" class="byLineLink">Diego Zamboni</a>
+</div>
+</div>
+</div>
+<div class="posterous_quote_citation">via <a href="http://shop.oreilly.com/product/0636920022022.do">shop.oreilly.com</a>
+</div>
+<p>My upcoming book "Learning CFEngine 3" is now available as an Early Release, which includes (for now) the first four chapters of the book. You can use the code AUTHD to get 40% off the print book, or 50% off the ebook version.</p>
+<p>Go get yours! And of course, I'd be happy to receive any feedback you have.</p>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[New job, new book]]></title>
+    <link href="http://zzamboni.github.com/blog/new-job-new-book"/>
+    <updated>2011-10-19T00:21:07-05:00</updated>
+    <id>http://zzamboni.github.com/blog/new-job-new-book</id>
+    <content type="html"><![CDATA[<p>Today I have two big announcements to make.<p></p></p>
+
+<div>First, as of this week I have a new job, I am now working with <a href="http://cfengine.com/">CFEngine AS</a>, the company that develops and maintains <a href="http://blog.zzamboni.org/tag/cfengine">cfengine</a>. As you know if you read my blog, I am a big fan of cfengine. It is a mature and able tool that provides extreme flexibility and power to system administrators. The company is full of energy and with very interesting projects to make cfengine even better and more popular than it is today. I am very happy to be working with such a talented team. I will be working with the Products and Services group in a variety of roles and projects, about some of which you may be able to read here as well.</div>
+
+
+<p></p>
+
+
+<div>Second, and not entirely unrelated, I have been working in the last few months in a book titled <b>Learning CFEngine 3</b>. The book will be published by <a href="http://oreilly.com/">O'Reilly</a>, and should come out sometime early next year. I can't tell you how excited I am to be writing a book for O'Reilly! I have learned so much from O'Reilly books throughout the years, so it is truly an honor to be able to join such select company and to contribute something back to the community. The book is a personal project and not part of my job at CFEngine, although of course working at the mothership makes things much easier in many respects, and my new colleagues are incredibly supportive of this project.</div>
+
+
+<p></p>
+
+
+<div>So, that's it for now. Big changes and big projects. I am very busy and very excited, and will keep you posted on both fronts. Thank you for reading!</div>
+
+]]></content>
+  </entry>
+  
+</feed>

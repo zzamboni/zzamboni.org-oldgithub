@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: ssh | zzamboni.org]]></title>
+  <link href="http://zzamboni.github.com/blog/categories/ssh/atom.xml" rel="self"/>
+  <link href="http://zzamboni.github.com/"/>
+  <updated>2013-03-24T00:01:23-06:00</updated>
+  <id>http://zzamboni.github.com/</id>
+  <author>
+    <name><![CDATA[Diego Zamboni]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Editing sshd configuration files with cfengine3]]></title>
+    <link href="http://zzamboni.github.com/blog/editing-sshd-configuration-files-with-cfengin"/>
+    <updated>2010-11-24T23:30:00-06:00</updated>
+    <id>http://zzamboni.github.com/blog/editing-sshd-configuration-files-with-cfengin</id>
+    <content type="html"><![CDATA[<p>Here's a cfengine bundle that I wrote for editing the sshd configuration file by passing an array with the parameters. Using an array is a very elegant way of defining the values to set. The bundle also restarts sshd after any changes are made, unless the no_restarts class is defined.</p>
+
+
+<p>The first gist contains the edit_sshd bundle itself, together with the set_config_values bundle that actually performs the editing job (this should go into a library file, I have it in my personal version of cfengine_stdlib.cf). The second file is a sample bundle showing how to use edit_sshd.</p>
+
+
+<p><br></p>
+
+
+<p><a href="https://gist.github.com/714948">https://gist.github.com/714948</a></p>
+
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: sitenews | zzamboni.org]]></title>
+  <link href="http://zzamboni.github.com/blog/categories/sitenews/atom.xml" rel="self"/>
+  <link href="http://zzamboni.github.com/"/>
+  <updated>2013-03-24T00:01:23-06:00</updated>
+  <id>http://zzamboni.github.com/</id>
+  <author>
+    <name><![CDATA[Diego Zamboni]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Website redesign and unification]]></title>
+    <link href="http://zzamboni.github.com/blog/website-redesign-and-unification"/>
+    <updated>2010-09-28T02:22:09-05:00</updated>
+    <id>http://zzamboni.github.com/blog/website-redesign-and-unification</id>
+    <content type="html"><![CDATA[<pre><code>  There are still some rough edges, but by far the redesign and unification of &lt;a href="http://zzamboni.org/"&gt;zzamboni.org&lt;/a&gt; is done. With the same design you can now find my blogs (hosted by posterous.com), my project pages (hosted in github.com project repositories) and some static pages (hosted in my personal github.com pages repository, this includes the root, About and Code pages, as well as the static copy of my old blog &lt;a href="http://zzamboni.org/brt/"&gt;BrT&lt;/a&gt;, which is the only one that retains its original design). The theme is a variation of Posterous' "Paramaibo".&lt;p&gt;&lt;/p&gt;  I'm still playing with the design, and finishing some pages here and there. But overall things should be good, please let me know if you find anything broken.&lt;p&gt;&lt;/p&gt;  Kudos to the Posterous and GitHub teams for building such useful, powerful and friendly tools and services.
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Updated server and service setup]]></title>
+    <link href="http://zzamboni.github.com/blog/updated-server-and-service-setup"/>
+    <updated>2010-08-16T14:58:00-05:00</updated>
+    <id>http://zzamboni.github.com/blog/updated-server-and-service-setup</id>
+    <content type="html"><![CDATA[<p>(a friend asked me about my online setup, and I wrote the text below. Then I realized it would also make an interesting blog post, and I just copied and pasted it, with minimal editing, into an email to posterous. This is why I love posterous, it makes posting so easy) </p>
+
+
+<p></p>
+
+
+<p> For my setup, I have a hodgepodge of stuff all aggregated under the <a href="http://zzamboni.org/">zzamboni.org</a> domain. I wrote a blog post about my setup some time ago: <a href="http://blog.zzamboni.org/server-less-does-not-mean-service-less">http://blog.zzamboni.org/server-less-does-not-mean-service-less</a> <p></p> Since then, the main things that have changed is that now my static content (e.g. <a href="http://zzamboni.org/brt/">http://zzamboni.org/brt/</a>) is also served by <a href="http://github.com/">github</a>, instead of Google AppEngine + drydrop. Github used to offer hosting of custom domains only for paid accounts, but now it's available to free accounts as well, so I decided to simplify the setup and host them directly on github. I also just moved the grabcartoons web page to github as well (<a href="http://zzamboni.org/grabcartoons/">http://zzamboni.org/grabcartoons/</a>). So now I have: <p></p> <a href="http://zzamboni.org/">http://zzamboni.org/</a> and <a href="http://zzamboni.org/brt/">http://zzamboni.org/brt/</a> hosted by github from my zzamboni.github.com repository. <br><a href="http://zzamboni.org/grabcartoons/">http://zzamboni.org/grabcartoons/</a> hosted by github from the grabcartoons repository. <br><a href="http://zzamboni.org/things2thl/">http://zzamboni.org/things2thl/</a> hosted by github from the things2thl repository. <br><a href="http://blog.zzamboni.org/">http://blog.zzamboni.org/</a> and <a href="http://posterous.zzamboni.org//">http://posterous.zzamboni.org//</a> (plus some other private blogs) hosted by posterous.com. This is my favorite site for blogging, since it's extremely easy to post by email, plus you can configure it to auto-post content to twitter, flicker, facebook, etc. <br>Email served by Google Apps. <p></p> I'm very happy with <a href="">posterous.com</a> and <a href="http://github.com/">github.com</a>. They are my two favorite services these days.</p>
+]]></content>
+  </entry>
+  
+</feed>

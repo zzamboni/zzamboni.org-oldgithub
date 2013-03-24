@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: osx | zzamboni.org]]></title>
+  <link href="http://zzamboni.github.com/blog/categories/osx/atom.xml" rel="self"/>
+  <link href="http://zzamboni.github.com/"/>
+  <updated>2013-03-24T00:01:23-06:00</updated>
+  <id>http://zzamboni.github.com/</id>
+  <author>
+    <name><![CDATA[Diego Zamboni]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Installing cfengine on Mac OS X]]></title>
+    <link href="http://zzamboni.github.com/blog/installing-cfengine-320b3-on-mac-os-x-107"/>
+    <updated>2011-08-05T02:31:00-05:00</updated>
+    <id>http://zzamboni.github.com/blog/installing-cfengine-320b3-on-mac-os-x-107</id>
+    <content type="html"><![CDATA[<p><a href="http://cfengine.com/">Cfengine</a> (tested 3.2.0) installs easily on OS X (tested 10.7), given that it's Unix. One problem I encountered was that it does not compile with the bundled version of Berkeley DB (it recognizes it during configure, but produces compilation errors). The solution is to use some other DB engine. I chose Tokyo Cabinet. Using <a href="http://mxcl.github.com/homebrew/">homebrew</a>, the process is simple</p>
+
+
+<p><code>brew install tokyo-cabinet</code></p>
+
+
+<p>After this, configure --with-tokyocabinet, and then compile and install as usual.</p>
+
+
+<p>I have submitted a <a href="https://github.com/mxcl/homebrew/pull/6835/files">homebrew formula for cfengine</a>. Once/if it gets approved, you should be able to run <code>brew install cfengine</code> to do all of the above automatically.</p>
+
+
+<p><strong>Update (2011/09/03): The cfengine homebrew formula has been accepted into the repository! You can now simply run "brew update; brew install cfengine" to get cfengine 3.2.0 installed.</strong></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[My thoughts about the Lion upgrade process]]></title>
+    <link href="http://zzamboni.github.com/blog/my-thought-about-the-lion-upgrade-process"/>
+    <updated>2011-07-22T10:30:00-05:00</updated>
+    <id>http://zzamboni.github.com/blog/my-thought-about-the-lion-upgrade-process</id>
+    <content type="html"><![CDATA[<p>I just finished upgrading our Mac (my wife and I share it) to Lion. It looks very nice. This has been the OS X upgrade to which I have given less thought: purchase, download, backup, install, done.</p>
+
+
+<div>
+<div>I think a lot of this has to do with the online distribution. We are used to installing things downloaded from the Internet without much thought (of course there are security considerations, but that's another topic). On the other hand, new OS versions used to be special: you go to the store, or you order it online, it comes in a box, and there used to be an ominous feeling about it. It may wipe all your data, it may make your machine unrecognizable, it may kill your pets.</div>
+<p></p>
+<div>But when a major OS upgrade comes through from the App Store, it feels just as if you are installing another app. It's much less frightening. And Apple has removed pretty much every question about installation options, which helps this feeling. And <strong>it works</strong>, which gives you assurance for next time.</div>
+<p></p>
+<div>All in all, a pleasant, reassuring and painless experience. Well done Apple.</div>
+<p></p>
+<div>And this reverse-scrolling thing in Lion? I think I'll get used to it pretty quickly. I use my iPhone so much that it almost feels natural on the Mac as well.</div>
+<p></p>
+</div>
+
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Installing cfengine on Windows 7 under cygwin - zzamboni.org</title>
+  <meta name="author" content="Diego Zamboni">
+
+  
+  <meta name="description" content="Update (2011/09/05): Updated the instructions for cfengine 3.2.0, cygwin 1.7.9, and tested them on a clean cygwin install. Installing the cfengine &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://zzamboni.github.com/blog/installing-cfengine-on-windows-7-under-cygwin">
+  <link href="/favicon.ico" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="zzamboni.org" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">zzamboni.org</a></h1>
+  
+    <h2></h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:zzamboni.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Home</a></li>
+  <li><a href="/blog">Ideally Blue</a></li>
+  <li><a href="/code.html">Code</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about.html">About</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Installing Cfengine on Windows 7 Under Cygwin</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-08-23T00:14:00-05:00" pubdate data-updated="true">Aug 23<span>rd</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p><strong>Update (2011/09/05): Updated the instructions for cfengine 3.2.0, cygwin 1.7.9, and tested them on a clean cygwin install.</strong></p>
+<p>Installing the <a href="http://cfengine.org/">cfengine community edition</a> under Windows (the <a href="http://cfengine.com/nova"> commercial version</a> includes native Windows support) is fairly easy under <a href="http://cygwin.com/"> cygwin</a>, you just need to have the appropriate dependencies installed. Here’s how I did it.</p>
+<p><span style="font-size: large;"><strong>Versions  </strong></span></p>
+<ul>
+<li>cfengine: <a href="https://cfengine.com/source_code">3.2.0</a>
+</li>
+<li>Windows 7 Enterprise SP1/64bit</li>
+<li>cygwin: <a href="http://cygwin.com/">1.7.9-1</a>
+</li>
+</ul>
+<p><span style="font-size: large;"><strong>Additional cygwin packages needed</strong></span> </p>
+<p>To install these, run cygwin’s setup.exe, search for each packages in turn, and install them. Make sure you agree to install any additional packages that are listed as dependencies (setup.exe will ask you about it).</p>
+<ul>
+<li>make</li>
+<li>gcc</li>
+<li>libdb4.5</li>
+<li>libdb4.5-devel</li>
+<li>openssl-devel</li>
+<li>libpcre-devel</li>
+<li>bison (will install m4 as a dependency, say &#8220;Yes&#8221;)</li>
+<li>flex</li>
+</ul>
+<p><span style="font-size: large;"><strong>How to compile and install</strong></span></p>
+<ol>
+<li>Unpack cfengine-3.2.0.tar.gz: <code>tar zxvf cfengine-3.2.0.tar.gz</code>
+</li>
+<li><code>cd cfengine-3.2.0</code></li>
+<li><code>./configure</code></li>
+<li><code>make</code></li>
+<li><code>make install</code></li>
+</ol>
+<p>That should be it. Remember that there is some functionality missing in the community edition under Windows (for example, userexists() does not return correct results). If you want full Windows support (including native features like registry editing, etc.) you have to use the commercial edition of cfengine. But for most purposes, the community edition works just fine.</p>
+<p>If you have different experiences, or with different versions of Windows, please let me know! I&#8217;ll update these instructions as needed.</p>
+<p> </p>
+<ol></ol>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Diego Zamboni</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-08-23T00:14:00-05:00" pubdate data-updated="true">Aug 23<span>rd</span>, 2010</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/cfengine/'>cfengine</a>, <a class='category' href='/blog/categories/cygwin/'>cygwin</a>, <a class='category' href='/blog/categories/howto/'>howto</a>, <a class='category' href='/blog/categories/windows/'>windows</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://zzamboni.github.com/blog/installing-cfengine-on-windows-7-under-cygwin" data-via="" data-counturl="http://zzamboni.github.com/blog/installing-cfengine-on-windows-7-under-cygwin" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/grabcartoons-v27" title="Previous Post: Grabcartoons v2.7">&laquo; Grabcartoons v2.7</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/implementing-single-copy-nirvana-in-cfengine3" title="Next Post: Implementing "single-copy nirvana" in cfengine3">Implementing "single-copy nirvana" in cfengine3 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/howto-changing-the-available-display-formats">HowTo: Changing the available display formats for Evernote's "Insert Date" command</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/cfengine-talks-at-picc12-conference">CFEngine talks at PICC'12 conference</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/purdue-at-night">Purdue at Night</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/blog-learning-cfengine-3">Learning CFEngine 3 has been released</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/analytics-put-to-a-good-cause">Analytics put to a good cause</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Diego Zamboni -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

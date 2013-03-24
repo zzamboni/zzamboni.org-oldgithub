@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: cfengine | zzamboni.org]]></title>
+  <link href="http://zzamboni.github.com/blog/categories/cfengine/atom.xml" rel="self"/>
+  <link href="http://zzamboni.github.com/"/>
+  <updated>2013-03-24T00:01:23-06:00</updated>
+  <id>http://zzamboni.github.com/</id>
+  <author>
+    <name><![CDATA[Diego Zamboni]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[CFEngine talks at PICC'12 conference]]></title>
+    <link href="http://zzamboni.github.com/blog/cfengine-talks-at-picc12-conference"/>
+    <updated>2012-04-27T08:30:32-05:00</updated>
+    <id>http://zzamboni.github.com/blog/cfengine-talks-at-picc12-conference</id>
+    <content type="html"><![CDATA[<p>There will be several CFEngine-related classes and talks at the <a href="http://www.picconf.org/">PICC'12 conference</a> (Professional IT Community Conference) on May 11-12th, in New Jersey. I will be talking about using CFEngine as part of your security infrastructure. My colleague Joe Netzel will be talking about migration from CFEngine 2 to CFEngine 3, so if you are using CF2 and have been considering (or dreading) the migration, make sure to come by! Aleksey Tsalolikhin will give an introductory class to CFEngine. And Mark Burgess will give a class not related to CFEngine, but to the perils and skills needed to survive as a technical person in the "business world".<p></p></p>
+
+<div>If you are coming to the conference, we look forward to seeing you there!<br><ul>
+<li>Mark Burgess - <a href="http://www.picconf.org/picc12-training-classes/#f4">A Sysadmin’s Guide to Navigating the Business World</a>
+</li>
+<li>Diego Zamboni - <a href="http://www.picconf.org/picc-12-talkspapers/#18">CFEngine Configuration Management for Security</a>
+</li>
+<li>Joe Netzel - <a href="http://www.picconf.org/picc-12-talkspapers/#16">Successfully Migrating From CFEngine 2 to CFEngine 3</a>
+</li>
+<li>Aleksey Tsalolikhin - <a href="http://www.picconf.org/picc12-training-classes/#f10">Automating System Administration with CFEngine 3</a>
+</li>
+</ul>
+<br>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Learning CFEngine 3 has been released]]></title>
+    <link href="http://zzamboni.github.com/blog/blog-learning-cfengine-3"/>
+    <updated>2012-03-24T01:23:00-06:00</updated>
+    <id>http://zzamboni.github.com/blog/blog-learning-cfengine-3</id>
+    <content type="html"><![CDATA[<div class="posterous_bookmarklet_entry">
+<blockquote class="posterous_long_quote">
+<div><a href="http://shop.oreilly.com/product/0636920022022.do">
+<div class="posterousGalleryMainDiv p_embed p_image_embed"><img src="http://zzamboni.github.com/images/2012/03/24/blog-learning-cfengine-3/cat.gif" height="236" alt="Cat" width="180"></div>
+</a></div>
+<p>I am ecstatic to announce that the book is now officially released!</p>
+</blockquote>
+<div class="posterous_quote_citation">via <a href="http://blog.cf-learn.info/">blog.cf-learn.info</a>
+</div>
+<p>I am so happy :-)</p>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[CFEngine posts moving to cf-learn.info]]></title>
+    <link href="http://zzamboni.github.com/blog/cfengine-posts-moving-to-cf-learninfo"/>
+    <updated>2012-01-04T13:16:00-06:00</updated>
+    <id>http://zzamboni.github.com/blog/cfengine-posts-moving-to-cf-learninfo</id>
+    <content type="html"><![CDATA[<div><span>I have been blogging <a href="http://blog.zzamboni.org/tag/cfengine">about CFEngine</a> here for a while (it's my most frequent tag). As of now, I'm starting to post all CFEngine-related posts to <a href="http://blog.cf-learn.info/">http://blog.cf-learn.info/</a>, which is part of <a href="http://cf-learn.info/"></a><a href="http://cf-learn.info/">the web site for my book "Learning CFEngine 3"</a>. In this way, I intend to group all CFEngine-related content over there. I will still cross-post relevant things here, but if you want to stay fully up to date on my CFEngine writings, please subscribe over there as well.</span></div>
+
+
+<p></p>
+
+
+<div><span>I hope to see you around!</span></div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[cf-cmd: A command-line tool for running CFEngine snippets]]></title>
+    <link href="http://zzamboni.github.com/blog/cf-cmd-a-command-line-tool-for-running-cfengi"/>
+    <updated>2011-12-27T19:41:00-06:00</updated>
+    <id>http://zzamboni.github.com/blog/cf-cmd-a-command-line-tool-for-running-cfengi</id>
+    <content type="html"><![CDATA[<div class="posterous_bookmarklet_entry">
+<blockquote class="posterous_short_quote">After building the typical "test bundle" scaffolding in an editor for the hundredth time, I decided to do something about it. The result is the cf-cmd command.</blockquote>
+<div class="posterous_quote_citation">via <a href="http://blog.cf-learn.info/cf-cmd-a-command-line-tool-for-running-cfengi">blog.cf-learn.info</a>
+</div>
+<p>A little useful script I wrote for making it easier to test CFEngine code snippets. Follow <a href="http://blog.cf-learn.info/cf-cmd-a-command-line-tool-for-running-cfengi">the link</a> to see the full details.</p>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[New website for "Learning CFEngine 3"]]></title>
+    <link href="http://zzamboni.github.com/blog/new-website-for-learning-cfengine-3"/>
+    <updated>2011-12-15T02:22:00-06:00</updated>
+    <id>http://zzamboni.github.com/blog/new-website-for-learning-cfengine-3</id>
+    <content type="html"><![CDATA[<p>I'm happy to announce that the website for my book is now live at <a href="http://cf-learn.info/">http://cf-learn.info/</a>. </p>
+
+
+<p></p>
+
+
+<p> In this website you will find:</p>
+
+<ul>
+<li>General information about the book. </li>
+<li>A discussion forum for any type of questions, feedback or suggestions about the book. </li>
+<li>Downloadable code examples from the book, plus (over time) many other new examples. </li>
+<li>List of Errata, and access to the Errata system at O'Reilly </li>
+<li>A blog devoted to the book and to CFEngine. </li>
+</ul>
+
+
+<p>The site is fairly empty at the moment (the blog, the forum and the errata page are live, I encourage you to participate, particularly if you have purchased the Early Release version of the book and want to provide any sort of feedback), but content will grow over time. </p>
+
+
+<p></p>
+
+
+<p> Check it out! And of course, let me know what you think.</p>
+]]></content>
+  </entry>
+  
+</feed>

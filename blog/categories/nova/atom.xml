@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: nova | zzamboni.org]]></title>
+  <link href="http://zzamboni.github.com/blog/categories/nova/atom.xml" rel="self"/>
+  <link href="http://zzamboni.github.com/"/>
+  <updated>2013-03-24T00:01:23-06:00</updated>
+  <id>http://zzamboni.github.com/</id>
+  <author>
+    <name><![CDATA[Diego Zamboni]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[What's New in CFEngine 3: Making System Administration Even More Powerful - O'Reilly Radar]]></title>
+    <link href="http://zzamboni.github.com/blog/whats-new-in-cfengine-3-making-system-adminis"/>
+    <updated>2011-10-28T16:24:00-05:00</updated>
+    <id>http://zzamboni.github.com/blog/whats-new-in-cfengine-3-making-system-adminis</id>
+    <content type="html"><![CDATA[<div class="posterous_bookmarklet_entry">
+      <blockquote class="posterous_long_quote">
+<a href="https://cfengine.com/">CFEngine</a> is both the oldest and the newest of the popular tools for automating site administration.  Mark Burgess invented it as a free software project in 1993, and years later, as deployments in the field outgrew its original design he gave it a complete rethink and developed the powerful concept of <a href="http://research.iu.hio.no/promises.php">promise theory</a> to make it modular and maintainable.</blockquote>
+
+<div class="posterous_quote_citation">via <a href="http://radar.oreilly.com/2011/10/whats-new-in-cfengine-3-making.html">radar.oreilly.com</a>
+</div>
+    <p>I contributed to this article by Andy Oram on CFEngine 3. It talks about the history of CFEngine 3, why it is a powerful tool for system administrators, and what is new in the latest releases of both the commercial and the open-source versions of CFEngine.</p>
+<p>(disclaimer: I work for CFEngine AS)</p>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA["Introduction to CFEngine 3 Nova" webinar]]></title>
+    <link href="http://zzamboni.github.com/blog/introduction-to-cfengine-3-nova-webinar"/>
+    <updated>2011-10-25T22:53:13-05:00</updated>
+    <id>http://zzamboni.github.com/blog/introduction-to-cfengine-3-nova-webinar</id>
+    <content type="html"><![CDATA[<p>A new version of <a href="https://cfengine.com/nova">CFEngine 3 Nova</a> was released today, and to go with it, there will be a free webinar called "<a href="http://info.cfengine.com/NewNovaWebinar_Introduction-to-Nova_Registration.html">Introduction to CFEngine 3 Nova</a>" on November 2nd. It will be presented by one of the members of the core CFEngine team, and it will be a great opportunity to learn more about the new and improved capabilities in this release. If you are interested in CFEngine and maybe thinking of going the commercial route, or you need more information to decide, make sure to attend!<p></p></p>
+
+<div>A new version of <a href="https://cfengine.com/community">CFEngine Community</a> (<a href="http://www.cfengine.com/source-code">3.2.3</a>), was also released today.</div>
+
+]]></content>
+  </entry>
+  
+</feed>

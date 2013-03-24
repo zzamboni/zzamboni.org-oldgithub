@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: photos | zzamboni.org]]></title>
+  <link href="http://zzamboni.github.com/blog/categories/photos/atom.xml" rel="self"/>
+  <link href="http://zzamboni.github.com/"/>
+  <updated>2013-03-24T00:01:23-06:00</updated>
+  <id>http://zzamboni.github.com/</id>
+  <author>
+    <name><![CDATA[Diego Zamboni]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Purdue at Night]]></title>
+    <link href="http://zzamboni.github.com/blog/purdue-at-night"/>
+    <updated>2012-03-26T00:01:14-06:00</updated>
+    <id>http://zzamboni.github.com/blog/purdue-at-night</id>
+    <content type="html"><![CDATA[<p>I am at Purdue to give a CFEngine talk and visit some old colleagues, here are some photos I took during a night walk right after checking into my hotel. I graduated in 2001, and the last time I visited was almost 10 years ago. Time really flies, there are many new things in campus (including the shiny new Computer Science Building, which I had never seen), but so many others remain unchanged. It's awesome to be back.<p></p></p>
+
+<div class="p_embed p_image_embed">
+<a href="http://zzamboni.github.com/images/2012/03/26/purdue-at-night/39410834-IMG_0506.jpeg"><img alt="Img_0506" height="669" src="http://zzamboni.github.com/images/2012/03/26/purdue-at-night/39410834-IMG_0506.jpeg" width="500"></a>
+<a href="http://zzamboni.github.com/images/2012/03/26/purdue-at-night/39410835-IMG_0507.jpeg"><img alt="Img_0507" height="374" src="http://zzamboni.github.com/images/2012/03/26/purdue-at-night/39410835-IMG_0507.jpeg" width="500"></a>
+<a href="http://zzamboni.github.com/images/2012/03/26/purdue-at-night/39410836-IMG_0508.jpeg"><img alt="Img_0508" height="374" src="http://zzamboni.github.com/images/2012/03/26/purdue-at-night/39410836-IMG_0508.jpeg" width="500"></a>
+<a href="http://zzamboni.github.com/images/2012/03/26/purdue-at-night/39410837-IMG_0512.jpeg"><img alt="Img_0512" height="669" src="http://zzamboni.github.com/images/2012/03/26/purdue-at-night/39410837-IMG_0512.jpeg" width="500"></a>
+</div>
+
+]]></content>
+  </entry>
+  
+</feed>

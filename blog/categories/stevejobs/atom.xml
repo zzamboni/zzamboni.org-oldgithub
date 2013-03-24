@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: stevejobs | zzamboni.org]]></title>
+  <link href="http://zzamboni.github.com/blog/categories/stevejobs/atom.xml" rel="self"/>
+  <link href="http://zzamboni.github.com/"/>
+  <updated>2013-03-24T00:01:23-06:00</updated>
+  <id>http://zzamboni.github.com/</id>
+  <author>
+    <name><![CDATA[Diego Zamboni]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Reading on multiple media]]></title>
+    <link href="http://zzamboni.github.com/blog/reading-on-multiple-media"/>
+    <updated>2011-12-20T02:17:00-06:00</updated>
+    <id>http://zzamboni.github.com/blog/reading-on-multiple-media</id>
+    <content type="html"><![CDATA[<p>A couple of days ago I finished reading <em>Steve Jobs</em> by Walter Isaacson. I thoroughly enjoyed it (I may post a longer review later on, but I really liked learning the "behind the scenes" of much of what I witnessed from the outside over so many years). </p>
+
+
+<p></p>
+
+
+<p> With this book, for the first time, I decided to conduct an experiment. I got the book as an audiobook (from Audible, playing on my iPhone), as an ebook (using Kindle on my iPhone) and also the hardcover physical book. This allowed me to read the hardcover book when at home, to read the ebook whenever I was around and had some quiet time, or to listen to the audiobook when I was moving around (walking, driving, working out, etc.). <p></p> It worked quite well. Having multiple means of consuming the book allowed me to finish it in a shorter time, and also to experience the differences of each media type. Overall, for the sheer pleasure of reading, I think I still prefer reading on paper. But I really appreciate not having to carry the heavy book everywhere I go, and to be able to continue "reading" even when I could not focus my eyes on the book. <p></p> My one wish: synchronization! It would be great if the Kindle book and the Audible audiobook would synchronize among them, so that one would skip to wherever I stopped on the other (like what Kindle does when you read the same book across multiple devices).</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Dennis M. Ritchie, R.I.P.]]></title>
+    <link href="http://zzamboni.github.com/blog/dennis-m-ritchie-rip"/>
+    <updated>2011-10-13T00:36:00-05:00</updated>
+    <id>http://zzamboni.github.com/blog/dennis-m-ritchie-rip</id>
+    <content type="html"><![CDATA[<p>Dennis Ritchie passed away last weekend. He was one of the great minds in systems research and development, father of the C programming language, and one of the big contributors to Unix, both of which power the Mac on which I'm typing this, the iPhone on my desk, the Windows machine I use at work, the servers on which this blog is hosted, and much of the infrastructure both you and I use to connect to it.</p>
+
+
+<p>May he Rest in Peace.</p>
+
+
+<p> </p>
+
+
+<p>This makes three consecutive obituaries in my blog, of three great minds that have passed away in the last couple of weeks. All three of them were giants in their fields, and their fields were related and interconnected. Dennis Ritchie built much of the foundations on which our current technologies are based; Gene Schultz worked tirelessly to make them more secure; and Steve Jobs worked tirelessly to make them a joy to use. </p>
+
+
+<p></p>
+
+
+<p> In my everyday work and life, even just here, in the devices on my desk, I can see and experience the work and passion of these three men. I feel honored to have met them, either in person or through their work.</p>
+
+<p> </p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Steve Jobs, R.I.P.]]></title>
+    <link href="http://zzamboni.github.com/blog/steve-jobs-rip"/>
+    <updated>2011-10-06T00:26:24-05:00</updated>
+    <id>http://zzamboni.github.com/blog/steve-jobs-rip</id>
+    <content type="html"><![CDATA[<p>   Farewell, Steve. Thank you for all you did for the computer industry, for design, for music, for telephony, and for so many other aspects of our lives. You will be missed.<p></p>  <div class="p_embed p_image_embed">
+<a href="http://zzamboni.github.com/images/2011/10/06/steve-jobs-rip/32654795-acibibhg.png"><img alt="Acibibhg" height="337" src="http://zzamboni.github.com/images/2011/10/06/steve-jobs-rip/32654795-acibibhg.png" width="500"></a>
+</div></p>
+]]></content>
+  </entry>
+  
+</feed>

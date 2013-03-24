@@ -1,0 +1,560 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>zzamboni.org</title>
+  <meta name="author" content="Diego Zamboni">
+
+  
+  <meta name="description" content="https://gist.github.com/536198
+">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://zzamboni.github.com/blog/page/6">
+  <link href="/favicon.ico" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="zzamboni.org" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">zzamboni.org</a></h1>
+  
+    <h2></h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:zzamboni.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Home</a></li>
+  <li><a href="/blog">Ideally Blue</a></li>
+  <li><a href="/code.html">Code</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about.html">About</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/emulate-vis-command-jump-to-matching-parenthe">Emulate Vi&#8217;s % Command (Jump to Matching Parenthesis) in Emacs</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-08-18T16:09:18-05:00" pubdate data-updated="true">Aug 18<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="https://gist.github.com/536198">https://gist.github.com/536198</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/installing-auctex-on-emacsw32-on-win764bit">Installing AucTeX on EmacsW32 on Win7/64bit</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-08-17T02:36:05-05:00" pubdate data-updated="true">Aug 17<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">      Today I had to install AucTeX to use on my Win7/64 machine under EmacsW32. I found the basic instructions here: <a href="http://www.sturmnet.org/blog/2007/09/01/installing-auctex-in-emacsw32">http://www.sturmnet.org/blog/2007/09/01/installing-auctex-in-emacsw32</a>, but I had to modify them a bit (in particular, I am using tetex installed from cygwin instead of MiKTeX). Here are the commands I used:<p></p>  <tt>$  mkdir -p /usr/local/share/texmf<br> $ ./configure &#8211;prefix=&#8217;c:/Program Files (x86)/Emacs/emacs&#8217; &#8211;with-texmf-dir=&#8217;/usr/local/share/texmf&#8217; &#8211;with-lispdir=&#8217;c:/Program Files (x86)/Emacs/emacs/site-lisp&#8217;<br> $  make<br> $  make install</tt><p></p>  I then added the following lines to my <tt>C:\Program Files (x86)\Emacs\site-lisp\site-start.el</tt> file:<p></p>  <tt>(load &#8220;auctex.el&#8221; nil t t)<br> (load &#8220;preview-latex.el&#8221; nil t t)<br> (eval-after-load &#8216;info<br>        &#8216;(add-to-list &#8216;Info-directory-list &#8220;c:/Program Files/Emacs/share/info&#8221;))<br> (setq TeX-auto-save t)<br> (setq TeX-parse-self t)</tt><p></p>  Everything seems to be working properly, even preview-mode.
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/updated-server-and-service-setup">Updated Server and Service Setup</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-08-16T14:58:00-05:00" pubdate data-updated="true">Aug 16<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>(a friend asked me about my online setup, and I wrote the text below. Then I realized it would also make an interesting blog post, and I just copied and pasted it, with minimal editing, into an email to posterous. This is why I love posterous, it makes posting so easy) </p>
+<p></p> For my setup, I have a hodgepodge of stuff all aggregated under the <a href="http://zzamboni.org/">zzamboni.org</a> domain. I wrote a blog post about my setup some time ago: <a href="http://blog.zzamboni.org/server-less-does-not-mean-service-less">http://blog.zzamboni.org/server-less-does-not-mean-service-less</a> <p></p> Since then, the main things that have changed is that now my static content (e.g. <a href="http://zzamboni.org/brt/">http://zzamboni.org/brt/</a>) is also served by <a href="http://github.com/">github</a>, instead of Google AppEngine + drydrop. Github used to offer hosting of custom domains only for paid accounts, but now it&#8217;s available to free accounts as well, so I decided to simplify the setup and host them directly on github. I also just moved the grabcartoons web page to github as well (<a href="http://zzamboni.org/grabcartoons/">http://zzamboni.org/grabcartoons/</a>). So now I have: <p></p> <a href="http://zzamboni.org/">http://zzamboni.org/</a> and <a href="http://zzamboni.org/brt/">http://zzamboni.org/brt/</a> hosted by github from my zzamboni.github.com repository. <br><a href="http://zzamboni.org/grabcartoons/">http://zzamboni.org/grabcartoons/</a> hosted by github from the grabcartoons repository. <br><a href="http://zzamboni.org/things2thl/">http://zzamboni.org/things2thl/</a> hosted by github from the things2thl repository. <br><a href="http://blog.zzamboni.org/">http://blog.zzamboni.org/</a> and <a href="http://posterous.zzamboni.org//">http://posterous.zzamboni.org//</a> (plus some other private blogs) hosted by posterous.com. This is my favorite site for blogging, since it&#8217;s extremely easy to post by email, plus you can configure it to auto-post content to twitter, flicker, facebook, etc. <br>Email served by Google Apps. <p></p> I&#8217;m very happy with <a href="">posterous.com</a> and <a href="http://github.com/">github.com</a>. They are my two favorite services these days.
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/layer-8-the-exception-is-the-rule">Layer 8: The Exception IS the Rule</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-07-09T10:55:00-05:00" pubdate data-updated="true">Jul 9<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class="posterous_bookmarklet_entry">
+<blockquote class="posterous_medium_quote">Whenever you look at a firewall rule, half the time you’re going to be asking yourself, “Why is that there?  Did *I* put it there?  Do we still need it?”  It would sure be nice if the explanation were right there, as a comment that could be version-tracked, exported into nice reports, searched on, and placed in a standard format that would be compatible with other exception entries in other tools.  (Kind of like a syslog for exceptions.)  It would be nice if you could mark a scanner finding as, “We KNOW it’s there.  We’re not going to fix it.  Just for these two machines, STOP REPORTING ON THIS.”)</blockquote>
+<div class="posterous_quote_citation">via <a href="http://layer8.itsecuritygeek.com/layer8/the-exception-is-the-rule/">layer8.itsecuritygeek.com</a>
+</div>
+<p>Insightful article. I can&#8217;t count the number of times I have asked myself exactly this, and hoped for a good, INTEGRATED way of keeping track of these exceptions.</p>
+</div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/site-improvements-1">Site Improvements</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-06-19T02:15:00-05:00" pubdate data-updated="true">Jun 19<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>In their quest to offer a better service every day, the guys at <a href="http://posterous.com">posterous.com</a> have released their <a href="">Pages tool</a>, which makes it much easier to use Posterous for all my online content by allowing the creation of static pages. And in a <strong>stroke of genius</strong>, they even allow pages to automatically redirect to arbitrary URLs! This makes it almost trivial to integrate multiple sites into a single, unified user experience. As a first step, as you can see above, I have better integrated this blog and my <a href="http://posterous.zzamboni.org/">zznippets</a> blog by giving them a common theme, differentiated only by color. I will be working on bringing much of my other online content under posterous by making use of this feature.</p>
+<p></p>
+<div>Thanks to the posterous team for offering such a great service!</div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/deleting-my-facebook-account-0">Deleting My Facebook Account</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-05-18T16:16:00-05:00" pubdate data-updated="true">May 18<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Today I reactivated my Facebook account just to be able to delete it <br>completely. If you find Facebook useful, you should at least be aware <br>of its potential privacy issues, and tune your privacy settings to a <br>level that you find comfortable. Here are some links where you can <br>find more information: </p>
+<p></p> <a href="http://www.theregister.co.uk/2010/05/14/facebook_trust_dumb/">http://www.theregister.co.uk/2010/05/14/facebook_trust_dumb/</a> <br><a href="http://www.fastcompany.com/1624745/time-to-audit-your-facebook-privacy-settings">http://www.fastcompany.com/1624745/time-to-audit-your-facebook-privacy-settings</a> <br><a href="http://www.fastcompany.com/1648478/online-privacy-check-yourself-before-you-wreck-yourself">http://www.fastcompany.com/1648478/online-privacy-check-yourself-before-you-w&#8230;</a> <p></p> Personally, I don&#8217;t find Facebook useful enough to go through the <br>hassle. My account <a href="http://blog.zzamboni.org/the-evolution-of-privacy-on-facebook-and-why">has been deactivated</a> for the last couple of weeks <br>and I haven&#8217;t missed it, so now it&#8217;s time to permanently delete it. <br>Clicky clicky: <a href="https://ssl.facebook.com/help/contact.php?show_form=delete_account">https://ssl.facebook.com/help/contact.php?show_form=delete_account</a>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/the-evolution-of-privacy-on-facebook-and-why">The Evolution of Privacy on Facebook and Why I&#8217;m Dropping Off</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-05-11T10:42:00-05:00" pubdate data-updated="true">May 11<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class="posterous_bookmarklet_entry">
+<div class="p_embed p_image_embed">
+<a href="/images/2010/05/11/the-evolution-of-privacy-on-facebook-and-why/8871619-media_httpmattmckeonc_bAuwG.png"><img alt="Media_httpmattmckeonc_bauwg" height="414" src="/images/2010/05/11/the-evolution-of-privacy-on-facebook-and-why/8871619-media_httpmattmckeonc_bAuwG.png" width="500"></a>
+</div>
+
+<div class="posterous_quote_citation">via <a href="http://mattmckeon.com/facebook-privacy/">mattmckeon.com</a>
+</div>
+<p>This is a very good analysis, and is why my Facebook account is currently deactivated, and probably will be deleted. Contrary to Matt, I don&#8217;t find Facebook very useful. Mostly it&#8217;s served me to be found by people by whom I wasn&#8217;t all that interested in being found, to see relatives&#8217; photos (which I can also receive through other means), to be endlessly spammed by people playing Farmville and, most usefully, to contact people whose email addresses I don&#8217;t have or can&#8217;t bother to remember. None of these are indispensable or irreplaceable to me.</p>
+<p>I have a <a href="http://www.google.com/search?q=diego+zamboni">significant</a> <a href="http://blog.zzamboni.org/">online</a> <a href="http://twitter.com/zzamboni">presence</a>, so if someone is interested, I&#8217;m really easy to find. I&#8217;m just not comfortable with having to keep tabs of what Facebook is doing so I can go tweak my settings every time they decide to change something.</p>
+</div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/avatar-blu-ray-dvd-on-lg-bd370-player">Avatar Blu-Ray DVD on LG BD370 Player</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-05-05T01:32:59-05:00" pubdate data-updated="true">May 5<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">Just for the record, the Avatar Blu-Ray DVD plays correctly on my LG BD370 player, with the latest firmware (V7.170.00.26, upgraded from the device). I get a message saying &#8220;your player may need an upgrade&#8221;, then the screen goes black, but after about 45 seconds, the DVD menu appears and you can play the movie correctly.<p></p>
+<div>The first time I watched it, the black screen freaked me out, I didn&#8217;t wait too long, and ended up watching the movie from the regular DVD. I haven&#8217;t yet watched the whole movie in Blu-Ray, but from the few scenes I watched, the difference is noticeable and the quality is amazing.</div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/starting-virtualcenter-automatically-when-it">Starting VirtualCenter Automatically When It Fails to Start</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-05-03T13:13:42-05:00" pubdate data-updated="true">May 3<span>rd</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class="posterous_bookmarklet_entry">
+      <blockquote class="posterous_long_quote">Create a .bat file with following script:<p>
+
+net start MSSQL$SQLEXP_VIM<br>
+ping 127.0.0.1 -n 120 -w 1000 &gt; null<br>
+net start vpxd</p>
+<p>
+
+Note: for SQL Server substitute MSSQLSERVER in the above batch file instead of MSSQL$SQLEXP_VIM.</p>
+<p>
+
+Set script to run on boot.</p>
+</blockquote>
+
+<div class="posterous_quote_citation">via <a href="http://communities.vmware.com/message/1247357#1247357">communities.vmware.com</a>
+</div>
+    <p>In one of my VirtualCenter servers, a Windows XP machine, the VirtualCenter Server service often fails to start because it tries to run before the MSSQL server is fully initialized. This happens even when the dependencies are set correctly between the services (which is the official solution provided by VMware). The workaround is to create a startup script as shown above. I remove the redirection to nul (which means the script window shows the ping output) as a reminder of what is happening.</p>
+<p>To make it a startup script in WinXP, click on Start -&gt; All programs, then right-click on &#8220;Startup&#8221; and select &#8220;Open All Users&#8221;. Store the script there (just name it  with a .bat extension to make it executable).</p>
+</div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/know-your-tools">Know Your Tools</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-04-22T02:01:36-05:00" pubdate data-updated="true">Apr 22<span>nd</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">I recently had to copy a very large file (&gt;4GB) from a remote Windows share to my Windows 7 machine, over a very finicky connection (frequently-failing VPN over a slow Internet connection). A GUI copy didn&#8217;t work because the connection dropped frequently. I tried <a href="http://www.freedownloadmanager.org/">Free Download Manager</a>, which was the recommended tool for the download, but surprisingly, it wasn&#8217;t always able to restart the download after connectivity dropped.<p></p>
+<div>Then a colleague pointed me to the &#8220;copy /z&#8221; command:</div>
+<p></p>
+<blockquote class="gmail_quote" style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0.8ex; border-left-width: 1px; border-left-color: rgb(204, 204, 204); border-left-style: solid; padding-left: 1ex;">   /Z           Copies networked files in restartable mode.</blockquote>
+<p></p>
+<div>And this simple, built-in tool turned out to be the thing I needed. It was, every time, able to restart the download properly, and after a few times, it downloaded the file correctly.</div> <p></p>
+<div>As you may know, I am a reluctant recent switcher to Windows, coming from Linux and Mac OS X. I confess I still have a condescending attitude to everything in Windows, but this teaches me a lesson: <b>it pays to know the native tools of the system you are using.</b> I had subconsciously dismissed the built-in DOS copy command as too primitive to work, but it turned out to have the capabilities I needed.</div> <p></p>
+<div>A couple of tips:</div>
+<div>
+<ul>
+<li>If you interrupt the command with Ctrl-C, it will delete the portion copied so far and you&#8217;ll have to restart the copy from the beginning. If you must interrupt a copy, simply terminate the network connection (it will die with an error, but leave the copied-so-far file) or close the window where the command is running.</li> <li>When you restart it and it asks if you want to overwrite, you must answer &#8220;yes&#8221;. You can also use the /Y flag.</li>
+</ul>
+<p></p>
+</div>
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      <a class="prev" href="/blog/page/7/">&larr; Older</a>
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/blog/page/5/">Newer &rarr;</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/howto-changing-the-available-display-formats">HowTo: Changing the available display formats for Evernote&#8217;s &#8220;Insert Date&#8221; command</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/cfengine-talks-at-picc12-conference">CFEngine talks at PICC&#8217;12 conference</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/purdue-at-night">Purdue at Night</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/blog-learning-cfengine-3">Learning CFEngine 3 has been released</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/analytics-put-to-a-good-cause">Analytics put to a good cause</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Diego Zamboni -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

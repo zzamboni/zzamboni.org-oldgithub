@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Hierarchical copying with cfengine3 - zzamboni.org</title>
+  <meta name="author" content="Diego Zamboni">
+
+  
+  <meta name="description" content="I recently posted a snippet to perform hierarchical copying in cfengine3. As I was attempting to integrate this mechanism into my copy of cfengine&# &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://zzamboni.github.com/blog/hierarchical-copying-with-cfengine3">
+  <link href="/favicon.ico" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="zzamboni.org" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">zzamboni.org</a></h1>
+  
+    <h2></h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:zzamboni.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Home</a></li>
+  <li><a href="/blog">Ideally Blue</a></li>
+  <li><a href="/code.html">Code</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about.html">About</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Hierarchical Copying With Cfengine3</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-08-27T00:28:00-05:00" pubdate data-updated="true">Aug 27<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>I <a href="http://blog.zzamboni.org/implementing-single-copy-nirvana-in-cfengine3">recently posted</a> a snippet to perform <a href="http://cfwiki.org/cfwiki/index.php/Singlecopy_Nirvana">hierarchical copying </a>in cfengine3. As I was attempting to integrate this mechanism into <a href="http://github.com/zzamboni/cfengine-copbl">my copy of cfengine&#8217;s COPBL</a>, I realized that no additional functions or body components are needed. Thanks to cfengine3&#8217;s <a href="http://www.cfengine.org/manuals/cf3-reference.html#Loops-and-lists-in-cfengine-3">list expansion</a>, all you need to do is include in the existing copy promise the list containing the desired list of suffixes to try. For example:</p>
+<p><span style=""><p><a href="https://gist.github.com/552848">https://gist.github.com/552848</a></p></span></p>
+<p>Becomes:</p>
+<p></p>
+<p><a href="https://gist.github.com/552849">https://gist.github.com/552849</a></p>
+<p>While this looks at first sight even longer than the original (and of course, in this case you could just specify <tt>${sys.flavour}</tt> directly in the <tt>copy_from </tt>statement), it is much more flexible. Instead of defining different sections for each class that you want to handle (e.g. suse_9, redhat_5, etc.), the same code is able to copy the corresponding binary directory for any operating system, you just have to put the corresponding <tt>bin.*</tt> directory in your repository.</p>
+<p></p>  Furthermore, without modifying the code, you can provide different binaries for specific hosts, for different domains, or for any other classification you want to impose. Just modify the @suffixes variable, ordering them from the most specific to the most general one:
+<p></p>
+<p><a href="https://gist.github.com/552850">https://gist.github.com/552850</a></p>
+<p>You can do this without any additional functions, just adding <tt>${suffixes}</tt> in the appropriate place in the copy arguments. The advantage of using a different function as in my previous post (or even better, modifying your existing copy function), is that you can add hierarchical copying without having to modify all copy promises in your policy.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Diego Zamboni</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-08-27T00:28:00-05:00" pubdate data-updated="true">Aug 27<span>th</span>, 2010</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/cfengine/'>cfengine</a>, <a class='category' href='/blog/categories/hierarchicalcopy/'>hierarchicalcopy</a>, <a class='category' href='/blog/categories/tips/'>tips</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://zzamboni.github.com/blog/hierarchical-copying-with-cfengine3" data-via="" data-counturl="http://zzamboni.github.com/blog/hierarchical-copying-with-cfengine3" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/the-state-of-open-source-system-automation" title="Previous Post: The State of Open Source System Automation">&laquo; The State of Open Source System Automation</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/gtd-tip-one-key-opening-of-inbox-notebook-in" title="Next Post: GTD Tip: one-key opening of INBOX notebook in OneNote">GTD Tip: one-key opening of INBOX notebook in OneNote &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/howto-changing-the-available-display-formats">HowTo: Changing the available display formats for Evernote's "Insert Date" command</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/cfengine-talks-at-picc12-conference">CFEngine talks at PICC'12 conference</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/purdue-at-night">Purdue at Night</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/blog-learning-cfengine-3">Learning CFEngine 3 has been released</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/analytics-put-to-a-good-cause">Analytics put to a good cause</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Diego Zamboni -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

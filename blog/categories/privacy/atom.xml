@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: privacy | zzamboni.org]]></title>
+  <link href="http://zzamboni.github.com/blog/categories/privacy/atom.xml" rel="self"/>
+  <link href="http://zzamboni.github.com/"/>
+  <updated>2013-03-24T00:01:23-06:00</updated>
+  <id>http://zzamboni.github.com/</id>
+  <author>
+    <name><![CDATA[Diego Zamboni]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Deleting my Facebook account]]></title>
+    <link href="http://zzamboni.github.com/blog/deleting-my-facebook-account-0"/>
+    <updated>2010-05-18T16:16:00-05:00</updated>
+    <id>http://zzamboni.github.com/blog/deleting-my-facebook-account-0</id>
+    <content type="html"><![CDATA[<p>Today I reactivated my Facebook account just to be able to delete it <br>completely. If you find Facebook useful, you should at least be aware <br>of its potential privacy issues, and tune your privacy settings to a <br>level that you find comfortable. Here are some links where you can <br>find more information: </p>
+
+
+<p></p>
+
+
+<p> <a href="http://www.theregister.co.uk/2010/05/14/facebook_trust_dumb/">http://www.theregister.co.uk/2010/05/14/facebook_trust_dumb/</a> <br><a href="http://www.fastcompany.com/1624745/time-to-audit-your-facebook-privacy-settings">http://www.fastcompany.com/1624745/time-to-audit-your-facebook-privacy-settings</a> <br><a href="http://www.fastcompany.com/1648478/online-privacy-check-yourself-before-you-wreck-yourself">http://www.fastcompany.com/1648478/online-privacy-check-yourself-before-you-w...</a> <p></p> Personally, I don't find Facebook useful enough to go through the <br>hassle. My account <a href="http://blog.zzamboni.org/the-evolution-of-privacy-on-facebook-and-why">has been deactivated</a> for the last couple of weeks <br>and I haven't missed it, so now it's time to permanently delete it. <br>Clicky clicky: <a href="https://ssl.facebook.com/help/contact.php?show_form=delete_account">https://ssl.facebook.com/help/contact.php?show_form=delete_account</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[The Evolution of Privacy on Facebook and why I'm dropping off]]></title>
+    <link href="http://zzamboni.github.com/blog/the-evolution-of-privacy-on-facebook-and-why"/>
+    <updated>2010-05-11T10:42:00-05:00</updated>
+    <id>http://zzamboni.github.com/blog/the-evolution-of-privacy-on-facebook-and-why</id>
+    <content type="html"><![CDATA[<div class="posterous_bookmarklet_entry">
+<div class="p_embed p_image_embed">
+<a href="http://zzamboni.github.com/images/2010/05/11/the-evolution-of-privacy-on-facebook-and-why/8871619-media_httpmattmckeonc_bAuwG.png"><img alt="Media_httpmattmckeonc_bauwg" height="414" src="http://zzamboni.github.com/images/2010/05/11/the-evolution-of-privacy-on-facebook-and-why/8871619-media_httpmattmckeonc_bAuwG.png" width="500"></a>
+</div>
+
+<div class="posterous_quote_citation">via <a href="http://mattmckeon.com/facebook-privacy/">mattmckeon.com</a>
+</div>
+<p>This is a very good analysis, and is why my Facebook account is currently deactivated, and probably will be deleted. Contrary to Matt, I don't find Facebook very useful. Mostly it's served me to be found by people by whom I wasn't all that interested in being found, to see relatives' photos (which I can also receive through other means), to be endlessly spammed by people playing Farmville and, most usefully, to contact people whose email addresses I don't have or can't bother to remember. None of these are indispensable or irreplaceable to me.</p>
+<p>I have a <a href="http://www.google.com/search?q=diego+zamboni">significant</a> <a href="http://blog.zzamboni.org/">online</a> <a href="http://twitter.com/zzamboni">presence</a>, so if someone is interested, I'm really easy to find. I'm just not comfortable with having to keep tabs of what Facebook is doing so I can go tweak my settings every time they decide to change something.</p>
+</div>
+
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,572 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>zzamboni.org</title>
+  <meta name="author" content="Diego Zamboni">
+
+  
+  <meta name="description" content="I got latex2html to install on the latest cygwin, however to get the configure to pass I had to alter the configure to recognize cygwin as a UNIX. &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://zzamboni.github.com/blog/page/4">
+  <link href="/favicon.ico" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="zzamboni.org" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">zzamboni.org</a></h1>
+  
+    <h2></h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:zzamboni.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Home</a></li>
+  <li><a href="/blog">Ideally Blue</a></li>
+  <li><a href="/code.html">Code</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about.html">About</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/installing-latex2html-under-win7-with-cygwin">Installing Latex2html Under Win7 With Cygwin</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-01-19T15:28:00-06:00" pubdate data-updated="true">Jan 19<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class="posterous_bookmarklet_entry">
+      <blockquote class="posterous_short_quote">I got latex2html to install on the latest cygwin, however to get the
+configure to pass I had to alter the configure to recognize cygwin as
+a UNIX.</blockquote>
+
+<div class="posterous_quote_citation">via <a href="http://www.mail-archive.com/latex2html@tug.org/msg01458.html">mail-archive.com</a>
+</div>
+    <p>Using this patch I was able to properly configure and install latex2html under cygwin in Windows 7.</p>
+</div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/logparser-event-logs-and-vista-neil-carpenter">LogParser, Event Logs, and Vista - Neil Carpenter&#8217;s Blog - Site Home - TechNet Blogs</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-01-19T12:33:00-06:00" pubdate data-updated="true">Jan 19<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class="posterous_bookmarklet_entry">
+      <blockquote class="posterous_long_quote">
+<p>The only workaround to this is to convert the logfile to the new evtx format prior to parsing it.  You can do this in the event log viewer GUI by doing a Save As&#8230; but I find it easier to do this at the command prompt: 
+</p>
+<blockquote class="posterous_short_quote">
+<p>wevtutil epl application.evt application.evtx /lf:true</p>
+</blockquote>
+</blockquote>
+
+<div class="posterous_quote_citation">via <a href="http://blogs.technet.com/b/neilcar/archive/2007/08/15/plogparser-event-logs-and-vista.aspx">blogs.technet.com</a>
+</div>
+    <p>I&#8217;m trying to process Windows Event Viewer files (.evt) from some servers on my Win7 machine, which kept me giving a &#8220;log file is corrupt&#8221; error message. The trick is to convert it to the newer .evtx format before processing. Thankfully this can also be easily done using a command-line utility.</p>
+</div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/setting-up-a-global-hotkey-to-add-tasks-to-ou">Setting Up a Global Hotkey to Add Tasks to Outlook</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-12-23T12:14:00-06:00" pubdate data-updated="true">Dec 23<span>rd</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>One thing I missed since I moved from a Mac (using The Hit List for GTD) to Outlook (using Jello Dashboard for GTD) was the availability of a global hot key that I could use to bring up a text entry box which I could use to quickly add things into my electronic Inbox, for later processing.</p>
+<p>I have found a way to achieve this, and here is the setup I am using now:</p>
+<p>The first component is <a href="http://www.leeholmes.com/blog/2007/03/01/getting-things-done-%E2%80%93-outlook-task-automation-with-powershell/">this PowerShell script</a> written by Lee Holmes, which takes as arguments the title of the task to add, and adds it to Outlook. I saved it as <code>Documents/Add-OutlookTask.ps1</code> in my home directory.</p>
+<p>The second component is the ever-useful and amazing <a href="http://www.autohotkey.com/">AutoHotkey</a>. I added the following lines to my <code>Documents/AutoHotKey.ahk</code> file:</p>
+<p></p>
+<p><a href="https://gist.github.com/753333">https://gist.github.com/753333</a></p>
+<p>This snippet assigns Win-space to open an input box, and uses whatever is typed in it as the task title to the Add-OutlookTask script. The task will be placed without any categories in the task list, so it appears automatically the next time I open my Jello Dashboard inbox. Here it is in action:</p>
+<p></p>
+<div class="p_embed p_image_embed">
+<img alt="Addtask" height="107" src="/images/2010/12/23/setting-up-a-global-hotkey-to-add-tasks-to-ou/19022076-AddTask.png" width="391">
+</div>
+
+<p>I find this extremely useful, since I can press Win-space to add new tasks from any application, without having to switch to Outlook first. At some point I would like to explore the idea of making it smarter, like the quick-add keys in Things or THL for the Mac. This would include, for example, using some information from the currently-active application to prefill the task information. Examples would include using the subject line if an Outlook email is selected or the title of the current web page if a browser is open. Also nice would be to include any selected text automatically in the notes for the task, and maybe a link to the original item.</p>
+<p> </p>
+<p> </p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/gtd-tip-clean-up-physical-clutter-using-ziplo">GTD Tip: Clean Up Physical Clutter Using Ziploc Bags</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-12-20T17:46:34-06:00" pubdate data-updated="true">Dec 20<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">If you are like me, you carry in your backpack, bag or briefcase all sorts of physical stuff, other than documents, papers or magazines. You know the type: phone chargers, USB cables, power adapters, network cables, USB sticks and other small gadgets or accessories. Over time these things accumulate and it becomes harder and harder to find them and to keep them organized. <p></p> I have been using a low-tech tool for organizing these things: ziploc bags. I now carry two large ziploc bags in my backpack, labeled &#8220;frequent use&#8221; and &#8220;infrequent use&#8221;. The first one has the things that I would most likely need to use every time I sit down to work: my iPhone USB cable, my laptop power adapter, etc. The other one includes all other things that I need every once in a while so I want to have them handy, but I don&#8217;t need them every day. This includes a USB cable for my camera, a two-to-three prong adapter for when I find myself in old buildings that don&#8217;t have grounded outlets, a couple of USB sticks, etc. <p></p> I find that this simple tip helps me keep the physical clutter under control, and makes it easy to review things periodically to check if I still need everything I&#8217;m carrying around.
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/translation-on-the-fly">Translation on the Fly</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-12-16T21:57:00-06:00" pubdate data-updated="true">Dec 16<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>When I arrived in Switzerland nine years ago I didn&#8217;t speak a word of German (much less Swiss German!), so for a while I faced a very real and practical problem. I would encounter signs on the street, and have absolutely no idea what they meant. Does this sign mean I can pass, or I cannot? &#8220;Watch your step&#8221; or &#8220;Watch for the vicious dog&#8221;? During that period, I often wished for a gadget that I could point at the sign and would give me an instant translation.</p>
+<p></p>  Well, I only had to wait 9 years for it. Behold this demo video for <a href="http://questvisual.com/">Word Lens</a>:<p></p>  <iframe src="http://www.youtube.com/embed/h2OfQdYrHRs?wmode=transparent" allowfullscreen frameborder="0" height="417" width="500"></iframe><p></p>  I immediately downloaded and played with it for a bit. I don&#8217;t need Spanish-English translation, which is the only one available for now (and which cost <span style="text-decoration: line-through;">USD50</span> USD5 for each direction), so I played with the built-in &#8220;reverse words&#8221; and &#8220;erase words&#8221; demos. Recognition is pretty good as long as the type is clearly printed and in not-too-weird fonts. It should work fine for many different cases. How good translation is becomes another matter, but mediocre translation is better than nothing when you are lost in a foreign country!<p></p>  It&#8217;s amazing how technology changes and advances. I can have my dream of point-and-click translation on my iPhone now.
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/editing-sshd-configuration-files-with-cfengin">Editing Sshd Configuration Files With Cfengine3</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-11-24T23:30:00-06:00" pubdate data-updated="true">Nov 24<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Here&#8217;s a cfengine bundle that I wrote for editing the sshd configuration file by passing an array with the parameters. Using an array is a very elegant way of defining the values to set. The bundle also restarts sshd after any changes are made, unless the no_restarts class is defined.</p>
+<p>The first gist contains the edit_sshd bundle itself, together with the set_config_values bundle that actually performs the editing job (this should go into a library file, I have it in my personal version of cfengine_stdlib.cf). The second file is a sample bundle showing how to use edit_sshd.</p>
+<p><br></p>
+<p><a href="https://gist.github.com/714948">https://gist.github.com/714948</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/making-cygwin-windows-and-emacs-understand-th">Making Cygwin, Windows and Emacs Understand the Same Symlinks</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-09-28T09:39:00-05:00" pubdate data-updated="true">Sep 28<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Today I ran into the problem that symlinks created under cygwin using &#8220;ln -s&#8221; are not understood by Windows, and of course Windows shortcuts are seen by cygwin as regular files. Happily, this is a <strong>(semi-)</strong>solved problem. For reference, this is what needs to be done:</p>
+<p></p> 
+<ol>
+<li>Add &#8221;<a href="http://www.cygwin.com/cygwin-ug-net/using-effectively.html#using-shortcuts">winsymlinks</a>&#8221; to your CYGWIN environment variable. For example, in my .bashrc I have the following:<p></p>  <tt>export CYGWIN=&#8221;nodosfilewarning winsymlinks&#8221;<br></tt><br> This makes cygwin create symlinks differently, in a form that is understood both by it and by Windows.<br> This is the main step, and the only one if you just need access from the shell and from the Windows explorer. However, emacs still sees those symlinks as regular .lnk files. To fix this, follow the next step.<p></p>  </li>
+<li>Install the <a href="http://centaur.maths.qmw.ac.uk/emacs/files/w32-symlinks.el">w32-symlinks.el </a>package, and add the following to your .emacs file:<p></p>  <tt>(require &#8216;w32-symlinks)</tt><p></p>  </li>
+<li>Run <tt>M-x customize-option</tt> and enter <tt>w32-symlinks-handle-shortcuts </tt>as the variable to customize. Turn it on, save it for future sessions, and you are all set. The new symlinks should be properly understood by the cygwin shell, Windows explorer, and emacs. Of course, you will have to re-create any symlinks or shortcuts that you created prior to setting the winsymlinks option, for them to be created in the new format.<p></p>
+<strong>Update: </strong>so this doesn&#8217;t quite work on my system. I am using Emacs 23.1, and apparently w32-symlinks does not work properly in this version. If you have an older version (I hear Emacs 21 works well), then this might work for you. </li>
+</ol>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/website-redesign-and-unification">Website Redesign and Unification</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-09-28T02:22:09-05:00" pubdate data-updated="true">Sep 28<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">      There are still some rough edges, but by far the redesign and unification of <a href="http://zzamboni.org/">zzamboni.org</a> is done. With the same design you can now find my blogs (hosted by posterous.com), my project pages (hosted in github.com project repositories) and some static pages (hosted in my personal github.com pages repository, this includes the root, About and Code pages, as well as the static copy of my old blog <a href="http://zzamboni.org/brt/">BrT</a>, which is the only one that retains its original design). The theme is a variation of Posterous&#8217; &#8220;Paramaibo&#8221;.<p></p>  I&#8217;m still playing with the design, and finishing some pages here and there. But overall things should be good, please let me know if you find anything broken.<p></p>  Kudos to the Posterous and GitHub teams for building such useful, powerful and friendly tools and services.
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/cfengine3-lexer-for-pygments">Cfengine3 Lexer for Pygments</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-09-08T21:16:00-05:00" pubdate data-updated="true">Sep 8<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I have written a <a href="http://cfengine.org/">Cfengine3</a> lexer for <a href="http://pygments.org/">Pygments</a>, the open source syntax-highlighter used by <a href="http://gist.github.com/">Gist</a> and many other sites. It seems to work fine on all the cfengine policy files I have tested, but if you find anything that doesn&#8217;t quite work as expected, please let me know. This is my first-ever Pygments lexer, so if you are an expert and can advise me on better ways of doing things, I&#8217;d very much appreciate the feedback too.</p>
+<p></p>  Here&#8217;s how to install it (again, I don&#8217;t know if this is the better or easier way):
+<ol>
+<li>Obtain the Pygments <a href="http://pygments.org/download/">source code</a>.</li>
+<li>Put the <a href="https://raw.github.com/gist/571230/9b28129fde567df4576fb1d48db7e5e6111477a3/pygments_cfengine_lexer.py">pygments_cfengine_lexer.py</a> file into the pygments/lexers/ directory</li>
+<li>run (cd pygments/lexers; python _mapping.py)</li>
+<li>run ./setup.py install</li>
+</ol>
+<p>If you already have Pygments installed, you should follow these instructions:</p>
+<ol>
+<li>Put the <a href="https://raw.github.com/gist/571230/9b28129fde567df4576fb1d48db7e5e6111477a3/pygments_cfengine_lexer.py">pygments_cfengine_lexer.py</a> file in the installed pygments/lexers/ directory (on my Mac, this is /Library/Python/2.6/site-packages/Pygments-1.4-py2.6.egg/pygments/lexers, under Linux it should be something like /usr/lib/python2.6/site-packages/Pygments&#8230;./pygments/lexers)
+</li>
+<li>cd into that directory</li>
+<li>run &#8220;python _mapping.py&#8221;</li>
+
+</ol>
+<p>Then run pygmentize on any .cf file, and it should output properly highlighted code. You can view a sample <a href="http://zzamboni.org/files/cfengine_stdlib.html">here</a>.</p>
+<p></p>  <p><a href="https://gist.github.com/571230">https://gist.github.com/571230</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/google-scribe-generated-prose">Google Scribe-generated Prose (Aka &#8220;Google Scribe Channels Kanye West&#8221;)</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-09-07T17:21:00-05:00" pubdate data-updated="true">Sep 7<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Google has launched a new labs project called <a href="http://scribe.googlelabs.com/">Google Scribe</a>, which essentially provides an auto-completion service. You type, it autocompletes. The following text was generated by typing a single space, and from then on simply accepting the default suggestions (pressing &#8220;Enter&#8221; every time the suggestion popup appeared). I had to stop at some point, but it seems like a good source of mindless entertainment. Also, the result varies depending on the initial seed word you provide, and also on whether you just accept blindly (Enter) or type spaces at certain places. These results also provide some insight into the training texts that were used (&#8220;I&#8217;ma let you finish&#8230;&#8221;)</p>
+<blockquote class="posterous_medium_quote"><em> There are no comments for this user yet and can not believe that there is anything you would not believe how much I loved them all and I&#8217;ma let you finish but Beyonce had one of these days I&#8217;ll bet your life on the road today and they are nothing but another form of therapy for these patients.</em></blockquote>
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      <a class="prev" href="/blog/page/5/">&larr; Older</a>
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/blog/page/3/">Newer &rarr;</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/howto-changing-the-available-display-formats">HowTo: Changing the available display formats for Evernote&#8217;s &#8220;Insert Date&#8221; command</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/cfengine-talks-at-picc12-conference">CFEngine talks at PICC&#8217;12 conference</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/purdue-at-night">Purdue at Night</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/blog-learning-cfengine-3">Learning CFEngine 3 has been released</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/analytics-put-to-a-good-cause">Analytics put to a good cause</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Diego Zamboni -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

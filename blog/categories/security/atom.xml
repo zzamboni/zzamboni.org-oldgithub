@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: security | zzamboni.org]]></title>
+  <link href="http://zzamboni.github.com/blog/categories/security/atom.xml" rel="self"/>
+  <link href="http://zzamboni.github.com/"/>
+  <updated>2013-03-24T00:01:23-06:00</updated>
+  <id>http://zzamboni.github.com/</id>
+  <author>
+    <name><![CDATA[Diego Zamboni]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA["Security in the Third Wave of IT Engineering"]]></title>
+    <link href="http://zzamboni.github.com/blog/security-in-the-third-wave-of-it-engineering"/>
+    <updated>2011-11-24T17:56:00-06:00</updated>
+    <id>http://zzamboni.github.com/blog/security-in-the-third-wave-of-it-engineering</id>
+    <content type="html"><![CDATA[<p>Today I gave a presentation at UNAM's 2011 Computer Security Conference in Mexico City. Below you will find my presentation (done using prezi.com, follow <a href="http://prezi.com/s3vthi4fbz5q/security-in-the-third-wave-of-it-engineering/">this link</a> if you can't see it below). You can also get the <a href="http://dl.dropbox.com/u/869/zamboni_congreso2011.pdf">PDF version</a>.</p>
+
+
+<p> </p>
+
+
+<div class="prezi-player">
+<object height="363" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="500">
+<param name="movie" value="http://prezi.com/bin/preziloader.swf">
+<param name="allowfullscreen" value="true">
+<param name="allowscriptaccess" value="always">
+<param name="bgcolor" value="#ffffff">
+<param name="flashvars" value="prezi_id=s3vthi4fbz5q&amp;lock_to_path=0&amp;color=ffffff&amp;autoplay=no&amp;autohide_ctrls=0">
+<embed src="http://prezi.com/bin/preziloader.swf" type="application/x-shockwave-flash" height="363" flashvars="prezi_id=s3vthi4fbz5q&amp;lock_to_path=0&amp;color=ffffff&amp;autoplay=no&amp;autohide_ctrls=0" width="500"></embed></object>
+<div class="prezi-player-links">
+<p><a href="http://prezi.com/s3vthi4fbz5q/security-in-the-third-wave-of-it-engineering/" title="                                                          Talk about the challenges and benefits for security in the Third Wave.                                                      ">Security in the Third Wave of IT Engineering</a> on <a href="http://prezi.com">Prezi</a></p>
+</div>
+</div>
+
+
+<p> </p>
+
+
+<p>Related blog posts from cfengine.com:</p>
+
+
+<p><a href="https://cfengine.com/blog/the-third-wave">CFEngine - The Third Wave of Configuration Management</a></p>
+
+
+<p><a href="https://cfengine.com/blog/sysadmin-3.0-and-the-third-wave">CFEngine, SysAdmin 3.0 and the Third Wave of IT Engineering</a></p>
+
+
+<p> </p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Layer 8: The exception IS the rule]]></title>
+    <link href="http://zzamboni.github.com/blog/layer-8-the-exception-is-the-rule"/>
+    <updated>2010-07-09T10:55:00-05:00</updated>
+    <id>http://zzamboni.github.com/blog/layer-8-the-exception-is-the-rule</id>
+    <content type="html"><![CDATA[<div class="posterous_bookmarklet_entry">
+<blockquote class="posterous_medium_quote">Whenever you look at a firewall rule, half the time you’re going to be asking yourself, “Why is that there?  Did *I* put it there?  Do we still need it?”  It would sure be nice if the explanation were right there, as a comment that could be version-tracked, exported into nice reports, searched on, and placed in a standard format that would be compatible with other exception entries in other tools.  (Kind of like a syslog for exceptions.)  It would be nice if you could mark a scanner finding as, “We KNOW it’s there.  We’re not going to fix it.  Just for these two machines, STOP REPORTING ON THIS.”)</blockquote>
+<div class="posterous_quote_citation">via <a href="http://layer8.itsecuritygeek.com/layer8/the-exception-is-the-rule/">layer8.itsecuritygeek.com</a>
+</div>
+<p>Insightful article. I can't count the number of times I have asked myself exactly this, and hoped for a good, INTEGRATED way of keeping track of these exceptions.</p>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Rugged software]]></title>
+    <link href="http://zzamboni.github.com/blog/a-meme-is-born"/>
+    <updated>2010-02-17T10:03:00-06:00</updated>
+    <id>http://zzamboni.github.com/blog/a-meme-is-born</id>
+    <content type="html"><![CDATA[<div class="posterous_bookmarklet_entry">
+<blockquote>
+<div>
+<strong><br> I am rugged - and more importantly, my code is rugged.</strong>
+<p> </p>
+<p>I recognize that software has become a foundation of our modern world.</p>
+<p>I recognize the awesome responsibility that comes with this foundational role.</p>
+<p>I recognize that my code will be used in ways I cannot anticipate, in ways it was not designed, and for longer than it was ever intended.</p>
+<p>I recognize that my code will be attacked by talented and persistent adversaries who threaten our physical, economic, and national security.</p>
+<p>I recognize these things - and I choose to be rugged.</p>
+<p>I am rugged because I refuse to be a source of vulnerability or weakness.</p>
+<p>I am rugged because I assure my code will support its mission.</p>
+<p>I am rugged because my code can face these challenges and persist in spite of them.</p>
+<p>I am rugged, not because it is easy, but because it is necessary… and I am up for the challenge.</p>
+</div>
+</blockquote>
+<div class="posterous_quote_citation">via <a href="http://layer8.itsecuritygeek.com/layer8/a-meme-is-born/">layer8.itsecuritygeek.com</a>
+</div>
+<p>This is important. We need to stop building fragile software, stop repeating the same mistakes that have caused vulnerabilities and failures for decades, and we need to teach software developers the importance of building rugged software.</p>
+</div>
+
+]]></content>
+  </entry>
+  
+</feed>

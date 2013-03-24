@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: blog | zzamboni.org]]></title>
+  <link href="http://zzamboni.github.com/blog/categories/blog/atom.xml" rel="self"/>
+  <link href="http://zzamboni.github.com/"/>
+  <updated>2013-03-24T00:01:23-06:00</updated>
+  <id>http://zzamboni.github.com/</id>
+  <author>
+    <name><![CDATA[Diego Zamboni]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[CFEngine posts moving to cf-learn.info]]></title>
+    <link href="http://zzamboni.github.com/blog/cfengine-posts-moving-to-cf-learninfo"/>
+    <updated>2012-01-04T13:16:00-06:00</updated>
+    <id>http://zzamboni.github.com/blog/cfengine-posts-moving-to-cf-learninfo</id>
+    <content type="html"><![CDATA[<div><span>I have been blogging <a href="http://blog.zzamboni.org/tag/cfengine">about CFEngine</a> here for a while (it's my most frequent tag). As of now, I'm starting to post all CFEngine-related posts to <a href="http://blog.cf-learn.info/">http://blog.cf-learn.info/</a>, which is part of <a href="http://cf-learn.info/"></a><a href="http://cf-learn.info/">the web site for my book "Learning CFEngine 3"</a>. In this way, I intend to group all CFEngine-related content over there. I will still cross-post relevant things here, but if you want to stay fully up to date on my CFEngine writings, please subscribe over there as well.</span></div>
+
+
+<p></p>
+
+
+<div><span>I hope to see you around!</span></div>
+
+]]></content>
+  </entry>
+  
+</feed>

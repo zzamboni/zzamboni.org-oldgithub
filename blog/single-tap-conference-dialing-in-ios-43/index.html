@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Single-tap conference dialing in iOS 4.3 - zzamboni.org</title>
+  <meta name="author" content="Diego Zamboni">
+
+  
+  <meta name="description" content="Apple released iOS 4.3 a few days ago, and if you follow this topic at all, you have probably already heard all about the Personal Hotspot feature, &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://zzamboni.github.com/blog/single-tap-conference-dialing-in-ios-43">
+  <link href="/favicon.ico" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="zzamboni.org" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">zzamboni.org</a></h1>
+  
+    <h2></h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:zzamboni.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Home</a></li>
+  <li><a href="/blog">Ideally Blue</a></li>
+  <li><a href="/code.html">Code</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about.html">About</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Single-tap Conference Dialing in iOS 4.3</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-03-12T17:03:00-06:00" pubdate data-updated="true">Mar 12<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Apple released iOS 4.3 a few days ago, and if you follow this topic at all, you have probably already heard all about the Personal Hotspot feature, AirPlay enhancements, and whatnot. But buried in the notes for this release was a new feature that caught my attention:</p>
+<blockquote class="posterous_short_quote">
+<em>Single tap conference call dialing with a pause to send a passcode</em><br>
+</blockquote>
+<p>I have found almost no mentions of this new feature online (most reviews focus on the &#8220;bigger&#8221; features), so I thought I&#8217;d explore it a little bit.</p>
+<p></p>  <strong>Warning: Unless you spend your days in conference calls (like me), you will probably be bored to tears by this. You&#8217;ve been warned.</strong><p></p>  First, a note about how I use my iPhone in this respect. I have a number of conference calls that I dial often. For these, I have created contacts that include the number to dial, followed by a long-enough pause (inserted through trial-and-error) and then any codes that have to be entered. For example, one such entry might look like this: &#8220;018001234567,,,987654#&#8221;. This gives already single-tap dialing of conference calls. This works for more complex cases. For example, for my own audioconference line, I need to dial the conference code, my moderator code, and a few other things. This entry looks something like this: &#8220;0018001234567,,89786756#,,*,,122334#,1&#8221;. This is very handy and it does everything except for speaking my name at the appropriate point in the sequence (it would be great if I could record it and play it back automatically at the correct moment).<p></p>  So what does the new feature do? It adds a &#8220;wait&#8221; button in addition to the &#8220;pause&#8221; button:<p></p>  <div class="p_embed p_image_embed">
+<a href="/images/2011/03/12/single-tap-conference-dialing-in-ios-43/22894252-IMG_16441.PNG"><img alt="Img_16441" height="750" src="/images/2011/03/12/single-tap-conference-dialing-in-ios-43/22894252-IMG_16441.PNG" width="500"></a>
+</div>
+<p></p>  When you press it, it appears as a semicolon, and the effect is that a button will appear after dialing the part before the semicolon, and a button will appear to dial the following parts. You can insert multiple waits in the number, and each press of the &#8220;dial&#8221; button will advance to the next part of the number:<p></p>  <div class="p_embed p_image_embed">
+<a href="/images/2011/03/12/single-tap-conference-dialing-in-ios-43/22894253-IMG_16451.PNG"><img alt="Img_16451" height="750" src="/images/2011/03/12/single-tap-conference-dialing-in-ios-43/22894253-IMG_16451.PNG" width="500"></a>
+</div>
+<p></p>  So, is this useful? For me, for frequently-dialed conference lines, I prefer my current method, since I don&#8217;t need any manual intervention. However, I think this new feature can be useful to include extension numbers in contacts. This is something I had never figured how to do, and now I can include the extension number in the same contact following a wait.
+<p>
+</p>
+<p>Sadly, this new feature does nothing to make phone numbers included in meeting invitation clickable, so they could be dialed automatically. This would indeed be a welcome addition.</p>
+<p></p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Diego Zamboni</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-03-12T17:03:00-06:00" pubdate data-updated="true">Mar 12<span>th</span>, 2011</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/audioconference/'>audioconference</a>, <a class='category' href='/blog/categories/ios43/'>ios43</a>, <a class='category' href='/blog/categories/iphone/'>iphone</a>, <a class='category' href='/blog/categories/review/'>review</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://zzamboni.github.com/blog/single-tap-conference-dialing-in-ios-43" data-via="" data-counturl="http://zzamboni.github.com/blog/single-tap-conference-dialing-in-ios-43" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/how-to-fix-texexpand-error-more-than-one-inpu" title="Previous Post: How to fix "texexpand error: More than one input file specified" in latex2html">&laquo; How to fix "texexpand error: More than one input file specified" in latex2html</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/overhauling-my-gtd-system-under-windows" title="Next Post: Overhauling my GTD system under Windows">Overhauling my GTD system under Windows &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/howto-changing-the-available-display-formats">HowTo: Changing the available display formats for Evernote's "Insert Date" command</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/cfengine-talks-at-picc12-conference">CFEngine talks at PICC'12 conference</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/purdue-at-night">Purdue at Night</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/blog-learning-cfengine-3">Learning CFEngine 3 has been released</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/analytics-put-to-a-good-cause">Analytics put to a good cause</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Diego Zamboni -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

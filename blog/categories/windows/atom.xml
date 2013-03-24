@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: windows | zzamboni.org]]></title>
+  <link href="http://zzamboni.github.com/blog/categories/windows/atom.xml" rel="self"/>
+  <link href="http://zzamboni.github.com/"/>
+  <updated>2013-03-24T00:01:23-06:00</updated>
+  <id>http://zzamboni.github.com/</id>
+  <author>
+    <name><![CDATA[Diego Zamboni]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Overhauling my GTD system under Windows]]></title>
+    <link href="http://zzamboni.github.com/blog/overhauling-my-gtd-system-under-windows"/>
+    <updated>2011-03-14T00:09:00-06:00</updated>
+    <id>http://zzamboni.github.com/blog/overhauling-my-gtd-system-under-windows</id>
+    <content type="html"><![CDATA[<p>As you may know, I'm a reluctant switcher from Mac to Windows. I am also a fan of <a href="http://en.wikipedia.org/wiki/Getting_Things_Done">GTD</a>. I had been using <a href="http://jello-dashboard.net/">Jello Dashboard</a> (JD) to implement GTD under Outlook. JD is a very nice system, the developer is friendly and responsive, and I had even written several patches to adapt it to my way of working. I was even in the process of drafting a series of blog posts titled "My GTD under Outlook setup".</p>
+
+
+<p>However, a couple of months ago JD stopped working for me. Not in the technical sense, mind you, but in the GTD sense. I stopped processing my Inbox, I stopped updating my lists, and of course I stopped checking them for getting my next actions. It didn't happen all at once, but over time I stopped having confidence in my system.</p>
+
+
+<p>What happened?</p>
+
+
+<p>I have come to the conclusion that the main reason I stopped using and trusting JD was what <a href="http://www.davidco.com/david_allen.php">David Allen</a> calls "friction". A system that has a lot of friction, Allen says, will eventually become unused and untrusted (I am paraphrasing, but the message is there in his books and articles). JD, as nice as it is, requires you to switch to a different "mode" within Outlook to use it, since it is essentially a web application that runs inside Outlook (it is all written in Javascript). This means that as I am processing my mailbox, for example, and encounter an actionable email, I cannot simply create an actionable task at that point. I have to (1) switch to JD, (2) find the email in JD's view of my Inbox, which is different than the one in Outlook Mail, (3) mark it as actionable, tag it and file it, and (4) go back to my Outlook Inbox to continue processing it. Friction.</p>
+
+
+<p>What is supposed to happen, I guess, is that you do all the processing from inside JD. But JD's mail viewer is not nearly as nice as the native Outlook one (for example, it shows all messages as plain text), it is slower, and does not have a threaded message view, among many other differences. The result was that my mode of operation, while I was still using JD, was to read my mail in Outlook, archive or delete non-actionable messages, and then switch to JD just to file the remaining ones as actions. Of course, as my workload increased, I stopped doing the switch as frequently, due to the mental friction of having to deal with the "not as nice" environment and losing time and momentum in the process.</p>
+
+
+<p>And slowly, over time, I fell back into old bad habits: keeping things in my Inbox because I would need them later, and working off it. As a years-old GTD practitioner, I can tell you that the difference was noticeable. I started missing commitments and forgetting things, I became crankier and more stressed, and both my personal and professional lives suffered.</p>
+
+
+<p>But the nice thing about GTD is that it is very forgiving. If you "fall off the wagon", all you have to do is do a good mind sweep and review, start recapturing stuff, and be on your way.</p>
+
+
+<p>But first, I had to overhaul my system. I was sure that if I started capturing stuff into JD again, I would eventually encounter the same problem. So I went back to the basics: I signed up for a free <a href="http://gtdconnect.com/">GTD Connect</a> trial (GTD Connect is an amazing resource, too bad I cannot at the moment spend USD$50-a-month on it), downloaded the "GTD and Outlook 2007" guide and the Outlook 2010 supplement, and got to work. Followed the instructions, removed all my categories (JD uses categories for projects as well and for all its tags, so I had over a hundred of them), set it up with the minimum recommended set, and got to work on processing all my accumulated stuff.</p>
+
+
+<p>I am not done yet, mind you, since I have literally hundreds of old tasks and emails, but I am making steady progress. I feel calmer than I was only a few days ago, because I am again slowly capturing all my stuff in a system that I hope can become trusted. For the first time in months I am decreasing my pile instead of increasing it constantly. The amount of things to do remains the same, but the pile of amorphous "stuff" that is there giving me the creeps has decreased. Eventually I need to get to the point where I can continue maintaining my system in cruise control, keeping things under control. I will blog more details about my specific setup later.</p>
+
+
+<p>My conclusion is this: if you fall off the GTD wagon, just get back in! And don't be afraid to throw away your old system if you realize it is not working for you. The beauty of GTD is that it is not tied to a specific toolset, and if the tools you use do not support your good habits, you can easily switch them for others that do.</p>
+
+
+<p>Reduce the friction, and it will improve your life.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Installing latex2html under Win7 with cygwin]]></title>
+    <link href="http://zzamboni.github.com/blog/installing-latex2html-under-win7-with-cygwin"/>
+    <updated>2011-01-19T15:28:00-06:00</updated>
+    <id>http://zzamboni.github.com/blog/installing-latex2html-under-win7-with-cygwin</id>
+    <content type="html"><![CDATA[<div class="posterous_bookmarklet_entry">
+      <blockquote class="posterous_short_quote">I got latex2html to install on the latest cygwin, however to get the
+configure to pass I had to alter the configure to recognize cygwin as
+a UNIX.</blockquote>
+
+<div class="posterous_quote_citation">via <a href="http://www.mail-archive.com/latex2html@tug.org/msg01458.html">mail-archive.com</a>
+</div>
+    <p>Using this patch I was able to properly configure and install latex2html under cygwin in Windows 7.</p>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[LogParser, Event Logs, and Vista - Neil Carpenter's Blog - Site Home - TechNet Blogs]]></title>
+    <link href="http://zzamboni.github.com/blog/logparser-event-logs-and-vista-neil-carpenter"/>
+    <updated>2011-01-19T12:33:00-06:00</updated>
+    <id>http://zzamboni.github.com/blog/logparser-event-logs-and-vista-neil-carpenter</id>
+    <content type="html"><![CDATA[<div class="posterous_bookmarklet_entry">
+      <blockquote class="posterous_long_quote">
+<p>The only workaround to this is to convert the logfile to the new evtx format prior to parsing it.  You can do this in the event log viewer GUI by doing a Save As... but I find it easier to do this at the command prompt: 
+</p>
+<blockquote class="posterous_short_quote">
+<p>wevtutil epl application.evt application.evtx /lf:true</p>
+</blockquote>
+</blockquote>
+
+<div class="posterous_quote_citation">via <a href="http://blogs.technet.com/b/neilcar/archive/2007/08/15/plogparser-event-logs-and-vista.aspx">blogs.technet.com</a>
+</div>
+    <p>I'm trying to process Windows Event Viewer files (.evt) from some servers on my Win7 machine, which kept me giving a "log file is corrupt" error message. The trick is to convert it to the newer .evtx format before processing. Thankfully this can also be easily done using a command-line utility.</p>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Setting up a global hotkey to add tasks to Outlook]]></title>
+    <link href="http://zzamboni.github.com/blog/setting-up-a-global-hotkey-to-add-tasks-to-ou"/>
+    <updated>2010-12-23T12:14:00-06:00</updated>
+    <id>http://zzamboni.github.com/blog/setting-up-a-global-hotkey-to-add-tasks-to-ou</id>
+    <content type="html"><![CDATA[<p>One thing I missed since I moved from a Mac (using The Hit List for GTD) to Outlook (using Jello Dashboard for GTD) was the availability of a global hot key that I could use to bring up a text entry box which I could use to quickly add things into my electronic Inbox, for later processing.</p>
+
+
+<p>I have found a way to achieve this, and here is the setup I am using now:</p>
+
+
+<p>The first component is <a href="http://www.leeholmes.com/blog/2007/03/01/getting-things-done-%E2%80%93-outlook-task-automation-with-powershell/">this PowerShell script</a> written by Lee Holmes, which takes as arguments the title of the task to add, and adds it to Outlook. I saved it as <code>Documents/Add-OutlookTask.ps1</code> in my home directory.</p>
+
+
+<p>The second component is the ever-useful and amazing <a href="http://www.autohotkey.com/">AutoHotkey</a>. I added the following lines to my <code>Documents/AutoHotKey.ahk</code> file:</p>
+
+
+<p></p>
+
+
+<p><a href="https://gist.github.com/753333">https://gist.github.com/753333</a></p>
+
+
+<p>This snippet assigns Win-space to open an input box, and uses whatever is typed in it as the task title to the Add-OutlookTask script. The task will be placed without any categories in the task list, so it appears automatically the next time I open my Jello Dashboard inbox. Here it is in action:</p>
+
+
+<p></p>
+
+
+<div class="p_embed p_image_embed">
+<img alt="Addtask" height="107" src="http://zzamboni.github.com/images/2010/12/23/setting-up-a-global-hotkey-to-add-tasks-to-ou/19022076-AddTask.png" width="391">
+</div>
+
+
+
+
+<p>I find this extremely useful, since I can press Win-space to add new tasks from any application, without having to switch to Outlook first. At some point I would like to explore the idea of making it smarter, like the quick-add keys in Things or THL for the Mac. This would include, for example, using some information from the currently-active application to prefill the task information. Examples would include using the subject line if an Outlook email is selected or the title of the current web page if a browser is open. Also nice would be to include any selected text automatically in the notes for the task, and maybe a link to the original item.</p>
+
+
+<p> </p>
+
+
+<p> </p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Making cygwin, Windows and emacs understand the same symlinks]]></title>
+    <link href="http://zzamboni.github.com/blog/making-cygwin-windows-and-emacs-understand-th"/>
+    <updated>2010-09-28T09:39:00-05:00</updated>
+    <id>http://zzamboni.github.com/blog/making-cygwin-windows-and-emacs-understand-th</id>
+    <content type="html"><![CDATA[<p>Today I ran into the problem that symlinks created under cygwin using "ln -s" are not understood by Windows, and of course Windows shortcuts are seen by cygwin as regular files. Happily, this is a <strong>(semi-)</strong>solved problem. For reference, this is what needs to be done:</p>
+
+
+<p></p>
+
+
+<p></p>
+
+<ol>
+<li>Add "<a href="http://www.cygwin.com/cygwin-ug-net/using-effectively.html#using-shortcuts">winsymlinks</a>" to your CYGWIN environment variable. For example, in my .bashrc I have the following:<p></p>  <tt>export CYGWIN="nodosfilewarning winsymlinks"<br></tt><br> This makes cygwin create symlinks differently, in a form that is understood both by it and by Windows.<br> This is the main step, and the only one if you just need access from the shell and from the Windows explorer. However, emacs still sees those symlinks as regular .lnk files. To fix this, follow the next step.<p></p>  </li>
+<li>Install the <a href="http://centaur.maths.qmw.ac.uk/emacs/files/w32-symlinks.el">w32-symlinks.el </a>package, and add the following to your .emacs file:<p></p>  <tt>(require 'w32-symlinks)</tt><p></p>  </li>
+<li>Run <tt>M-x customize-option</tt> and enter <tt>w32-symlinks-handle-shortcuts </tt>as the variable to customize. Turn it on, save it for future sessions, and you are all set. The new symlinks should be properly understood by the cygwin shell, Windows explorer, and emacs. Of course, you will have to re-create any symlinks or shortcuts that you created prior to setting the winsymlinks option, for them to be created in the new format.<p></p>
+<strong>Update: </strong>so this doesn't quite work on my system. I am using Emacs 23.1, and apparently w32-symlinks does not work properly in this version. If you have an older version (I hear Emacs 21 works well), then this might work for you. </li>
+</ol>
+
+]]></content>
+  </entry>
+  
+</feed>

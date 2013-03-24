@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Making cygwin, Windows and emacs understand the same symlinks - zzamboni.org</title>
+  <meta name="author" content="Diego Zamboni">
+
+  
+  <meta name="description" content="Today I ran into the problem that symlinks created under cygwin using &#8220;ln -s&#8221; are not understood by Windows, and of course Windows &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://zzamboni.github.com/blog/making-cygwin-windows-and-emacs-understand-th">
+  <link href="/favicon.ico" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="zzamboni.org" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">zzamboni.org</a></h1>
+  
+    <h2></h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:zzamboni.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Home</a></li>
+  <li><a href="/blog">Ideally Blue</a></li>
+  <li><a href="/code.html">Code</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about.html">About</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Making Cygwin, Windows and Emacs Understand the Same Symlinks</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-09-28T09:39:00-05:00" pubdate data-updated="true">Sep 28<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Today I ran into the problem that symlinks created under cygwin using &#8220;ln -s&#8221; are not understood by Windows, and of course Windows shortcuts are seen by cygwin as regular files. Happily, this is a <strong>(semi-)</strong>solved problem. For reference, this is what needs to be done:</p>
+<p></p> 
+<ol>
+<li>Add &#8221;<a href="http://www.cygwin.com/cygwin-ug-net/using-effectively.html#using-shortcuts">winsymlinks</a>&#8221; to your CYGWIN environment variable. For example, in my .bashrc I have the following:<p></p>  <tt>export CYGWIN=&#8221;nodosfilewarning winsymlinks&#8221;<br></tt><br> This makes cygwin create symlinks differently, in a form that is understood both by it and by Windows.<br> This is the main step, and the only one if you just need access from the shell and from the Windows explorer. However, emacs still sees those symlinks as regular .lnk files. To fix this, follow the next step.<p></p>  </li>
+<li>Install the <a href="http://centaur.maths.qmw.ac.uk/emacs/files/w32-symlinks.el">w32-symlinks.el </a>package, and add the following to your .emacs file:<p></p>  <tt>(require &#8216;w32-symlinks)</tt><p></p>  </li>
+<li>Run <tt>M-x customize-option</tt> and enter <tt>w32-symlinks-handle-shortcuts </tt>as the variable to customize. Turn it on, save it for future sessions, and you are all set. The new symlinks should be properly understood by the cygwin shell, Windows explorer, and emacs. Of course, you will have to re-create any symlinks or shortcuts that you created prior to setting the winsymlinks option, for them to be created in the new format.<p></p>
+<strong>Update: </strong>so this doesn&#8217;t quite work on my system. I am using Emacs 23.1, and apparently w32-symlinks does not work properly in this version. If you have an older version (I hear Emacs 21 works well), then this might work for you. </li>
+</ol>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Diego Zamboni</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-09-28T09:39:00-05:00" pubdate data-updated="true">Sep 28<span>th</span>, 2010</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/annoyances/'>annoyances</a>, <a class='category' href='/blog/categories/cygwin/'>cygwin</a>, <a class='category' href='/blog/categories/howto/'>howto</a>, <a class='category' href='/blog/categories/symlink/'>symlink</a>, <a class='category' href='/blog/categories/tips/'>tips</a>, <a class='category' href='/blog/categories/windows/'>windows</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://zzamboni.github.com/blog/making-cygwin-windows-and-emacs-understand-th" data-via="" data-counturl="http://zzamboni.github.com/blog/making-cygwin-windows-and-emacs-understand-th" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/website-redesign-and-unification" title="Previous Post: Website redesign and unification">&laquo; Website redesign and unification</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/editing-sshd-configuration-files-with-cfengin" title="Next Post: Editing sshd configuration files with cfengine3">Editing sshd configuration files with cfengine3 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/howto-changing-the-available-display-formats">HowTo: Changing the available display formats for Evernote's "Insert Date" command</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/cfengine-talks-at-picc12-conference">CFEngine talks at PICC'12 conference</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/purdue-at-night">Purdue at Night</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/blog-learning-cfengine-3">Learning CFEngine 3 has been released</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/analytics-put-to-a-good-cause">Analytics put to a good cause</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Diego Zamboni -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

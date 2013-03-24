@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: oreilly | zzamboni.org]]></title>
+  <link href="http://zzamboni.github.com/blog/categories/oreilly/atom.xml" rel="self"/>
+  <link href="http://zzamboni.github.com/"/>
+  <updated>2013-03-24T00:01:23-06:00</updated>
+  <id>http://zzamboni.github.com/</id>
+  <author>
+    <name><![CDATA[Diego Zamboni]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Learning CFEngine 3 has been released]]></title>
+    <link href="http://zzamboni.github.com/blog/blog-learning-cfengine-3"/>
+    <updated>2012-03-24T01:23:00-06:00</updated>
+    <id>http://zzamboni.github.com/blog/blog-learning-cfengine-3</id>
+    <content type="html"><![CDATA[<div class="posterous_bookmarklet_entry">
+<blockquote class="posterous_long_quote">
+<div><a href="http://shop.oreilly.com/product/0636920022022.do">
+<div class="posterousGalleryMainDiv p_embed p_image_embed"><img src="http://zzamboni.github.com/images/2012/03/24/blog-learning-cfengine-3/cat.gif" height="236" alt="Cat" width="180"></div>
+</a></div>
+<p>I am ecstatic to announce that the book is now officially released!</p>
+</blockquote>
+<div class="posterous_quote_citation">via <a href="http://blog.cf-learn.info/">blog.cf-learn.info</a>
+</div>
+<p>I am so happy :-)</p>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA["Learning CFEngine 3" Early Release now available -use AUTHD to get 40-50% off]]></title>
+    <link href="http://zzamboni.github.com/blog/learning-cfengine-3early-release-now-availabl"/>
+    <updated>2011-12-06T15:03:00-06:00</updated>
+    <id>http://zzamboni.github.com/blog/learning-cfengine-3early-release-now-availabl</id>
+    <content type="html"><![CDATA[<div class="posterous_bookmarklet_entry">
+<div>
+<div style="float: left;">
+<div class="detailimgcontainer"><a href="http://shop.oreilly.com/product/0636920022022.do?sortby=publicationDate" target="_parent"> <img src="http://akamaicovers.oreilly.com/images/0636920022022/cat.gif" border="0" height="236" alt="Automated system administration for sites of any size" width="180"></a></div>
+<p> </p>
+</div>
+<div class="detailheader"><a href="http://shop.oreilly.com/product/0636920022022.do">Learning CFEngine 3</a></div>
+<div class="detailSubHeader">Automated system administration for sites of any size</div>
+<div>
+<div class="AuthorName">By <a href="http://shop.oreilly.com/product/0636920022022.do#tab_03" class="byLineLink">Diego Zamboni</a>
+</div>
+</div>
+</div>
+<div class="posterous_quote_citation">via <a href="http://shop.oreilly.com/product/0636920022022.do">shop.oreilly.com</a>
+</div>
+<p>My upcoming book "Learning CFEngine 3" is now available as an Early Release, which includes (for now) the first four chapters of the book. You can use the code AUTHD to get 40% off the print book, or 50% off the ebook version.</p>
+<p>Go get yours! And of course, I'd be happy to receive any feedback you have.</p>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[What's New in CFEngine 3: Making System Administration Even More Powerful - O'Reilly Radar]]></title>
+    <link href="http://zzamboni.github.com/blog/whats-new-in-cfengine-3-making-system-adminis"/>
+    <updated>2011-10-28T16:24:00-05:00</updated>
+    <id>http://zzamboni.github.com/blog/whats-new-in-cfengine-3-making-system-adminis</id>
+    <content type="html"><![CDATA[<div class="posterous_bookmarklet_entry">
+      <blockquote class="posterous_long_quote">
+<a href="https://cfengine.com/">CFEngine</a> is both the oldest and the newest of the popular tools for automating site administration.  Mark Burgess invented it as a free software project in 1993, and years later, as deployments in the field outgrew its original design he gave it a complete rethink and developed the powerful concept of <a href="http://research.iu.hio.no/promises.php">promise theory</a> to make it modular and maintainable.</blockquote>
+
+<div class="posterous_quote_citation">via <a href="http://radar.oreilly.com/2011/10/whats-new-in-cfengine-3-making.html">radar.oreilly.com</a>
+</div>
+    <p>I contributed to this article by Andy Oram on CFEngine 3. It talks about the history of CFEngine 3, why it is a powerful tool for system administrators, and what is new in the latest releases of both the commercial and the open-source versions of CFEngine.</p>
+<p>(disclaimer: I work for CFEngine AS)</p>
+</div>
+
+]]></content>
+  </entry>
+  
+</feed>

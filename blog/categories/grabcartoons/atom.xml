@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: grabcartoons | zzamboni.org]]></title>
+  <link href="http://zzamboni.github.com/blog/categories/grabcartoons/atom.xml" rel="self"/>
+  <link href="http://zzamboni.github.com/"/>
+  <updated>2013-03-24T00:01:23-06:00</updated>
+  <id>http://zzamboni.github.com/</id>
+  <author>
+    <name><![CDATA[Diego Zamboni]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Grabcartoons v2.7]]></title>
+    <link href="http://zzamboni.github.com/blog/grabcartoons-v27"/>
+    <updated>2010-08-19T15:22:28-05:00</updated>
+    <id>http://zzamboni.github.com/blog/grabcartoons-v27</id>
+    <content type="html"><![CDATA[<pre><code>  Last night I made a new release of my comic aggregator script, &lt;a href="http://zzamboni.org/grabcartoons/"&gt;grabcartoons&lt;/a&gt;. You can fetch it from it brand new &lt;a href="http://zzamboni.org/grabcartoons/"&gt;web page&lt;/a&gt;, now hosted by &lt;a href="http://github.com/zzamboni/grabcartoons/"&gt;github.com&lt;/a&gt; instead of sourceforge.net.
+</code></pre>
+]]></content>
+  </entry>
+  
+</feed>
