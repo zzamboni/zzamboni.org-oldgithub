@@ -9,8 +9,7 @@
   <meta name="author" content="Diego Zamboni">
 
   
-  <meta name="description" content="https://gist.github.com/536198
-">
+  <meta name="description" content="via theinspiration.com One time on a plane from Brussels to Chicago, I was trying to make space in the overhead for my backpack, by moving a large &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -75,7 +74,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/emulate-vis-command-jump-to-matching-parenthe">Emulate Vi&#8217;s % Command (Jump to Matching Parenthesis) in Emacs</a></h1>
+      <h1 class="entry-title"><a href="/blog/cinema-stunt-by-carlsberg-theinspirationcom-l">Cinema Stunt by Carlsberg | THEINSPIRATION.COM L THIS IS WH▲T INSPIRES US</a></h1>
     
     
       <p class="meta">
@@ -91,116 +90,7 @@
   
 
 
-<time datetime="2010-08-18T16:09:18-05:00" pubdate data-updated="true">Aug 18<span>th</span>, 2010</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><a href="https://gist.github.com/536198">https://gist.github.com/536198</a></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/installing-auctex-on-emacsw32-on-win764bit">Installing AucTeX on EmacsW32 on Win7/64bit</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-08-17T02:36:05-05:00" pubdate data-updated="true">Aug 17<span>th</span>, 2010</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content">      Today I had to install AucTeX to use on my Win7/64 machine under EmacsW32. I found the basic instructions here: <a href="http://www.sturmnet.org/blog/2007/09/01/installing-auctex-in-emacsw32">http://www.sturmnet.org/blog/2007/09/01/installing-auctex-in-emacsw32</a>, but I had to modify them a bit (in particular, I am using tetex installed from cygwin instead of MiKTeX). Here are the commands I used:<p></p>  <tt>$  mkdir -p /usr/local/share/texmf<br> $ ./configure &#8211;prefix=&#8217;c:/Program Files (x86)/Emacs/emacs&#8217; &#8211;with-texmf-dir=&#8217;/usr/local/share/texmf&#8217; &#8211;with-lispdir=&#8217;c:/Program Files (x86)/Emacs/emacs/site-lisp&#8217;<br> $  make<br> $  make install</tt><p></p>  I then added the following lines to my <tt>C:\Program Files (x86)\Emacs\site-lisp\site-start.el</tt> file:<p></p>  <tt>(load &#8220;auctex.el&#8221; nil t t)<br> (load &#8220;preview-latex.el&#8221; nil t t)<br> (eval-after-load &#8216;info<br>        &#8216;(add-to-list &#8216;Info-directory-list &#8220;c:/Program Files/Emacs/share/info&#8221;))<br> (setq TeX-auto-save t)<br> (setq TeX-parse-self t)</tt><p></p>  Everything seems to be working properly, even preview-mode.
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/updated-server-and-service-setup">Updated Server and Service Setup</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-08-16T14:58:00-05:00" pubdate data-updated="true">Aug 16<span>th</span>, 2010</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>(a friend asked me about my online setup, and I wrote the text below. Then I realized it would also make an interesting blog post, and I just copied and pasted it, with minimal editing, into an email to posterous. This is why I love posterous, it makes posting so easy) </p>
-<p></p> For my setup, I have a hodgepodge of stuff all aggregated under the <a href="http://zzamboni.org/">zzamboni.org</a> domain. I wrote a blog post about my setup some time ago: <a href="http://blog.zzamboni.org/server-less-does-not-mean-service-less">http://blog.zzamboni.org/server-less-does-not-mean-service-less</a> <p></p> Since then, the main things that have changed is that now my static content (e.g. <a href="http://zzamboni.org/brt/">http://zzamboni.org/brt/</a>) is also served by <a href="http://github.com/">github</a>, instead of Google AppEngine + drydrop. Github used to offer hosting of custom domains only for paid accounts, but now it&#8217;s available to free accounts as well, so I decided to simplify the setup and host them directly on github. I also just moved the grabcartoons web page to github as well (<a href="http://zzamboni.org/grabcartoons/">http://zzamboni.org/grabcartoons/</a>). So now I have: <p></p> <a href="http://zzamboni.org/">http://zzamboni.org/</a> and <a href="http://zzamboni.org/brt/">http://zzamboni.org/brt/</a> hosted by github from my zzamboni.github.com repository. <br><a href="http://zzamboni.org/grabcartoons/">http://zzamboni.org/grabcartoons/</a> hosted by github from the grabcartoons repository. <br><a href="http://zzamboni.org/things2thl/">http://zzamboni.org/things2thl/</a> hosted by github from the things2thl repository. <br><a href="http://blog.zzamboni.org/">http://blog.zzamboni.org/</a> and <a href="http://posterous.zzamboni.org//">http://posterous.zzamboni.org//</a> (plus some other private blogs) hosted by posterous.com. This is my favorite site for blogging, since it&#8217;s extremely easy to post by email, plus you can configure it to auto-post content to twitter, flicker, facebook, etc. <br>Email served by Google Apps. <p></p> I&#8217;m very happy with <a href="">posterous.com</a> and <a href="http://github.com/">github.com</a>. They are my two favorite services these days.
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/layer-8-the-exception-is-the-rule">Layer 8: The Exception IS the Rule</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-07-09T10:55:00-05:00" pubdate data-updated="true">Jul 9<span>th</span>, 2010</time>
+<time datetime="2011-11-07T11:35:00-06:00" pubdate data-updated="true">Nov 7<span>th</span>, 2011</time>
         
       </p>
     
@@ -208,10 +98,11 @@
 
 
   <div class="entry-content"><div class="posterous_bookmarklet_entry">
-<blockquote class="posterous_medium_quote">Whenever you look at a firewall rule, half the time you’re going to be asking yourself, “Why is that there?  Did *I* put it there?  Do we still need it?”  It would sure be nice if the explanation were right there, as a comment that could be version-tracked, exported into nice reports, searched on, and placed in a standard format that would be compatible with other exception entries in other tools.  (Kind of like a syslog for exceptions.)  It would be nice if you could mark a scanner finding as, “We KNOW it’s there.  We’re not going to fix it.  Just for these two machines, STOP REPORTING ON THIS.”)</blockquote>
-<div class="posterous_quote_citation">via <a href="http://layer8.itsecuritygeek.com/layer8/the-exception-is-the-rule/">layer8.itsecuritygeek.com</a>
+<blockquote class="posterous_long_quote"><iframe src="http://www.youtube.com/embed/g6OaSzoSpHE" frameborder="0" height="315" width="560"></iframe></blockquote>
+<div class="posterous_quote_citation">via <a href="http://www.theinspiration.com/2011/09/carlsberg-stunt-in-cinema/">theinspiration.com</a>
 </div>
-<p>Insightful article. I can&#8217;t count the number of times I have asked myself exactly this, and hoped for a good, INTEGRATED way of keeping track of these exceptions.</p>
+<p>One time on a plane from Brussels to Chicago, I was trying to make space in the overhead for my backpack, by moving a large bag with a flowery stamped design. A large tattooed, biker-type guy across the aisle says to me: &#8220;please be careful, I&#8217;m transporting a china set in there&#8221;.</p>
+<p>Never judge people by their appearance :)</p>
 </div>
 </div>
   
@@ -225,7 +116,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/site-improvements-1">Site Improvements</a></h1>
+      <h1 class="entry-title"><a href="/blog/quadrocopters">Quadrocopters</a></h1>
     
     
       <p class="meta">
@@ -241,237 +132,380 @@
   
 
 
-<time datetime="2010-06-19T02:15:00-05:00" pubdate data-updated="true">Jun 19<span>th</span>, 2010</time>
+<time datetime="2011-11-06T21:54:49-06:00" pubdate data-updated="true">Nov 6<span>th</span>, 2011</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>In their quest to offer a better service every day, the guys at <a href="http://posterous.com">posterous.com</a> have released their <a href="">Pages tool</a>, which makes it much easier to use Posterous for all my online content by allowing the creation of static pages. And in a <strong>stroke of genius</strong>, they even allow pages to automatically redirect to arbitrary URLs! This makes it almost trivial to integrate multiple sites into a single, unified user experience. As a first step, as you can see above, I have better integrated this blog and my <a href="http://posterous.zzamboni.org/">zznippets</a> blog by giving them a common theme, differentiated only by color. I will be working on bringing much of my other online content under posterous by making use of this feature.</p>
-<p></p>
-<div>Thanks to the posterous team for offering such a great service!</div>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/deleting-my-facebook-account-0">Deleting My Facebook Account</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-05-18T16:16:00-05:00" pubdate data-updated="true">May 18<span>th</span>, 2010</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Today I reactivated my Facebook account just to be able to delete it <br>completely. If you find Facebook useful, you should at least be aware <br>of its potential privacy issues, and tune your privacy settings to a <br>level that you find comfortable. Here are some links where you can <br>find more information: </p>
-<p></p> <a href="http://www.theregister.co.uk/2010/05/14/facebook_trust_dumb/">http://www.theregister.co.uk/2010/05/14/facebook_trust_dumb/</a> <br><a href="http://www.fastcompany.com/1624745/time-to-audit-your-facebook-privacy-settings">http://www.fastcompany.com/1624745/time-to-audit-your-facebook-privacy-settings</a> <br><a href="http://www.fastcompany.com/1648478/online-privacy-check-yourself-before-you-wreck-yourself">http://www.fastcompany.com/1648478/online-privacy-check-yourself-before-you-w&#8230;</a> <p></p> Personally, I don&#8217;t find Facebook useful enough to go through the <br>hassle. My account <a href="http://blog.zzamboni.org/the-evolution-of-privacy-on-facebook-and-why">has been deactivated</a> for the last couple of weeks <br>and I haven&#8217;t missed it, so now it&#8217;s time to permanently delete it. <br>Clicky clicky: <a href="https://ssl.facebook.com/help/contact.php?show_form=delete_account">https://ssl.facebook.com/help/contact.php?show_form=delete_account</a>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/the-evolution-of-privacy-on-facebook-and-why">The Evolution of Privacy on Facebook and Why I&#8217;m Dropping Off</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-05-11T10:42:00-05:00" pubdate data-updated="true">May 11<span>th</span>, 2010</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><div class="posterous_bookmarklet_entry">
-<div class="p_embed p_image_embed">
-<a href="/images/2010/05/11/the-evolution-of-privacy-on-facebook-and-why/8871619-media_httpmattmckeonc_bAuwG.png"><img alt="Media_httpmattmckeonc_bauwg" height="414" src="/images/2010/05/11/the-evolution-of-privacy-on-facebook-and-why/8871619-media_httpmattmckeonc_bAuwG.png" width="500"></a>
-</div>
-
-<div class="posterous_quote_citation">via <a href="http://mattmckeon.com/facebook-privacy/">mattmckeon.com</a>
-</div>
-<p>This is a very good analysis, and is why my Facebook account is currently deactivated, and probably will be deleted. Contrary to Matt, I don&#8217;t find Facebook very useful. Mostly it&#8217;s served me to be found by people by whom I wasn&#8217;t all that interested in being found, to see relatives&#8217; photos (which I can also receive through other means), to be endlessly spammed by people playing Farmville and, most usefully, to contact people whose email addresses I don&#8217;t have or can&#8217;t bother to remember. None of these are indispensable or irreplaceable to me.</p>
-<p>I have a <a href="http://www.google.com/search?q=diego+zamboni">significant</a> <a href="http://blog.zzamboni.org/">online</a> <a href="http://twitter.com/zzamboni">presence</a>, so if someone is interested, I&#8217;m really easy to find. I&#8217;m just not comfortable with having to keep tabs of what Facebook is doing so I can go tweak my settings every time they decide to change something.</p>
-</div>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/avatar-blu-ray-dvd-on-lg-bd370-player">Avatar Blu-Ray DVD on LG BD370 Player</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-05-05T01:32:59-05:00" pubdate data-updated="true">May 5<span>th</span>, 2010</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content">Just for the record, the Avatar Blu-Ray DVD plays correctly on my LG BD370 player, with the latest firmware (V7.170.00.26, upgraded from the device). I get a message saying &#8220;your player may need an upgrade&#8221;, then the screen goes black, but after about 45 seconds, the DVD menu appears and you can play the movie correctly.<p></p>
-<div>The first time I watched it, the black screen freaked me out, I didn&#8217;t wait too long, and ended up watching the movie from the regular DVD. I haven&#8217;t yet watched the whole movie in Blu-Ray, but from the few scenes I watched, the difference is noticeable and the quality is amazing.</div>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/starting-virtualcenter-automatically-when-it">Starting VirtualCenter Automatically When It Fails to Start</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-05-03T13:13:42-05:00" pubdate data-updated="true">May 3<span>rd</span>, 2010</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><div class="posterous_bookmarklet_entry">
-      <blockquote class="posterous_long_quote">Create a .bat file with following script:<p>
-
-net start MSSQL$SQLEXP_VIM<br>
-ping 127.0.0.1 -n 120 -w 1000 &gt; null<br>
-net start vpxd</p>
-<p>
-
-Note: for SQL Server substitute MSSQLSERVER in the above batch file instead of MSSQL$SQLEXP_VIM.</p>
-<p>
-
-Set script to run on boot.</p>
-</blockquote>
-
-<div class="posterous_quote_citation">via <a href="http://communities.vmware.com/message/1247357#1247357">communities.vmware.com</a>
-</div>
-    <p>In one of my VirtualCenter servers, a Windows XP machine, the VirtualCenter Server service often fails to start because it tries to run before the MSSQL server is fully initialized. This happens even when the dependencies are set correctly between the services (which is the official solution provided by VMware). The workaround is to create a startup script as shown above. I remove the redirection to nul (which means the script window shows the ping output) as a reminder of what is happening.</p>
-<p>To make it a startup script in WinXP, click on Start -&gt; All programs, then right-click on &#8220;Startup&#8221; and select &#8220;Open All Users&#8221;. Store the script there (just name it  with a .bat extension to make it executable).</p>
-</div>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/know-your-tools">Know Your Tools</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-04-22T02:01:36-05:00" pubdate data-updated="true">Apr 22<span>nd</span>, 2010</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content">I recently had to copy a very large file (&gt;4GB) from a remote Windows share to my Windows 7 machine, over a very finicky connection (frequently-failing VPN over a slow Internet connection). A GUI copy didn&#8217;t work because the connection dropped frequently. I tried <a href="http://www.freedownloadmanager.org/">Free Download Manager</a>, which was the recommended tool for the download, but surprisingly, it wasn&#8217;t always able to restart the download after connectivity dropped.<p></p>
-<div>Then a colleague pointed me to the &#8220;copy /z&#8221; command:</div>
-<p></p>
-<blockquote class="gmail_quote" style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0.8ex; border-left-width: 1px; border-left-color: rgb(204, 204, 204); border-left-style: solid; padding-left: 1ex;">   /Z           Copies networked files in restartable mode.</blockquote>
-<p></p>
-<div>And this simple, built-in tool turned out to be the thing I needed. It was, every time, able to restart the download properly, and after a few times, it downloaded the file correctly.</div> <p></p>
-<div>As you may know, I am a reluctant recent switcher to Windows, coming from Linux and Mac OS X. I confess I still have a condescending attitude to everything in Windows, but this teaches me a lesson: <b>it pays to know the native tools of the system you are using.</b> I had subconsciously dismissed the built-in DOS copy command as too primitive to work, but it turned out to have the capabilities I needed.</div> <p></p>
-<div>A couple of tips:</div>
+  <div class="entry-content"><div>Quadrocopters are really getting popular for research, and for a reason - they are seriously cool.</div>
 <div>
-<ul>
-<li>If you interrupt the command with Ctrl-C, it will delete the portion copied so far and you&#8217;ll have to restart the copy from the beginning. If you must interrupt a copy, simply terminate the network connection (it will die with an error, but leave the copied-so-far file) or close the window where the command is running.</li> <li>When you restart it and it asks if you want to overwrite, you must answer &#8220;yes&#8221;. You can also use the /Y flag.</li>
-</ul>
+<br>Arms / grippers have already been used on them:<br><iframe src="http://www.youtube.com/embed/W18Z3UnnS_0?wmode=transparent" allowfullscreen frameborder="0" height="417" width="500"></iframe><p></p>
+</div>
+<div>They can also do ball jugling:<br><iframe src="http://www.youtube.com/embed/3CR5y8qZf0Y?wmode=transparent" allowfullscreen frameborder="0" height="417" width="500"></iframe><p></p>
+</div>
+<div>Have precise movement control:<br><iframe src="http://www.youtube.com/embed/MvRTALJp8DM?wmode=transparent" allowfullscreen frameborder="0" height="417" width="500"></iframe><p></p>
+</div>
+<div>And do mapping:</div>
+<div><iframe src="http://www.youtube.com/embed/TjQPHprBTPs?wmode=transparent" allowfullscreen frameborder="0" height="417" width="500"></iframe></div>
+<br><p></p>
+<div>Tip of the rotor blade to Axel Tanner for sending me these.</div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/video-a-murmuration-of-starlings-alexis-madri">Video: A Murmuration of Starlings - Alexis Madrigal - Technology - the Atlantic</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-11-04T17:52:00-06:00" pubdate data-updated="true">Nov 4<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class="posterous_bookmarklet_entry">
+      <blockquote class="posterous_long_quote">
+<iframe src="http://player.vimeo.com/video/31158841?title=0&amp;byline=0&amp;portrait=0" allowfullscreen="" frameborder="0" height="492" width="615"></iframe>
+<br>
+</blockquote>
+</div>
+<div class="posterous_quote_citation">via <a href="http://www.theatlantic.com/technology/archive/2011/11/video-a-murmuration-of-starlings/247852/">theatlantic.com</a>
+</div>
+    <p>Wow.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011-pan-american-games-alan-taylor-in-focus">2011 Pan American Games - Alan Taylor - in Focus - the Atlantic</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-11-03T00:31:00-06:00" pubdate data-updated="true">Nov 3<span>rd</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class="posterous_bookmarklet_entry">
+      <div class="p_embed p_image_embed">
+<a href="/images/2011/11/03/2011-pan-american-games-alan-taylor-in-focus/33833248-media_httpcdntheatlan_getqG.jpg"><img alt="Media_httpcdntheatlan_getqg" height="350" src="/images/2011/11/03/2011-pan-american-games-alan-taylor-in-focus/33833248-media_httpcdntheatlan_getqG.jpg" width="500"></a>
+</div>
+<div class="posterous_quote_citation">via <a href="http://www.theatlantic.com/infocus/2011/10/2011-pan-american-games/100179/">theatlantic.com</a>
+</div>
+    <p>Nice photo set from the Panamerican Games.</p>
+</div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/all-the-apps-on-my-iphone">All the Apps on My iPhone</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-10-31T10:19:00-06:00" pubdate data-updated="true">Oct 31<span>st</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I’m doing some cleanup and reorganization, and captured my current app setup as a reference point. Here they are.</p>
+<p>Quick note: The first screen is my most-used apps (some are going out now, like 2Do which I&#8217;ve never liked too much, but was the best way to sync tasks with Outlook, which I&#8217;m no longer forced using). Second screen is all my folders. Third and fourth screens are my girls&#8217; screens, with the games they use when they borrow my phone. The games I play are mostly in the first &#8220;Games&#8221; folder.</p>
 <p></p>
+<div class="p_embed p_image_embed">
+<a href="/images/2011/10/31/all-the-apps-on-my-iphone/33698993-IMG_3019.jpg"><img alt="Img_3019" height="750" src="/images/2011/10/31/all-the-apps-on-my-iphone/33698993-IMG_3019.jpg" width="500"></a>
+<a href="/images/2011/10/31/all-the-apps-on-my-iphone/33698997-IMG_3020.jpg"><img alt="Img_3020" height="750" src="/images/2011/10/31/all-the-apps-on-my-iphone/33698997-IMG_3020.jpg" width="500"></a>
+<a href="/images/2011/10/31/all-the-apps-on-my-iphone/33698982-IMG_3021.jpg"><img alt="Img_3021" height="750" src="/images/2011/10/31/all-the-apps-on-my-iphone/33698982-IMG_3021.jpg" width="500"></a>
+<a href="/images/2011/10/31/all-the-apps-on-my-iphone/33698988-IMG_3022.jpg"><img alt="Img_3022" height="750" src="/images/2011/10/31/all-the-apps-on-my-iphone/33698988-IMG_3022.jpg" width="500"></a>
+<a href="/images/2011/10/31/all-the-apps-on-my-iphone/33698995-IMG_3023.jpg"><img alt="Img_3023" height="750" src="/images/2011/10/31/all-the-apps-on-my-iphone/33698995-IMG_3023.jpg" width="500"></a>
+<a href="/images/2011/10/31/all-the-apps-on-my-iphone/33698989-IMG_3024.jpg"><img alt="Img_3024" height="750" src="/images/2011/10/31/all-the-apps-on-my-iphone/33698989-IMG_3024.jpg" width="500"></a>
+<a href="/images/2011/10/31/all-the-apps-on-my-iphone/33698996-IMG_3025.jpg"><img alt="Img_3025" height="750" src="/images/2011/10/31/all-the-apps-on-my-iphone/33698996-IMG_3025.jpg" width="500"></a>
+<a href="/images/2011/10/31/all-the-apps-on-my-iphone/33698983-IMG_3026.jpg"><img alt="Img_3026" height="750" src="/images/2011/10/31/all-the-apps-on-my-iphone/33698983-IMG_3026.jpg" width="500"></a>
+<a href="/images/2011/10/31/all-the-apps-on-my-iphone/33698987-IMG_3027.jpg"><img alt="Img_3027" height="750" src="/images/2011/10/31/all-the-apps-on-my-iphone/33698987-IMG_3027.jpg" width="500"></a>
+<a href="/images/2011/10/31/all-the-apps-on-my-iphone/33698986-IMG_3028.jpg"><img alt="Img_3028" height="750" src="/images/2011/10/31/all-the-apps-on-my-iphone/33698986-IMG_3028.jpg" width="500"></a>
+<a href="/images/2011/10/31/all-the-apps-on-my-iphone/33698985-IMG_3029.jpg"><img alt="Img_3029" height="750" src="/images/2011/10/31/all-the-apps-on-my-iphone/33698985-IMG_3029.jpg" width="500"></a>
+<a href="/images/2011/10/31/all-the-apps-on-my-iphone/33698998-IMG_3030.jpg"><img alt="Img_3030" height="750" src="/images/2011/10/31/all-the-apps-on-my-iphone/33698998-IMG_3030.jpg" width="500"></a>
+<a href="/images/2011/10/31/all-the-apps-on-my-iphone/33698992-IMG_3031.jpg"><img alt="Img_3031" height="750" src="/images/2011/10/31/all-the-apps-on-my-iphone/33698992-IMG_3031.jpg" width="500"></a>
+<a href="/images/2011/10/31/all-the-apps-on-my-iphone/33698984-IMG_3032.jpg"><img alt="Img_3032" height="750" src="/images/2011/10/31/all-the-apps-on-my-iphone/33698984-IMG_3032.jpg" width="500"></a>
+<a href="/images/2011/10/31/all-the-apps-on-my-iphone/33698991-IMG_3033.jpg"><img alt="Img_3033" height="750" src="/images/2011/10/31/all-the-apps-on-my-iphone/33698991-IMG_3033.jpg" width="500"></a>
+<a href="/images/2011/10/31/all-the-apps-on-my-iphone/33698990-IMG_3034.jpg"><img alt="Img_3034" height="750" src="/images/2011/10/31/all-the-apps-on-my-iphone/33698990-IMG_3034.jpg" width="500"></a>
+<a href="/images/2011/10/31/all-the-apps-on-my-iphone/33698994-IMG_3035.jpg"><img alt="Img_3035" height="750" src="/images/2011/10/31/all-the-apps-on-my-iphone/33698994-IMG_3035.jpg" width="500"></a>
+</div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/a-new-invention-on-30-rock-020311">A New Invention on &#8216;30 Rock&#8217; 02/03/11</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-10-30T11:54:00-06:00" pubdate data-updated="true">Oct 30<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class="posterous_bookmarklet_entry">
+      <object class="BrightcoveExperience" type="application/x-shockwave-flash" height="282" width="500"><param name="allowFullScreen" value="true">
+<param name="allowScriptAccess" value="always">
+<param name="bgColor" value="#CCCCCC">
+<param name="wmode" value="transparent">
+<param name="swLiveConnect" value="true">
+<param name="flashVars" value="&amp;videoSmoothing=true&amp;bannerid=AdBanner">
+<param name="videoSmoothing" value="true"></object><div class="posterous_quote_citation">via <a href="http://daringfireball.net/linked/2011/10/27/donaghy">daringfireball.net</a>
+</div>
+    <p>Voice recognition is hard :)</p>
+</div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/whats-new-in-cfengine-3-making-system-adminis">What&#8217;s New in CFEngine 3: Making System Administration Even More Powerful - O&#8217;Reilly Radar</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-10-28T16:24:00-05:00" pubdate data-updated="true">Oct 28<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class="posterous_bookmarklet_entry">
+      <blockquote class="posterous_long_quote">
+<a href="https://cfengine.com/">CFEngine</a> is both the oldest and the newest of the popular tools for automating site administration.  Mark Burgess invented it as a free software project in 1993, and years later, as deployments in the field outgrew its original design he gave it a complete rethink and developed the powerful concept of <a href="http://research.iu.hio.no/promises.php">promise theory</a> to make it modular and maintainable.</blockquote>
+
+<div class="posterous_quote_citation">via <a href="http://radar.oreilly.com/2011/10/whats-new-in-cfengine-3-making.html">radar.oreilly.com</a>
+</div>
+    <p>I contributed to this article by Andy Oram on CFEngine 3. It talks about the history of CFEngine 3, why it is a powerful tool for system administrators, and what is new in the latest releases of both the commercial and the open-source versions of CFEngine.</p>
+<p>(disclaimer: I work for CFEngine AS)</p>
+</div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/github-secrets-github">GitHub Secrets</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-10-26T01:06:00-05:00" pubdate data-updated="true">Oct 26<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class="posterous_bookmarklet_entry">
+<blockquote class="posterous_long_quote">
+<p>Let&#8217;s talk about some of those secret features you may not know about.</p>
+</blockquote>
+<div class="posterous_quote_citation">via <a href="https://github.com/blog/967-github-secrets">github.com</a>
+</div>
+<p>Nice article about some lesser-known GitHub features.</p>
+</div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/introduction-to-cfengine-3-nova-webinar">&#8220;Introduction to CFEngine 3 Nova&#8221; Webinar</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-10-25T22:53:13-05:00" pubdate data-updated="true">Oct 25<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">A new version of <a href="https://cfengine.com/nova">CFEngine 3 Nova</a> was released today, and to go with it, there will be a free webinar called &#8221;<a href="http://info.cfengine.com/NewNovaWebinar_Introduction-to-Nova_Registration.html">Introduction to CFEngine 3 Nova</a>&#8221; on November 2nd. It will be presented by one of the members of the core CFEngine team, and it will be a great opportunity to learn more about the new and improved capabilities in this release. If you are interested in CFEngine and maybe thinking of going the commercial route, or you need more information to decide, make sure to attend!<p></p>
+<div>A new version of <a href="https://cfengine.com/community">CFEngine Community</a> (<a href="http://www.cfengine.com/source-code">3.2.3</a>), was also released today.</div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/dennis-ritchie-70-dies-programming-trailblaze">Dennis Ritchie, 70, Dies, Programming Trailblazer - NYTimes.com</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-10-24T13:21:00-05:00" pubdate data-updated="true">Oct 24<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class="posterous_bookmarklet_entry">
+      <blockquote class="posterous_short_quote">The tools that Dennis built — and their direct descendants — run pretty much everything today.</blockquote>
+<p align="right">—Brian Kernighan</p>
+<div class="posterous_quote_citation">via <a href="http://www.nytimes.com/2011/10/14/technology/dennis-ritchie-programming-trailblazer-dies-at-70.html?_r=1">nytimes.com</a>
+</div>
+    <p>Nice article about Dennis Ritchie.</p>
 </div>
 </div>
   
@@ -501,19 +535,19 @@ Set script to run on boot.</p>
       </li>
     
       <li class="post">
-        <a href="/blog/cfengine-talks-at-picc12-conference">CFEngine talks at PICC&#8217;12 conference</a>
+        <a href="/blog/included-in-the-linuxcon-registration-packet">Included in the #LinuxCon registration packet: a skateboard#</a>
       </li>
     
       <li class="post">
-        <a href="/blog/purdue-at-night">Purdue at Night</a>
+        <a href="/blog/letters-of-note-regarding-your-dam-complaint">Letters of Note: Regarding your dam complaint</a>
       </li>
     
       <li class="post">
-        <a href="/blog/blog-learning-cfengine-3">Learning CFEngine 3 has been released</a>
+        <a href="/blog/the-cfengine-agent-as-drawn-by-my-6-year-old">The #CFEngine agent, as drawn by my 6-year-old daughter :) </a>
       </li>
     
       <li class="post">
-        <a href="/blog/analytics-put-to-a-good-cause">Analytics put to a good cause</a>
+        <a href="/blog/when-a-dragon-mated-the-space-station-ht-bada">When a Dragon mated the space station /ht @BadAstronomer</a>
       </li>
     
   </ul>

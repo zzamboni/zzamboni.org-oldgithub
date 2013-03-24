@@ -9,7 +9,7 @@
   <meta name="author" content="Diego Zamboni">
 
   
-  <meta name="description" content="Farewell, Steve. Thank you for all you did for the computer industry, for design, for music, for telephony, and for so many other aspects of our &hellip;">
+  <meta name="description" content=" via Tweetbot for iPhone ">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -74,7 +74,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/steve-jobs-rip">Steve Jobs, R.I.P.</a></h1>
+      <h1 class="entry-title"><a href="/blog/our-new-popcorn-machine">Our New Popcorn Machine :)</a></h1>
     
     
       <p class="meta">
@@ -90,15 +90,20 @@
   
 
 
-<time datetime="2011-10-06T00:26:24-05:00" pubdate data-updated="true">Oct 6<span>th</span>, 2011</time>
+<time datetime="2012-01-28T17:15:40-06:00" pubdate data-updated="true">Jan 28<span>th</span>, 2012</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content">   Farewell, Steve. Thank you for all you did for the computer industry, for design, for music, for telephony, and for so many other aspects of our lives. You will be missed.<p></p>  <div class="p_embed p_image_embed">
-<a href="/images/2011/10/06/steve-jobs-rip/32654795-acibibhg.png"><img alt="Acibibhg" height="337" src="/images/2011/10/06/steve-jobs-rip/32654795-acibibhg.png" width="500"></a>
+  <div class="entry-content"><p></p>
+<div class="p_embed p_image_embed">
+<a href="/images/2012/01/28/our-new-popcorn-machine/37266154-image.jpg"><img alt="Image" height="670" src="/images/2012/01/28/our-new-popcorn-machine/37266154-image.jpg" width="500"></a>
+</div>
+
+
+<div class="posterous_quote_citation">via <a href="http://tapbots.com/tweetbot">Tweetbot for iPhone</a>
 </div>
 </div>
   
@@ -112,7 +117,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/gene-schultz-rip">Gene Schultz, R.I.P.</a></h1>
+      <h1 class="entry-title"><a href="/blog/changing-message-protocol-handler-from-sparro">Changing &#8220;Message:&#8221; Protocol Handler From Sparrow Back to Mail.app</a></h1>
     
     
       <p class="meta">
@@ -128,346 +133,29 @@
   
 
 
-<time datetime="2011-10-03T23:08:00-05:00" pubdate data-updated="true">Oct 3<span>rd</span>, 2011</time>
+<time datetime="2012-01-25T09:54:07-06:00" pubdate data-updated="true">Jan 25<span>th</span>, 2012</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>A few days ago I learned through <a href="http://spaf.cerias.purdue.edu/">Spaf</a> that Gene Schultz had had a severe accident and was hospitalized. Later we learned that the accident was apparently caused by an earlier stroke that went unrecognized. Yesterday, October 2nd, during the afternoon, Gene passed away.</p>
+  <div class="entry-content">After using <a href="http://www.sparrowmailapp.com/">Sparrow</a> for a while, I have decided to switch back to Mail.app. However, even after setting my default email client to Mail.app, all my message: links (for example, from messages dragged from Mail.app into <a href="http://culturedcode.com/things/">Things</a>) were opening in Sparrow.<p></p>
+<div>After some experimentation, I figured out what happened: I switched the default email client from Sparrow to Mail using Mail&#8217;s preference panel:</div>
 <p></p>
-<div>I met Gene about 15 years ago while I was a grad student at Purdue. I met him initially at a couple of conferences, and later while he was visiting Purdue for some time. I never took a class with him, but for a while we sat in cubicles right across from each other (this was when <a href="http://www.cerias.purdue.edu/">CERIAS</a> was very young, and we were still in the old <a href="http://www.cerias.purdue.edu/about/history/coast/">COAST lab</a> room in the Purdue CS Department). I remember talking to him all the time during those days, both about computer security and about silly stuff, questions he had about how things worked at the lab, how to say things in Spanish, or anything else that came to mind.  He had a great sense of humor, and he treated everyone the same, including us, the &#8220;lowly grad students&#8221; that sat around him.</div>
-<p></p>
-<div>Eventually we went our separate ways, exchanging email only every once in a while. In the last few months I had more frequent contact with him in the context of the <a href="http://www.elsevier.com/wps/find/journaleditorialboard.cws_home/405877/editorialboard">COSE Editorial Board</a>. In every exchange he was the same - kind, knowledgeable and fun.</div>
-<p></p>
-<div>May he Rest in Peace.</div>
-<p></p>
-<div>Gene Spafford has written a beautiful <a href="http://www.cerias.purdue.edu/site/blog/post/gene_schultz_r._i._p/">tribute</a> for Gene Schultz.</div>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/installing-cfengine-320b3-on-mac-os-x-107">Installing Cfengine on Mac OS X</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-08-05T02:31:00-05:00" pubdate data-updated="true">Aug 5<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><a href="http://cfengine.com/">Cfengine</a> (tested 3.2.0) installs easily on OS X (tested 10.7), given that it&#8217;s Unix. One problem I encountered was that it does not compile with the bundled version of Berkeley DB (it recognizes it during configure, but produces compilation errors). The solution is to use some other DB engine. I chose Tokyo Cabinet. Using <a href="http://mxcl.github.com/homebrew/">homebrew</a>, the process is simple</p>
-<p><code>brew install tokyo-cabinet</code></p>
-<p>After this, configure &#8211;with-tokyocabinet, and then compile and install as usual.</p>
-<p>I have submitted a <a href="https://github.com/mxcl/homebrew/pull/6835/files">homebrew formula for cfengine</a>. Once/if it gets approved, you should be able to run <code>brew install cfengine</code> to do all of the above automatically.</p>
-<p><strong>Update (2011/09/03): The cfengine homebrew formula has been accepted into the repository! You can now simply run &#8220;brew update; brew install cfengine&#8221; to get cfengine 3.2.0 installed.</strong></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/my-thought-about-the-lion-upgrade-process">My Thoughts About the Lion Upgrade Process</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-07-22T10:30:00-05:00" pubdate data-updated="true">Jul 22<span>nd</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I just finished upgrading our Mac (my wife and I share it) to Lion. It looks very nice. This has been the OS X upgrade to which I have given less thought: purchase, download, backup, install, done.</p>
 <div>
-<div>I think a lot of this has to do with the online distribution. We are used to installing things downloaded from the Internet without much thought (of course there are security considerations, but that&#8217;s another topic). On the other hand, new OS versions used to be special: you go to the store, or you order it online, it comes in a box, and there used to be an ominous feeling about it. It may wipe all your data, it may make your machine unrecognizable, it may kill your pets.</div>
-<p></p>
-<div>But when a major OS upgrade comes through from the App Store, it feels just as if you are installing another app. It&#8217;s much less frightening. And Apple has removed pretty much every question about installation options, which helps this feeling. And <strong>it works</strong>, which gives you assurance for next time.</div>
-<p></p>
-<div>All in all, a pleasant, reassuring and painless experience. Well done Apple.</div>
-<p></p>
-<div>And this reverse-scrolling thing in Lion? I think I&#8217;ll get used to it pretty quickly. I use my iPhone so much that it almost feels natural on the Mac as well.</div>
-<p></p>
-</div>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/karate-exam">Karate Exam</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-07-02T19:03:27-05:00" pubdate data-updated="true">Jul 2<span>nd</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p></p>
 <div class="p_embed p_image_embed">
-<a href="/images/2011/07/02/karate-exam/28571846-p724.jpg"><img alt="P724" height="373" src="/images/2011/07/02/karate-exam/28571846-p724.jpg" width="500"></a>
+<a href="/images/2012/01/25/changing-message-protocol-handler-from-sparro/37129835-PastedGraphic-1.png"><img alt="Pastedgraphic-1" height="125" src="/images/2012/01/25/changing-message-protocol-handler-from-sparro/37129835-PastedGraphic-1.png" width="500"></a>
 </div>
-Today I had my 2nd-Kyu Karate exam. I passed! This is my first exam after having abandoned karate for 10 years and coming back to training 5 months ago, so I&#8217;m very happy that it went well. Here&#8217;s the &#8220;after&#8221; photo. I am the one with the headband (and yes, I am the oldest in the group other than my Sensei).
 </div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/back-from-vacation">Back From Vacation</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-04-28T09:32:26-05:00" pubdate data-updated="true">Apr 28<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p></p>
-<div class="p_embed p_image_embed">
-<a href="/images/2011/04/28/back-from-vacation/25389064-p647.jpg"><img alt="P647" height="670" src="/images/2011/04/28/back-from-vacation/25389064-p647.jpg" width="500"></a>
-</div>
-We had a few days of true rest and relaxation at the beach. Very very nice.
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/automatically-creating-tasks-from-email-in-ou">Automatically Creating Tasks From Email in Outlook</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-03-16T01:54:00-06:00" pubdate data-updated="true">Mar 16<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><span style="font-size: x-small;"><em><strong>Please note:</strong> I am no longer using Windows nor Outlook, so unfortunately I cannot offer any help with problems you encounter using these scripts and techniques.</em></span></p>
-<p>Over the last few days I have been redoing my GTD-under-Outlook setup, based on the instructions available in the &#8221;<a href="https://secure.davidco.com/store/product.php?productid=16426&amp;cat=0&amp;page=1">GTD and Outlook</a>&#8221; guide from DavidCo (I will write more about my setup later). One of the tricks the guide suggest is creating a mail rule on outgoing mail, which scans the message body for a special tag (/wf or *wf* are suggested) and automatically adds the message to the @WAITING FOR email folder. </p>
-<p></p> This is a very nice idea, and I am a fan of automating things as much as possible, so it really strikes a cord with me. Unfortunately, I am not using a @WAITING FOR email folder, instead I have just my @WAITING FOR task category. As strange as it sounds, Outlook does not have an email filter rule for automatically creating a task from an outgoing or incoming email message. For incoming messages there is a rule for flagging the message for &#8220;Follow up&#8221;, which creates a &#8220;to do&#8221; item but not a Task in itself (this is very confusing). This would be fine except that Follow-Up items are not synchronized to <a href="http://toodledo.com/">Toodledo</a> by the <a href="http://www.chromadrake.com/ChromaticDragon/software/ToodledoSyncInfo.aspx">ToodleDoSync application</a>, and hence not synchronized to my iPhone. <p></p> So, evidently I had to solve this, and here is how I did it. <p></p> I noticed that there is an email action for &#8220;running a script&#8221;. It turns out the &#8220;script&#8221; <a href="http://support.microsoft.com/kb/306108">must be a subroutine written in VisualBasic for Applications</a> (VBA) from inside Outlook. A Google search for &#8221;<a href="http://www.google.com/search?sourceid=chrome&amp;ie=UTF-8&amp;q=outlook+automatically+create+task+from+email">outlook create task from email</a>&#8221; yielded a few good hits, including <a href="http://www.outlookcode.com/codedetail.aspx?id=959">this one</a>. It does pretty much what I want, except that the text and attachments of the message are copied into the task body, which I don&#8217;t like because (1) most formatting from the original email is lost, and (2) in my testing, some messages with attachments produced VBA errors. So I modified it to just attach a copy of the original message into the task, which preserves both its formatting and attachments identically. I made the rule it so that the tasks are created based on incoming mail because <a href="http://blog.zzamboni.org/automatically-cc-myself-in-outlook">I copy myself automatically on all messages I send</a> (in fact I have disabled saving messages to the &#8220;Sent Items&#8221; folder), and this makes it possible to create tasks by emailing my Exchange account from other locations.
-<p>As a bonus, I modified the script so that any text you type after the /wf tag becomes the title of the newly-created task (if you don&#8217;t type anything, the subject of the email message is used). This makes it easier to give your @WAITING FOR items a good, descriptive title upfront.</p>
-<p>So here are the detailed steps of what you need to do: </p>
-<p></p> (these instructions are based on Outlook 2010 which is what I use, if you use 2007 or prior you&#8217;ll have to find by yourself where the different options and menus are, which shouldn&#8217;t be all that difficult) <p></p> 
-<ol>
-<li>In the Developer tab, click on &#8220;Visual Basic&#8221;, which opens the VBA development environment, and unless you already have other macros installed, should give you a blank window. <br><div class="p_embed p_image_embed">
-<img alt="Vba" height="126" src="/images/2011/03/16/automatically-creating-tasks-from-email-in-ou/23077308-vba.png" width="422">
-</div>
-</li>
-<li>Paste the code:<br><script src="https://gist.github.com/868510.js?file=outlook_MakeWaitingForTaskWithAttachmentFromCurrentMessage.bas"></script>
-</li>
-<li>The code includes both the &#8220;script&#8221; to use in an email rule (which receives the email message as argument) and a macro (without arguments) so that you can run it manually from the Macros menu (also in the Developer tab). Try it out - select an email message, choose the macro from the Macros menu, and check that a new task in the @WAITING FOR category is created, with the original message as an attachment. </li>
-<li>If needed, modify the category to which the task is assigned (or leave it empty to create an uncategorized task). </li>
-<li>The code by default adds the recipient of the message to the beginning of the task title, separated by a colon (of the form &#8220;recipient: subject&#8221;). This makes it easier to see pending items per person (and, if you use the 2Do iPhone app, it automatically groups entries by the text before the colon, which makes it even easier to process. If you don&#8217;t want this, modify the value of addRecipient to &#8220;False&#8221;.</li>
-<li>To ensure that the macros run correctly after restarting Outlook, you have to sign it digitally, following the instructions here: <a href="http://office.microsoft.com/en-us/outlook-help/digitally-sign-a-macro-project-HA001231781.aspx">http://office.microsoft.com/en-us/outlook-help/digitally-sign-a-macro-project&#8230;</a>. Create a self-signed certificate and use it for signing the macro package. I had to restart Outlook for the digital signature to take proper effect. </li>
-<li>Create the rule that will invoke the new subroutine on appropriate incoming email message(to create a new rule open the Home tab, then the Rules menu, then &#8220;Manage Rules and Alerts&#8221;, create a blank rule for incoming messages, choose the appropriate criteria, and click on the underlined parts to define the parameters). These are the criteria I used: my rule operates on incoming mail from any of my accounts (so that only I can create Waiting For tasks for myself) and that contains &#8220;/wf&#8221; or &#8220;/*wf*/&#8221; in the body (in practice I always use /wf). I choose to automatically move the message to a local Outlook file (I have a pretty restrictive server quota), but you may want to skip this step. I also mark the message as read automatically, and of course I invoke the script created in the previous steps. <div class="p_embed p_image_embed">
-<a href="/images/2011/03/16/automatically-creating-tasks-from-email-in-ou/23077311-rule.png"><img alt="Rule" height="123" src="/images/2011/03/16/automatically-creating-tasks-from-email-in-ou/23077311-rule.png" width="500"></a>
-</div>
-</li>
-<li>Test it out. Send a message to yourself that contains /wf in the body. What I do in practice is that I include the /wf at the end of the message, and make it 1-point font and white so it&#8217;s invisible to most people, but still detectable by the filter. After the message arrives you should see the new task appear in the appropriate category, containing the original message as an attachment. If you want to give the task a custom title instead of using the email subject, type it after the /wf, like this: &#8220;/wf Response about foo bar&#8221;. The email recipient will still be added when you specify a custom title, unless you have disabled it in the code (see step 5).</li>
-</ol>
-<p>Of course, when using this to flag messages sent to other people, you need to make sure you either automatically cc yourself (if you have created the rule on incoming mail), or that you create it on outgoing mail. I have not tested this case, but the &#8220;run a script&#8221; option is there as well for outgoing messages, so I don&#8217;t see a reason why it should not work. </p>
-<p></p> Have fun.
-<p> </p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/overhauling-my-gtd-system-under-windows">Overhauling My GTD System Under Windows</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-03-14T00:09:00-06:00" pubdate data-updated="true">Mar 14<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>As you may know, I&#8217;m a reluctant switcher from Mac to Windows. I am also a fan of <a href="http://en.wikipedia.org/wiki/Getting_Things_Done">GTD</a>. I had been using <a href="http://jello-dashboard.net/">Jello Dashboard</a> (JD) to implement GTD under Outlook. JD is a very nice system, the developer is friendly and responsive, and I had even written several patches to adapt it to my way of working. I was even in the process of drafting a series of blog posts titled &#8220;My GTD under Outlook setup&#8221;.</p>
-<p>However, a couple of months ago JD stopped working for me. Not in the technical sense, mind you, but in the GTD sense. I stopped processing my Inbox, I stopped updating my lists, and of course I stopped checking them for getting my next actions. It didn&#8217;t happen all at once, but over time I stopped having confidence in my system.</p>
-<p>What happened?</p>
-<p>I have come to the conclusion that the main reason I stopped using and trusting JD was what <a href="http://www.davidco.com/david_allen.php">David Allen</a> calls &#8220;friction&#8221;. A system that has a lot of friction, Allen says, will eventually become unused and untrusted (I am paraphrasing, but the message is there in his books and articles). JD, as nice as it is, requires you to switch to a different &#8220;mode&#8221; within Outlook to use it, since it is essentially a web application that runs inside Outlook (it is all written in Javascript). This means that as I am processing my mailbox, for example, and encounter an actionable email, I cannot simply create an actionable task at that point. I have to (1) switch to JD, (2) find the email in JD&#8217;s view of my Inbox, which is different than the one in Outlook Mail, (3) mark it as actionable, tag it and file it, and (4) go back to my Outlook Inbox to continue processing it. Friction.</p>
-<p>What is supposed to happen, I guess, is that you do all the processing from inside JD. But JD&#8217;s mail viewer is not nearly as nice as the native Outlook one (for example, it shows all messages as plain text), it is slower, and does not have a threaded message view, among many other differences. The result was that my mode of operation, while I was still using JD, was to read my mail in Outlook, archive or delete non-actionable messages, and then switch to JD just to file the remaining ones as actions. Of course, as my workload increased, I stopped doing the switch as frequently, due to the mental friction of having to deal with the &#8220;not as nice&#8221; environment and losing time and momentum in the process.</p>
-<p>And slowly, over time, I fell back into old bad habits: keeping things in my Inbox because I would need them later, and working off it. As a years-old GTD practitioner, I can tell you that the difference was noticeable. I started missing commitments and forgetting things, I became crankier and more stressed, and both my personal and professional lives suffered.</p>
-<p>But the nice thing about GTD is that it is very forgiving. If you &#8220;fall off the wagon&#8221;, all you have to do is do a good mind sweep and review, start recapturing stuff, and be on your way.</p>
-<p>But first, I had to overhaul my system. I was sure that if I started capturing stuff into JD again, I would eventually encounter the same problem. So I went back to the basics: I signed up for a free <a href="http://gtdconnect.com/">GTD Connect</a> trial (GTD Connect is an amazing resource, too bad I cannot at the moment spend USD$50-a-month on it), downloaded the &#8220;GTD and Outlook 2007&#8221; guide and the Outlook 2010 supplement, and got to work. Followed the instructions, removed all my categories (JD uses categories for projects as well and for all its tags, so I had over a hundred of them), set it up with the minimum recommended set, and got to work on processing all my accumulated stuff.</p>
-<p>I am not done yet, mind you, since I have literally hundreds of old tasks and emails, but I am making steady progress. I feel calmer than I was only a few days ago, because I am again slowly capturing all my stuff in a system that I hope can become trusted. For the first time in months I am decreasing my pile instead of increasing it constantly. The amount of things to do remains the same, but the pile of amorphous &#8220;stuff&#8221; that is there giving me the creeps has decreased. Eventually I need to get to the point where I can continue maintaining my system in cruise control, keeping things under control. I will blog more details about my specific setup later.</p>
-<p>My conclusion is this: if you fall off the GTD wagon, just get back in! And don&#8217;t be afraid to throw away your old system if you realize it is not working for you. The beauty of GTD is that it is not tied to a specific toolset, and if the tools you use do not support your good habits, you can easily switch them for others that do.</p>
-<p>Reduce the friction, and it will improve your life.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/single-tap-conference-dialing-in-ios-43">Single-tap Conference Dialing in iOS 4.3</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-03-12T17:03:00-06:00" pubdate data-updated="true">Mar 12<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Apple released iOS 4.3 a few days ago, and if you follow this topic at all, you have probably already heard all about the Personal Hotspot feature, AirPlay enhancements, and whatnot. But buried in the notes for this release was a new feature that caught my attention:</p>
-<blockquote class="posterous_short_quote">
-<em>Single tap conference call dialing with a pause to send a passcode</em><br>
-</blockquote>
-<p>I have found almost no mentions of this new feature online (most reviews focus on the &#8220;bigger&#8221; features), so I thought I&#8217;d explore it a little bit.</p>
-<p></p>  <strong>Warning: Unless you spend your days in conference calls (like me), you will probably be bored to tears by this. You&#8217;ve been warned.</strong><p></p>  First, a note about how I use my iPhone in this respect. I have a number of conference calls that I dial often. For these, I have created contacts that include the number to dial, followed by a long-enough pause (inserted through trial-and-error) and then any codes that have to be entered. For example, one such entry might look like this: &#8220;018001234567,,,987654#&#8221;. This gives already single-tap dialing of conference calls. This works for more complex cases. For example, for my own audioconference line, I need to dial the conference code, my moderator code, and a few other things. This entry looks something like this: &#8220;0018001234567,,89786756#,,*,,122334#,1&#8221;. This is very handy and it does everything except for speaking my name at the appropriate point in the sequence (it would be great if I could record it and play it back automatically at the correct moment).<p></p>  So what does the new feature do? It adds a &#8220;wait&#8221; button in addition to the &#8220;pause&#8221; button:<p></p>  <div class="p_embed p_image_embed">
-<a href="/images/2011/03/12/single-tap-conference-dialing-in-ios-43/22894252-IMG_16441.PNG"><img alt="Img_16441" height="750" src="/images/2011/03/12/single-tap-conference-dialing-in-ios-43/22894252-IMG_16441.PNG" width="500"></a>
-</div>
-<p></p>  When you press it, it appears as a semicolon, and the effect is that a button will appear after dialing the part before the semicolon, and a button will appear to dial the following parts. You can insert multiple waits in the number, and each press of the &#8220;dial&#8221; button will advance to the next part of the number:<p></p>  <div class="p_embed p_image_embed">
-<a href="/images/2011/03/12/single-tap-conference-dialing-in-ios-43/22894253-IMG_16451.PNG"><img alt="Img_16451" height="750" src="/images/2011/03/12/single-tap-conference-dialing-in-ios-43/22894253-IMG_16451.PNG" width="500"></a>
-</div>
-<p></p>  So, is this useful? For me, for frequently-dialed conference lines, I prefer my current method, since I don&#8217;t need any manual intervention. However, I think this new feature can be useful to include extension numbers in contacts. This is something I had never figured how to do, and now I can include the extension number in the same contact following a wait.
-<p>
-</p>
-<p>Sadly, this new feature does nothing to make phone numbers included in meeting invitation clickable, so they could be dialed automatically. This would indeed be a welcome addition.</p>
 <p></p>
+<div>Apparently this switches the application for the mailto: protocol, but not for message:, nor for .eml files. The solution was to <b>use Sparrow&#8217;s preference panel</b> to set it again as the default email client, and then disable it. Then Sparrow correctly sets all the protocol handlers back to their default values.</div>
+<p></p>
+<div>
+<div class="p_embed p_image_embed">
+<a href="/images/2012/01/25/changing-message-protocol-handler-from-sparro/37129836-PastedGraphic-2.png"><img alt="Pastedgraphic-2" height="184" src="/images/2012/01/25/changing-message-protocol-handler-from-sparro/37129836-PastedGraphic-2.png" width="500"></a>
+</div>
+</div>
 </div>
   
   
@@ -480,7 +168,7 @@ We had a few days of true rest and relaxation at the beach. Very very nice.
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/how-to-fix-texexpand-error-more-than-one-inpu">How to Fix &#8220;Texexpand Error: More Than One Input File Specified&#8221; in Latex2html</a></h1>
+      <h1 class="entry-title"><a href="/blog/how-to-remove-a-subprojectsubmodule-to-a-git">How to Remove a Subproject/submodule to a Git-svn Repository</a></h1>
     
     
       <p class="meta">
@@ -496,7 +184,7 @@ We had a few days of true rest and relaxation at the beach. Very very nice.
   
 
 
-<time datetime="2011-01-20T00:24:00-06:00" pubdate data-updated="true">Jan 20<span>th</span>, 2011</time>
+<time datetime="2012-01-25T03:16:00-06:00" pubdate data-updated="true">Jan 25<span>th</span>, 2012</time>
         
       </p>
     
@@ -504,13 +192,318 @@ We had a few days of true rest and relaxation at the beach. Very very nice.
 
 
   <div class="entry-content"><div class="posterous_bookmarklet_entry">
-      <blockquote class="posterous_medium_quote">There&#8217;s a bug that causes problems when running latex2html on files which have spaces in the path.  The workaround is to either move things to folders with no spaces, or add appropriate symbolic links.</blockquote>
-
-<div class="posterous_quote_citation">via <a href="http://ubuntuforums.org/showthread.php?t=358775">ubuntuforums.org</a>
+      <blockquote class="posterous_long_quote">
+<p>To sum up, you delete the offending directory and then run something to the effect of </p>
+<p><code>
+git filter-branch --index-filter \<br>
+ 'git rm --cached --ignore-unmatch path/to/the/formerly/misbehaving/module'</code></p>
+</blockquote>
+<div class="posterous_quote_citation">via <a href="http://ignoredbydinosaurs.com/2011/06/quick-trip-panic-room">ignoredbydinosaurs.com</a>
 </div>
-    <p>This error had me stumped in trying to process a latex file with latex2html:</p>
-<p>texexpand: Error: More than one input file specified.<br>texexpand failed: No such file or directory</p>
-<p>The fix is simple - make sure the path of the current directory does not have any spaces.</p>
+    <p>I accidentally added another git repository to a git-svn repository, which makes it die when trying to push the changes. This technique helped me fix it. Documenting mostly so I remember when it happens again sometime.</p>
+</div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/nwdiag-simple-network-diagram-image-generator">Nwdiag - Simple Network-diagram Image Generators — Blockdiag 1.0 Documentation</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-01-23T22:06:00-06:00" pubdate data-updated="true">Jan 23<span>rd</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class="posterous_bookmarklet_entry">
+<blockquote class="posterous_long_quote">
+<p><cite>nwdiag</cite> generates network-diagram image file from .diag file. .diag file is similar to DOT file (graphviz’s).</p>
+<p>You can get diagrams like this.</p>
+<p class="nwdiag"><img src="http://blockdiag.com/en/_images/nwdiag-e6cb3df814f9c072916614f4c1ebccb38ea4482f.png" height="444" alt="None" width="608"></p>
+</blockquote>
+<div class="posterous_quote_citation">
+<a href="http://blockdiag.com/en/nwdiag/index.html">blockdiag.com</a> via <a href="https://twitter.com/#!/saintaardvark/status/161580734518276098">@saintaardvark</a>
+</div>
+<p>Very useful, like Graphviz but specifically for network diagrams. You can probably obtain the same result with Graphviz with the appropriate amount of dot magic, but nwdiag makes this very easy. Other useful graph types in sister projects: <a href="http://blockdiag.com/en/index.html">http://blockdiag.com/en/index.html</a></p>
+</div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/harbin-international-ice-and-snow-festival-20">Harbin International Ice and Snow Festival 2012 - the Big Picture</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-01-22T01:37:00-06:00" pubdate data-updated="true">Jan 22<span>nd</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class="posterous_bookmarklet_entry">
+      <div class="p_embed p_image_embed">
+<a href="/images/2012/01/22/harbin-international-ice-and-snow-festival-20/37005798-media_httpinapcachebo_szdBp.jpg"><img alt="Media_httpinapcachebo_szdbp" height="360" src="/images/2012/01/22/harbin-international-ice-and-snow-festival-20/37005798-media_httpinapcachebo_szdBp.jpg" width="500"></a>
+</div>
+<div class="posterous_quote_citation">via <a href="http://www.boston.com/bigpicture/2012/01/harbin_international_ice_and_s.html">boston.com</a>
+</div>
+    <p>A-ma-zing. All made from ice.</p>
+</div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/the-joy-of-books-youtube">The Joy of Books - YouTube</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-01-18T19:08:00-06:00" pubdate data-updated="true">Jan 18<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class="posterous_bookmarklet_entry">
+      <iframe allowfullscreen="true" src="http://www.youtube.com/embed/SKVcQnyEIT8?wmode=transparent" frameborder="0" height="417" width="500"></iframe>
+
+<div class="posterous_quote_citation">via <a href="http://www.youtube.com/watch?feature=player_embedded&amp;v=SKVcQnyEIT8">youtube.com</a>
+</div>
+    <p>Wow, the amount of work that went into making this makes me dizzy.</p>
+</div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/every-presentation-ever">Every Presentation Ever</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-01-18T15:41:00-06:00" pubdate data-updated="true">Jan 18<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class="posterous_bookmarklet_entry">
+<iframe width="560" height="315" src="http://www.youtube.com/embed/rIABo0d9MVE" frameborder="0" allowfullscreen></iframe>
+
+<div class="posterous_quote_citation">via <a href="http://www.youtube.com/watch?v=rIABo0d9MVE">youtube.com</a>
+</div>
+    <p>Communicate Better.</p>
+</div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/i-broke-my-zagg-smartbuds">I Broke My Zagg Smartbuds :(</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-01-13T20:36:33-06:00" pubdate data-updated="true">Jan 13<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div>The cable caught on my knee while working out and snapped off the microphone unit :( Hope to get it repaired or replaced, I love these headphones.</div>
+<p></p>
+<div>
+<div class="p_embed p_image_embed">
+<a href="/images/2012/01/13/i-broke-my-zagg-smartbuds/36702009-IMG_0110.jpeg"><img alt="Img_0110" height="373" src="/images/2012/01/13/i-broke-my-zagg-smartbuds/36702009-IMG_0110.jpeg" width="500"></a>
+</div>
+<p></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px;"><span class="Apple-converted-space"> </span><br class="webkit-block-placeholder"></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px;"><span class="Apple-converted-space"> </span><br class="webkit-block-placeholder"></p>
+<p></p> </div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/how-one-bit-of-stupidity-could-have-brought-d">How One Bit of Stupidity Could Have Brought Down a Multi-Million Dollar Media Company | Peter Shankman</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-01-13T13:14:00-06:00" pubdate data-updated="true">Jan 13<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class="posterous_bookmarklet_entry">
+      <blockquote class="posterous_short_quote">the man sitting next to me was reading proprietary information, information that could be very, very damaging to this company if in the wrong hands, and he couldn’t have cared less about it</blockquote>
+
+<div class="posterous_quote_citation">via <a href="http://shankman.com/how-pure-stupidity-can-bring-down-a-multi-million-dollar-media-company/">shankman.com</a>
+</div>
+    <p>Fascinating, scary story. It&#8217;s amazing the things people do in airplanes (particularly on their laptops/iPads/phones) as if no one was watching them. Situational awareness is very important.</p>
+</div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/the-restart-page-free-unlimited-rebooting-exp">The Restart Page - Free Unlimited Rebooting Experience From Vintage Operating Systems</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-01-08T00:29:00-06:00" pubdate data-updated="true">Jan 8<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class="posterous_bookmarklet_entry">
+      <div class="p_embed p_image_embed">
+<img alt="Media_httpwwwtheresta_abcco" height="199" src="/images/2012/01/08/the-restart-page-free-unlimited-rebooting-exp/36480688-media_httpwwwtheresta_aBCCo.png" width="271">
+</div>
+<div class="posterous_quote_citation">via <a href="http://daringfireball.net/linked/2012/01/07/restart">daring fireball.net</a>
+</div>
+    <p>Awesome. So many memories.</p>
 </div>
 </div>
   
@@ -540,19 +533,19 @@ We had a few days of true rest and relaxation at the beach. Very very nice.
       </li>
     
       <li class="post">
-        <a href="/blog/cfengine-talks-at-picc12-conference">CFEngine talks at PICC&#8217;12 conference</a>
+        <a href="/blog/included-in-the-linuxcon-registration-packet">Included in the #LinuxCon registration packet: a skateboard#</a>
       </li>
     
       <li class="post">
-        <a href="/blog/purdue-at-night">Purdue at Night</a>
+        <a href="/blog/letters-of-note-regarding-your-dam-complaint">Letters of Note: Regarding your dam complaint</a>
       </li>
     
       <li class="post">
-        <a href="/blog/blog-learning-cfengine-3">Learning CFEngine 3 has been released</a>
+        <a href="/blog/the-cfengine-agent-as-drawn-by-my-6-year-old">The #CFEngine agent, as drawn by my 6-year-old daughter :) </a>
       </li>
     
       <li class="post">
-        <a href="/blog/analytics-put-to-a-good-cause">Analytics put to a good cause</a>
+        <a href="/blog/when-a-dragon-mated-the-space-station-ht-bada">When a Dragon mated the space station /ht @BadAstronomer</a>
       </li>
     
   </ul>

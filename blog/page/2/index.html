@@ -9,7 +9,7 @@
   <meta name="author" content="Diego Zamboni">
 
   
-  <meta name="description" content="Yesterday my external Western Digital disk (which I use for Time Machine, among other things) stopped mounting automatically when I plug it in. This &hellip;">
+  <meta name="description" content="I am at Purdue to give a CFEngine talk and visit some old colleagues, here are some photos I took during a night walk right after checking into my &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -74,7 +74,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/fix-journal-in-an-hfs-file-system">Fix Journal in an HFS+ File System</a></h1>
+      <h1 class="entry-title"><a href="/blog/purdue-at-night">Purdue at Night</a></h1>
     
     
       <p class="meta">
@@ -90,61 +90,20 @@
   
 
 
-<time datetime="2011-12-15T00:07:00-06:00" pubdate data-updated="true">Dec 15<span>th</span>, 2011</time>
+<time datetime="2012-03-26T00:01:14-06:00" pubdate data-updated="true">Mar 26<span>th</span>, 2012</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>Yesterday my external Western Digital disk (which I use for Time Machine, among other things) stopped mounting automatically when I plug it in. This may *cough*definitely*cough*have something to do with me unmounting it forcefully while it was doing a backup, since I was in a hurry.</p>
-<div>Disk Utility reported everything was OK with the disk, but it still failed to mount. Upon poking a bit deeper, I found these messages in the logs:</div>
-<p></p>
-<div>
-<div><span style="font-family: Courier New;">12/14/11 11:49:00.000 PM kernel: jnl: disk2s2: <strong>open: journal magic is bad</strong> (0x0 != 0x4a4e4c78)</span></div>
+  <div class="entry-content">I am at Purdue to give a CFEngine talk and visit some old colleagues, here are some photos I took during a night walk right after checking into my hotel. I graduated in 2001, and the last time I visited was almost 10 years ago. Time really flies, there are many new things in campus (including the shiny new Computer Science Building, which I had never seen), but so many others remain unchanged. It&#8217;s awesome to be back.<p></p>
+<div class="p_embed p_image_embed">
+<a href="/images/2012/03/26/purdue-at-night/39410834-IMG_0506.jpeg"><img alt="Img_0506" height="669" src="/images/2012/03/26/purdue-at-night/39410834-IMG_0506.jpeg" width="500"></a>
+<a href="/images/2012/03/26/purdue-at-night/39410835-IMG_0507.jpeg"><img alt="Img_0507" height="374" src="/images/2012/03/26/purdue-at-night/39410835-IMG_0507.jpeg" width="500"></a>
+<a href="/images/2012/03/26/purdue-at-night/39410836-IMG_0508.jpeg"><img alt="Img_0508" height="374" src="/images/2012/03/26/purdue-at-night/39410836-IMG_0508.jpeg" width="500"></a>
+<a href="/images/2012/03/26/purdue-at-night/39410837-IMG_0512.jpeg"><img alt="Img_0512" height="669" src="/images/2012/03/26/purdue-at-night/39410837-IMG_0512.jpeg" width="500"></a>
 </div>
-<div>
-<div><span style="font-family: Courier New;">12/14/11 11:49:00.000 PM kernel: hfs: late jnl init: failed to open/create the journal (retval 0).</span></div>
-</div>
-<div>
-<div><span style="font-family: Courier New;">12/14/11 11:49:00.000 PM kernel: hfs_mounthfsplus: hfs_late_journal_init returned (0)</span></div>
-</div>
-<div>
-<div><span style="font-family: Courier New;">12/14/11 11:49:00.000 PM kernel: hfs_mounthfsplus: encountered errorr (22)</span></div>
-</div>
-<div>
-<div><span style="font-family: Courier New;">12/14/11 11:49:00.000 PM kernel: hfs_mountfs: encountered failure 22 </span></div>
-</div>
-<div>
-<div><span style="font-family: Courier New;">12/14/11 11:49:00.000 PM kernel: hfs_mount: hfs_mountfs returned 22</span></div>
-</div>
-<p></p>
-<div>Aha! Journal error. A bit of Google searching led me to <a href="http://dmunsie.wordpress.com/code/hacks/">this page</a>, where one comment gave me the key:</div>
-<p></p>
-<div>
-<div><span style="font-family: Courier New;">root# mkdir /tmp/disk &amp;&amp; mount_hfs -j /dev/disk2s2 /tmp/disk</span></div>
-</div>
-<div>
-<div><span style="font-family: Courier New;">root# diskutil disableJournal /tmp/disk</span></div>
-</div>
-<div>
-<div><span style="font-family: Courier New;">An error occurred journaling the file system: The underlying task reported failure on exit (-69860)</span></div>
-</div>
-<div>
-<div><span style="font-family: Courier New;">root# diskutil enableJournal /tmp/disk</span></div>
-</div>
-<div>
-<span style="font-family: Courier New;"> </span>
-<div><span style="font-family: Courier New;">Journaling was already enabled for volume Casa on disk2s2</span></div>
-</div>
-<div>
-<div><span style="font-family: Courier New;">root# diskutil unmount /tmp/disk</span></div>
-</div>
-<div>
-<div><span style="font-family: Courier New;">Volume Casa on disk2s2 unmounted</span></div>
-</div>
-<p></p>
-<div>Despite the error in the &#8220;disableJournal&#8221; command, after this sequence the Finder was able to mount the disk, and things seem to be working fine. The trick in the first command is the -j option, since it allows the disk to be mounted (without journaling), so that the disableJournal/enableJournal commands can be issued.</div>
 </div>
   
   
@@ -157,7 +116,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/learning-cfengine-3early-release-now-availabl">&#8220;Learning CFEngine 3&#8221; Early Release Now Available -use AUTHD to Get 40-50% Off</a></h1>
+      <h1 class="entry-title"><a href="/blog/blog-learning-cfengine-3">Learning CFEngine 3 Has Been Released</a></h1>
     
     
       <p class="meta">
@@ -173,7 +132,7 @@
   
 
 
-<time datetime="2011-12-06T15:03:00-06:00" pubdate data-updated="true">Dec 6<span>th</span>, 2011</time>
+<time datetime="2012-03-24T01:23:00-06:00" pubdate data-updated="true">Mar 24<span>th</span>, 2012</time>
         
       </p>
     
@@ -181,22 +140,15 @@
 
 
   <div class="entry-content"><div class="posterous_bookmarklet_entry">
-<div>
-<div style="float: left;">
-<div class="detailimgcontainer"><a href="http://shop.oreilly.com/product/0636920022022.do?sortby=publicationDate" target="_parent"> <img src="http://akamaicovers.oreilly.com/images/0636920022022/cat.gif" border="0" height="236" alt="Automated system administration for sites of any size" width="180"></a></div>
-<p> </p>
+<blockquote class="posterous_long_quote">
+<div><a href="http://shop.oreilly.com/product/0636920022022.do">
+<div class="posterousGalleryMainDiv p_embed p_image_embed"><img src="/images/2012/03/24/blog-learning-cfengine-3/cat.gif" height="236" alt="Cat" width="180"></div>
+</a></div>
+<p>I am ecstatic to announce that the book is now officially released!</p>
+</blockquote>
+<div class="posterous_quote_citation">via <a href="http://blog.cf-learn.info/">blog.cf-learn.info</a>
 </div>
-<div class="detailheader"><a href="http://shop.oreilly.com/product/0636920022022.do">Learning CFEngine 3</a></div>
-<div class="detailSubHeader">Automated system administration for sites of any size</div>
-<div>
-<div class="AuthorName">By <a href="http://shop.oreilly.com/product/0636920022022.do#tab_03" class="byLineLink">Diego Zamboni</a>
-</div>
-</div>
-</div>
-<div class="posterous_quote_citation">via <a href="http://shop.oreilly.com/product/0636920022022.do">shop.oreilly.com</a>
-</div>
-<p>My upcoming book &#8220;Learning CFEngine 3&#8221; is now available as an Early Release, which includes (for now) the first four chapters of the book. You can use the code AUTHD to get 40% off the print book, or 50% off the ebook version.</p>
-<p>Go get yours! And of course, I&#8217;d be happy to receive any feedback you have.</p>
+<p>I am so happy :-)</p>
 </div>
 </div>
   
@@ -210,7 +162,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/remapping-mac-modifier-keys-on-emacs-233">Remapping Mac Modifier Keys on Emacs 23.3</a></h1>
+      <h1 class="entry-title"><a href="/blog/analytics-put-to-a-good-cause">Analytics Put to a Good Cause</a></h1>
     
     
       <p class="meta">
@@ -226,25 +178,19 @@
   
 
 
-<time datetime="2011-11-27T01:47:00-06:00" pubdate data-updated="true">Nov 27<span>th</span>, 2011</time>
+<time datetime="2012-03-15T17:05:57-06:00" pubdate data-updated="true">Mar 15<span>th</span>, 2012</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>I just switched from <a href="http://homepage.mac.com/zenitani/emacs-e.html">Carbon Emacs</a> (which is old Emacs 22.x) to <a href="http://vgoulet.act.ulaval.ca/en/emacs/mac">Emacs for OS X Modified</a> on my Mac (which is a Cocoa app, and Emacs 23.3).</p>
-<p></p>
-<div>One of the unwelcome changes was that the Emacs &#8216;Meta&#8217; modifier is now by default mapped to the Option key and not Command as before. But this gave me the opportunity to learn how to map the Mac keyboard modifier keys arbitrarily. I now have the following in my .emacs:</div>
-<p></p>
-<div>
-<div><p><a href="https://gist.github.com/1400862">https://gist.github.com/1400862</a></p></div>
+  <div class="entry-content">Well, here&#8217;s a good use of web analytics. From LinkedIn:<br><div>
+<br class="Apple-interchange-newline"><blockquote type="cite"><div style="">
+<div style="color: rgb(51, 51, 51); font-family: arial, sans-serif; font-size: 12px;">Seeing a lot of daily digests piling up?<table border="0" width="1"><tr><td><p></p></td></tr></table>Diego, we noticed you haven&#8217;t visited <some group in which i only slightly interested><span class="Apple-converted-space"> </span></some>
+</div>lately. To help keep your email tidy, we&#8217;ve switched you from daily emails to weekly digests from this group - we hope this suits you better!</div></blockquote>
 </div>
-<p></p>
-<div>I&#8217;m documenting it here just in case someone (or my future self, when I need to redo my configuration at some point) finds it useful.</div>
-<p></p>
-<div>References: <a href="http://stackoverflow.com/q/2738660">http://stackoverflow.com/q/2738660</a> and <a href="http://www.emacswiki.org/emacs/MetaKeyProblems#toc15">http://www.emacswiki.org/emacs/MetaKeyProblems#toc15</a>
-</div>
+<br><div>Actually useful.</div>
 </div>
   
   
@@ -257,7 +203,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/security-in-the-third-wave-of-it-engineering">&#8220;Security in the Third Wave of IT Engineering&#8221;</a></h1>
+      <h1 class="entry-title"><a href="/blog/a-dogs-gotta-do-what-a-dogs-gotta-doo-doo-the">A Dog&#8217;s Gotta Do What a Dog&#8217;s Gotta Doo Doo | the Sun |News</a></h1>
     
     
       <p class="meta">
@@ -273,32 +219,19 @@
   
 
 
-<time datetime="2011-11-24T17:56:00-06:00" pubdate data-updated="true">Nov 24<span>th</span>, 2011</time>
+<time datetime="2012-03-13T17:29:00-06:00" pubdate data-updated="true">Mar 13<span>th</span>, 2012</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>Today I gave a presentation at UNAM&#8217;s 2011 Computer Security Conference in Mexico City. Below you will find my presentation (done using prezi.com, follow <a href="http://prezi.com/s3vthi4fbz5q/security-in-the-third-wave-of-it-engineering/">this link</a> if you can&#8217;t see it below). You can also get the <a href="http://dl.dropbox.com/u/869/zamboni_congreso2011.pdf">PDF version</a>.</p>
-<p> </p>
-<div class="prezi-player">
-<object height="363" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="500">
-<param name="movie" value="http://prezi.com/bin/preziloader.swf">
-<param name="allowfullscreen" value="true">
-<param name="allowscriptaccess" value="always">
-<param name="bgcolor" value="#ffffff">
-<param name="flashvars" value="prezi_id=s3vthi4fbz5q&amp;lock_to_path=0&amp;color=ffffff&amp;autoplay=no&amp;autohide_ctrls=0">
-<embed src="http://prezi.com/bin/preziloader.swf" type="application/x-shockwave-flash" height="363" flashvars="prezi_id=s3vthi4fbz5q&amp;lock_to_path=0&amp;color=ffffff&amp;autoplay=no&amp;autohide_ctrls=0" width="500"></embed></object>
-<div class="prezi-player-links">
-<p><a href="http://prezi.com/s3vthi4fbz5q/security-in-the-third-wave-of-it-engineering/" title="                                                          Talk about the challenges and benefits for security in the Third Wave.                                                      ">Security in the Third Wave of IT Engineering</a> on <a href="http://prezi.com">Prezi</a></p>
+  <div class="entry-content"><div class="posterous_bookmarklet_entry">
+<script src="http://player.ooyala.com/iframe.js#ec=BjMmtyMzrkTu6hbD7I_rPYIaDCGXPx2F&pbid=NDcyOWI0M2YyMDdkN2YwODU5Mzc5MDUz" height="400px"></script>
+<div class="posterous_quote_citation">via <a href="http://www.thesun.co.uk/sol/homepage/news/4189506/A-dogs-gotta-do-what-a-dogs-gotta-doo-doo.html">thesun.co.uk</a>
 </div>
+    <p>Poor dog, but hilarious video.</p>
 </div>
-<p> </p>
-<p>Related blog posts from cfengine.com:</p>
-<p><a href="https://cfengine.com/blog/the-third-wave">CFEngine - The Third Wave of Configuration Management</a></p>
-<p><a href="https://cfengine.com/blog/sysadmin-3.0-and-the-third-wave">CFEngine, SysAdmin 3.0 and the Third Wave of IT Engineering</a></p>
-<p> </p>
 </div>
   
   
@@ -311,7 +244,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/congreso-de-seguridad-en-computo-2011">Congreso De Seguridad en Computo 2011</a></h1>
+      <h1 class="entry-title"><a href="/blog/githubgitignore">Github/gitignore</a></h1>
     
     
       <p class="meta">
@@ -327,22 +260,20 @@
   
 
 
-<time datetime="2011-11-24T10:53:00-06:00" pubdate data-updated="true">Nov 24<span>th</span>, 2011</time>
+<time datetime="2012-03-12T09:10:00-06:00" pubdate data-updated="true">Mar 12<span>th</span>, 2012</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p></p>
-<div class="p_embed p_image_embed">
-<a href="/images/2011/11/24/congreso-de-seguridad-en-computo-2011/34802338-p168.jpg"><img alt="P168" height="669" src="/images/2011/11/24/congreso-de-seguridad-en-computo-2011/34802338-p168.jpg" width="500"></a>
-<a href="/images/2011/11/24/congreso-de-seguridad-en-computo-2011/34803036-IMG_0096.jpg"><img alt="Img_0096" height="669" src="/images/2011/11/24/congreso-de-seguridad-en-computo-2011/34803036-IMG_0096.jpg" width="500"></a>
-<a href="/images/2011/11/24/congreso-de-seguridad-en-computo-2011/34804253-IMG_0097.jpg"><img alt="Img_0097" height="669" src="/images/2011/11/24/congreso-de-seguridad-en-computo-2011/34804253-IMG_0097.jpg" width="500"></a>
-<a href="/images/2011/11/24/congreso-de-seguridad-en-computo-2011/34806933-IMG_0098.jpg"><img alt="Img_0098" height="669.421487603306" src="/images/2011/11/24/congreso-de-seguridad-en-computo-2011/34806933-IMG_0098.jpg" width="500"></a>
-</div>
+  <div class="entry-content"><div class="posterous_bookmarklet_entry">
+      <blockquote class="posterous_short_quote">A collection of useful .gitignore templates</blockquote>
 
-<p>I&#8217;m attending UNAM&#8217;s computer security conference, giving a talk as well. Some photos from the event (will be updated throughout the day)</p>
+<div class="posterous_quote_citation">via <a href="https://github.com/github/gitignore">github.com</a>
+</div>
+    <p>Useful resource.</p>
+</div>
 </div>
   
   
@@ -355,7 +286,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/all-the-apps-on-my-iphone">All the Apps on My iPhone</a></h1>
+      <h1 class="entry-title"><a href="/blog/heart-stop-beating-jeremiah-zagar-on-vimeo">Heart Stop Beating | Jeremiah Zagar on Vimeo</a></h1>
     
     
       <p class="meta">
@@ -371,34 +302,19 @@
   
 
 
-<time datetime="2011-10-31T10:19:00-06:00" pubdate data-updated="true">Oct 31<span>st</span>, 2011</time>
+<time datetime="2012-03-02T13:03:00-06:00" pubdate data-updated="true">Mar 2<span>nd</span>, 2012</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>I’m doing some cleanup and reorganization, and captured my current app setup as a reference point. Here they are.</p>
-<p>Quick note: The first screen is my most-used apps (some are going out now, like 2Do which I&#8217;ve never liked too much, but was the best way to sync tasks with Outlook, which I&#8217;m no longer forced using). Second screen is all my folders. Third and fourth screens are my girls&#8217; screens, with the games they use when they borrow my phone. The games I play are mostly in the first &#8220;Games&#8221; folder.</p>
-<p></p>
-<div class="p_embed p_image_embed">
-<a href="/images/2011/10/31/all-the-apps-on-my-iphone/33698993-IMG_3019.jpg"><img alt="Img_3019" height="750" src="/images/2011/10/31/all-the-apps-on-my-iphone/33698993-IMG_3019.jpg" width="500"></a>
-<a href="/images/2011/10/31/all-the-apps-on-my-iphone/33698997-IMG_3020.jpg"><img alt="Img_3020" height="750" src="/images/2011/10/31/all-the-apps-on-my-iphone/33698997-IMG_3020.jpg" width="500"></a>
-<a href="/images/2011/10/31/all-the-apps-on-my-iphone/33698982-IMG_3021.jpg"><img alt="Img_3021" height="750" src="/images/2011/10/31/all-the-apps-on-my-iphone/33698982-IMG_3021.jpg" width="500"></a>
-<a href="/images/2011/10/31/all-the-apps-on-my-iphone/33698988-IMG_3022.jpg"><img alt="Img_3022" height="750" src="/images/2011/10/31/all-the-apps-on-my-iphone/33698988-IMG_3022.jpg" width="500"></a>
-<a href="/images/2011/10/31/all-the-apps-on-my-iphone/33698995-IMG_3023.jpg"><img alt="Img_3023" height="750" src="/images/2011/10/31/all-the-apps-on-my-iphone/33698995-IMG_3023.jpg" width="500"></a>
-<a href="/images/2011/10/31/all-the-apps-on-my-iphone/33698989-IMG_3024.jpg"><img alt="Img_3024" height="750" src="/images/2011/10/31/all-the-apps-on-my-iphone/33698989-IMG_3024.jpg" width="500"></a>
-<a href="/images/2011/10/31/all-the-apps-on-my-iphone/33698996-IMG_3025.jpg"><img alt="Img_3025" height="750" src="/images/2011/10/31/all-the-apps-on-my-iphone/33698996-IMG_3025.jpg" width="500"></a>
-<a href="/images/2011/10/31/all-the-apps-on-my-iphone/33698983-IMG_3026.jpg"><img alt="Img_3026" height="750" src="/images/2011/10/31/all-the-apps-on-my-iphone/33698983-IMG_3026.jpg" width="500"></a>
-<a href="/images/2011/10/31/all-the-apps-on-my-iphone/33698987-IMG_3027.jpg"><img alt="Img_3027" height="750" src="/images/2011/10/31/all-the-apps-on-my-iphone/33698987-IMG_3027.jpg" width="500"></a>
-<a href="/images/2011/10/31/all-the-apps-on-my-iphone/33698986-IMG_3028.jpg"><img alt="Img_3028" height="750" src="/images/2011/10/31/all-the-apps-on-my-iphone/33698986-IMG_3028.jpg" width="500"></a>
-<a href="/images/2011/10/31/all-the-apps-on-my-iphone/33698985-IMG_3029.jpg"><img alt="Img_3029" height="750" src="/images/2011/10/31/all-the-apps-on-my-iphone/33698985-IMG_3029.jpg" width="500"></a>
-<a href="/images/2011/10/31/all-the-apps-on-my-iphone/33698998-IMG_3030.jpg"><img alt="Img_3030" height="750" src="/images/2011/10/31/all-the-apps-on-my-iphone/33698998-IMG_3030.jpg" width="500"></a>
-<a href="/images/2011/10/31/all-the-apps-on-my-iphone/33698992-IMG_3031.jpg"><img alt="Img_3031" height="750" src="/images/2011/10/31/all-the-apps-on-my-iphone/33698992-IMG_3031.jpg" width="500"></a>
-<a href="/images/2011/10/31/all-the-apps-on-my-iphone/33698984-IMG_3032.jpg"><img alt="Img_3032" height="750" src="/images/2011/10/31/all-the-apps-on-my-iphone/33698984-IMG_3032.jpg" width="500"></a>
-<a href="/images/2011/10/31/all-the-apps-on-my-iphone/33698991-IMG_3033.jpg"><img alt="Img_3033" height="750" src="/images/2011/10/31/all-the-apps-on-my-iphone/33698991-IMG_3033.jpg" width="500"></a>
-<a href="/images/2011/10/31/all-the-apps-on-my-iphone/33698990-IMG_3034.jpg"><img alt="Img_3034" height="750" src="/images/2011/10/31/all-the-apps-on-my-iphone/33698990-IMG_3034.jpg" width="500"></a>
-<a href="/images/2011/10/31/all-the-apps-on-my-iphone/33698994-IMG_3035.jpg"><img alt="Img_3035" height="750" src="/images/2011/10/31/all-the-apps-on-my-iphone/33698994-IMG_3035.jpg" width="500"></a>
+  <div class="entry-content"><div class="posterous_bookmarklet_entry">
+      <iframe src="http://player.vimeo.com/video/33741794?portrait=0" frameborder="0" height="283" width="500"></iframe>
+
+<div class="posterous_quote_citation">via <a href="http://vimeo.com/33741794">vimeo.com</a>
+</div>
+    <p>Amazing - a continuous-flow artificial heart. You can live without a pulse.</p>
 </div>
 </div>
   
@@ -412,7 +328,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/whats-new-in-cfengine-3-making-system-adminis">What&#8217;s New in CFEngine 3: Making System Administration Even More Powerful - O&#8217;Reilly Radar</a></h1>
+      <h1 class="entry-title"><a href="/blog/six-legged-giant-finds-secret-hideaway-hides">Six-Legged Giant Finds Secret Hideaway, Hides for 80 Years : Krulwich Wonders&#8230; : NPR</a></h1>
     
     
       <p class="meta">
@@ -428,7 +344,7 @@
   
 
 
-<time datetime="2011-10-28T16:24:00-05:00" pubdate data-updated="true">Oct 28<span>th</span>, 2011</time>
+<time datetime="2012-03-02T00:11:00-06:00" pubdate data-updated="true">Mar 2<span>nd</span>, 2012</time>
         
       </p>
     
@@ -437,12 +353,18 @@
 
   <div class="entry-content"><div class="posterous_bookmarklet_entry">
       <blockquote class="posterous_long_quote">
-<a href="https://cfengine.com/">CFEngine</a> is both the oldest and the newest of the popular tools for automating site administration.  Mark Burgess invented it as a free software project in 1993, and years later, as deployments in the field outgrew its original design he gave it a complete rethink and developed the powerful concept of <a href="http://research.iu.hio.no/promises.php">promise theory</a> to make it modular and maintainable.</blockquote>
+<div class="bucketwrap photo462">
+<img class="img462" title="Patrick Honan holds two of the rare Lord Howe Island stick insects." src="http://media.npr.org/assets/img/2012/02/27/patrick_custom.jpg?t=1330533368&amp;s=3" height="616" alt="Patrick Honan holds two of the rare Lord Howe Island stick insects." width="462"><div class="captionwrap">
+                                                                   <span class="creditwrap"><span class="credit">Rod Morris</span>/<span class="rightsnotice"><a href="http://www.rodmorris.co.nz/Beyond-New-Zealand/Beyond-New-Zealand/13993648_pzN6Kn#!i=1135534988&amp;k=B6jk4">www.rodmorris.co.nz</a></span></span>                                 <p></p>
+                              </div>
+                              
 
-<div class="posterous_quote_citation">via <a href="http://radar.oreilly.com/2011/10/whats-new-in-cfengine-3-making.html">radar.oreilly.com</a>
+                           </div>
+                           <a name="more"> </a>                           <p>The story is simple: A bunch of black rats almost wiped out a bunch of gigantic bugs on a little island far, far away from most of us. A few dedicated scientists, passionate about biological diversity, risked their lives to keep the bugs going. For the bugs to get their homes and their future back doesn&#8217;t depend on scientists anymore. They&#8217;ve done their job. Now it&#8217;s up to the folks on Lord Howe Island.</p>
+</blockquote>
+<div class="posterous_quote_citation">via <a href="http://www.npr.org/blogs/krulwich/2012/02/24/147367644/six-legged-giant-finds-secret-hideaway-hides-for-80-years?sc=fb&amp;cc=fp">npr.org</a>
 </div>
-    <p>I contributed to this article by Andy Oram on CFEngine 3. It talks about the history of CFEngine 3, why it is a powerful tool for system administrators, and what is new in the latest releases of both the commercial and the open-source versions of CFEngine.</p>
-<p>(disclaimer: I work for CFEngine AS)</p>
+    <p>Amazing story.</p>
 </div>
 </div>
   
@@ -456,7 +378,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/introduction-to-cfengine-3-nova-webinar">&#8220;Introduction to CFEngine 3 Nova&#8221; Webinar</a></h1>
+      <h1 class="entry-title"><a href="/blog/a-punto-de-comenzar-torneo-de-taekwondo-en-qu">A Punto De Comenzar. Torneo De #TaeKwonDo en Querétaro</a></h1>
     
     
       <p class="meta">
@@ -472,15 +394,21 @@
   
 
 
-<time datetime="2011-10-25T22:53:13-05:00" pubdate data-updated="true">Oct 25<span>th</span>, 2011</time>
+<time datetime="2012-02-18T09:50:08-06:00" pubdate data-updated="true">Feb 18<span>th</span>, 2012</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content">A new version of <a href="https://cfengine.com/nova">CFEngine 3 Nova</a> was released today, and to go with it, there will be a free webinar called &#8221;<a href="http://info.cfengine.com/NewNovaWebinar_Introduction-to-Nova_Registration.html">Introduction to CFEngine 3 Nova</a>&#8221; on November 2nd. It will be presented by one of the members of the core CFEngine team, and it will be a great opportunity to learn more about the new and improved capabilities in this release. If you are interested in CFEngine and maybe thinking of going the commercial route, or you need more information to decide, make sure to attend!<p></p>
-<div>A new version of <a href="https://cfengine.com/community">CFEngine Community</a> (<a href="http://www.cfengine.com/source-code">3.2.3</a>), was also released today.</div>
+  <div class="entry-content"><p></p>
+<div class="p_embed p_image_embed">
+<a href="/images/2012/02/18/a-punto-de-comenzar-torneo-de-taekwondo-en-qu/38058956-image.jpg"><img alt="Image" height="373" src="/images/2012/02/18/a-punto-de-comenzar-torneo-de-taekwondo-en-qu/38058956-image.jpg" width="500"></a>
+</div>
+
+
+<div class="posterous_quote_citation">via <a href="http://tapbots.com/tweetbot">Tweetbot for iPhone</a>
+</div>
 </div>
   
   
@@ -493,7 +421,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/new-job-new-book">New Job, New Book</a></h1>
+      <h1 class="entry-title"><a href="/blog/the-fantastic-flying-books-of-mr-morris-lessm">The Fantastic Flying Books of Mr. Morris Lessmore (2011) - YouTube</a></h1>
     
     
       <p class="meta">
@@ -509,19 +437,20 @@
   
 
 
-<time datetime="2011-10-19T00:21:07-05:00" pubdate data-updated="true">Oct 19<span>th</span>, 2011</time>
+<time datetime="2012-02-17T23:50:00-06:00" pubdate data-updated="true">Feb 17<span>th</span>, 2012</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content">Today I have two big announcements to make.<p></p>
-<div>First, as of this week I have a new job, I am now working with <a href="http://cfengine.com/">CFEngine AS</a>, the company that develops and maintains <a href="http://blog.zzamboni.org/tag/cfengine">cfengine</a>. As you know if you read my blog, I am a big fan of cfengine. It is a mature and able tool that provides extreme flexibility and power to system administrators. The company is full of energy and with very interesting projects to make cfengine even better and more popular than it is today. I am very happy to be working with such a talented team. I will be working with the Products and Services group in a variety of roles and projects, about some of which you may be able to read here as well.</div>
-<p></p>
-<div>Second, and not entirely unrelated, I have been working in the last few months in a book titled <b>Learning CFEngine 3</b>. The book will be published by <a href="http://oreilly.com/">O&#8217;Reilly</a>, and should come out sometime early next year. I can&#8217;t tell you how excited I am to be writing a book for O&#8217;Reilly! I have learned so much from O&#8217;Reilly books throughout the years, so it is truly an honor to be able to join such select company and to contribute something back to the community. The book is a personal project and not part of my job at CFEngine, although of course working at the mothership makes things much easier in many respects, and my new colleagues are incredibly supportive of this project.</div>
-<p></p>
-<div>So, that&#8217;s it for now. Big changes and big projects. I am very busy and very excited, and will keep you posted on both fronts. Thank you for reading!</div>
+  <div class="entry-content"><div class="posterous_bookmarklet_entry">
+      <iframe allowfullscreen="true" src="http://www.youtube.com/embed/Adzywe9xeIU?wmode=transparent" frameborder="0" height="417" width="500"></iframe>
+
+<div class="posterous_quote_citation">via <a href="http://www.youtube.com/watch?v=Adzywe9xeIU&amp;feature=youtu.be">youtube.com</a>
+</div>
+    <p>Beautiful.</p>
+</div>
 </div>
   
   
@@ -534,7 +463,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/dennis-m-ritchie-rip">Dennis M. Ritchie, R.I.P.</a></h1>
+      <h1 class="entry-title"><a href="/blog/lists-of-note-henry-millers-11-commandments">Lists of Note: Henry Miller&#8217;s 11 Commandments</a></h1>
     
     
       <p class="meta">
@@ -550,19 +479,32 @@
   
 
 
-<time datetime="2011-10-13T00:36:00-05:00" pubdate data-updated="true">Oct 13<span>th</span>, 2011</time>
+<time datetime="2012-01-31T09:41:00-06:00" pubdate data-updated="true">Jan 31<span>st</span>, 2012</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>Dennis Ritchie passed away last weekend. He was one of the great minds in systems research and development, father of the C programming language, and one of the big contributors to Unix, both of which power the Mac on which I&#8217;m typing this, the iPhone on my desk, the Windows machine I use at work, the servers on which this blog is hosted, and much of the infrastructure both you and I use to connect to it.</p>
-<p>May he Rest in Peace.</p>
-<p> </p>
-<p>This makes three consecutive obituaries in my blog, of three great minds that have passed away in the last couple of weeks. All three of them were giants in their fields, and their fields were related and interconnected. Dennis Ritchie built much of the foundations on which our current technologies are based; Gene Schultz worked tirelessly to make them more secure; and Steve Jobs worked tirelessly to make them a joy to use. </p>
-<p></p> In my everyday work and life, even just here, in the devices on my desk, I can see and experience the work and passion of these three men. I feel honored to have met them, either in person or through their work.
-<p> </p>
+  <div class="entry-content"><div class="posterous_bookmarklet_entry">
+<blockquote class="posterous_long_quote">COMMANDMENTS<br><ol>
+<li>Work on one thing at a time until finished.</li>
+<li>Start no more new books, add no more new material to &#8220;Black Spring.&#8221;</li>
+<li>Don&#8217;t be nervous. Work calmly, joyously, recklessly on whatever is in hand.</li>
+<li>Work according to Program and not according to mood. Stop at the appointed time!</li>
+<li>When you can&#8217;t <em>create</em> you can <em>work</em>.</li>
+<li>Cement a little every day, rather than add new fertilizers.</li>
+<li>Keep human! See people, go places, drink if you feel like it.</li>
+<li>Don&#8217;t be a draught-horse! Work with pleasure only.</li>
+<li>Discard the Program when you feel like it—but go back to it next day. <em>Concentrate</em>. <em>Narrow down</em>. <em>Exclude</em>.</li>
+<li>Forget the books you want to write. Think only of the book you <em>are</em> writing.</li>
+<li>Write first and always. Painting, music, friends, cinema, all these come afterwards.</li>
+</ol>
+</blockquote>
+<div class="posterous_quote_citation">via <a href="http://www.listsofnote.com/2012/01/henry-millers-11-commandments.html">listsofnote.com</a>
+</div>
+<p>Excellent advice for any line of work, not only writing.</p>
+</div>
 </div>
   
   
@@ -591,19 +533,19 @@
       </li>
     
       <li class="post">
-        <a href="/blog/cfengine-talks-at-picc12-conference">CFEngine talks at PICC&#8217;12 conference</a>
+        <a href="/blog/included-in-the-linuxcon-registration-packet">Included in the #LinuxCon registration packet: a skateboard#</a>
       </li>
     
       <li class="post">
-        <a href="/blog/purdue-at-night">Purdue at Night</a>
+        <a href="/blog/letters-of-note-regarding-your-dam-complaint">Letters of Note: Regarding your dam complaint</a>
       </li>
     
       <li class="post">
-        <a href="/blog/blog-learning-cfengine-3">Learning CFEngine 3 has been released</a>
+        <a href="/blog/the-cfengine-agent-as-drawn-by-my-6-year-old">The #CFEngine agent, as drawn by my 6-year-old daughter :) </a>
       </li>
     
       <li class="post">
-        <a href="/blog/analytics-put-to-a-good-cause">Analytics put to a good cause</a>
+        <a href="/blog/when-a-dragon-mated-the-space-station-ht-bada">When a Dragon mated the space station /ht @BadAstronomer</a>
       </li>
     
   </ul>

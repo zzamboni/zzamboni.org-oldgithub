@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: reference | zzamboni.org]]></title>
+  <link href="http://zzamboni.github.com/blog/categories/reference/atom.xml" rel="self"/>
+  <link href="http://zzamboni.github.com/"/>
+  <updated>2013-03-24T16:56:31-06:00</updated>
+  <id>http://zzamboni.github.com/</id>
+  <author>
+    <name><![CDATA[Diego Zamboni]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Must-Have Windows Software (or Windows Programs that I use) - good coders code, great reuse]]></title>
+    <link href="http://zzamboni.github.com/blog/must-have-windows-software-or-windows-program"/>
+    <updated>2010-02-17T10:12:38-06:00</updated>
+    <id>http://zzamboni.github.com/blog/must-have-windows-software-or-windows-program</id>
+    <content type="html"><![CDATA[<div class="posterous_bookmarklet_entry">
+      <blockquote class="posterous_medium_quote">I am not just a Linux enthusiast, I also happen to use Windows quite often. In fact, Windows is my primary desktop from which I connect to all the other boxes and do my work on. During the years of Windows usage, I have accumulated a list of must-have Windows programs that I wouldn’t be able to work without. Some of them are commercial, some are freeware, but that doesn’t matter. What matters is how productive you are with your setup. If you’re really productive on Linux with your own set of tools, it’s perfectly fine and you have done a great job of finding the best tools of trade.</blockquote>
+
+<div class="posterous_quote_citation">via <a href="http://www.catonmat.net/blog/must-have-windows-programs/?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+catonmat+%28good+coders+code%2C+great+reuse%29&amp;utm_content=Google+Reader">catonmat.net</a>
+</div>
+    <p>Having recently moved to Windows as my main desktop OS (out of work requirement, not by wish), I have been trying to find good software that makes it a more pleasant environment. This list has many good recommendations.</p>
+</div>
+
+]]></content>
+  </entry>
+  
+</feed>

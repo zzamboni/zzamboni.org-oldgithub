@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: macros | zzamboni.org]]></title>
+  <link href="http://zzamboni.github.com/blog/categories/macros/atom.xml" rel="self"/>
+  <link href="http://zzamboni.github.com/"/>
+  <updated>2013-03-24T16:56:31-06:00</updated>
+  <id>http://zzamboni.github.com/</id>
+  <author>
+    <name><![CDATA[Diego Zamboni]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[How to digitally sign a macro project - Outlook]]></title>
+    <link href="http://zzamboni.github.com/blog/how-to-digitally-sign-a-macro-project-outlook"/>
+    <updated>2011-03-13T00:16:00-06:00</updated>
+    <id>http://zzamboni.github.com/blog/how-to-digitally-sign-a-macro-project-outlook</id>
+    <content type="html"><![CDATA[<div class="posterous_bookmarklet_entry">
+      <blockquote class="posterous_long_quote"><div>
+<p>This article explains how you can digitally sign a file or a macro project by using a certificate. If you don't already have a digital certificate, you must obtain one. To test macro projects on your own computer, you can create your own self-signing certificate by using the Selfcert.exe tool.</p>
+</div></blockquote>
+<div class="posterous_quote_citation">via <a href="http://office.microsoft.com/en-us/outlook-help/digitally-sign-a-macro-project-HA001231781.aspx#BM12">office.microsoft.com</a>
+</div>
+    <p>Useful for future reference. I'm playing with a bit of VBA in Outlook, and found that my code would work fine right after writing it, but if I restart Outlook, the macros will be disabled unless I first sign them as described in this article.</p>
+</div>
+
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,571 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>zzamboni.org</title>
+  <meta name="author" content="Diego Zamboni">
+
+  
+  <meta name="description" content="Today I ran into the problem that symlinks created under cygwin using &#8220;ln -s&#8221; are not understood by Windows, and of course Windows &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://zzamboni.github.com/blog/page/16">
+  <link href="/favicon.ico" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="zzamboni.org" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">zzamboni.org</a></h1>
+  
+    <h2></h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:zzamboni.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Home</a></li>
+  <li><a href="/blog">Ideally Blue</a></li>
+  <li><a href="/code.html">Code</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about.html">About</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/making-cygwin-windows-and-emacs-understand-th">Making Cygwin, Windows and Emacs Understand the Same Symlinks</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-09-28T09:39:00-05:00" pubdate data-updated="true">Sep 28<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Today I ran into the problem that symlinks created under cygwin using &#8220;ln -s&#8221; are not understood by Windows, and of course Windows shortcuts are seen by cygwin as regular files. Happily, this is a <strong>(semi-)</strong>solved problem. For reference, this is what needs to be done:</p>
+<p></p> 
+<ol>
+<li>Add &#8221;<a href="http://www.cygwin.com/cygwin-ug-net/using-effectively.html#using-shortcuts">winsymlinks</a>&#8221; to your CYGWIN environment variable. For example, in my .bashrc I have the following:<p></p>  <tt>export CYGWIN=&#8221;nodosfilewarning winsymlinks&#8221;<br></tt><br> This makes cygwin create symlinks differently, in a form that is understood both by it and by Windows.<br> This is the main step, and the only one if you just need access from the shell and from the Windows explorer. However, emacs still sees those symlinks as regular .lnk files. To fix this, follow the next step.<p></p>  </li>
+<li>Install the <a href="http://centaur.maths.qmw.ac.uk/emacs/files/w32-symlinks.el">w32-symlinks.el </a>package, and add the following to your .emacs file:<p></p>  <tt>(require &#8216;w32-symlinks)</tt><p></p>  </li>
+<li>Run <tt>M-x customize-option</tt> and enter <tt>w32-symlinks-handle-shortcuts </tt>as the variable to customize. Turn it on, save it for future sessions, and you are all set. The new symlinks should be properly understood by the cygwin shell, Windows explorer, and emacs. Of course, you will have to re-create any symlinks or shortcuts that you created prior to setting the winsymlinks option, for them to be created in the new format.<p></p>
+<strong>Update: </strong>so this doesn&#8217;t quite work on my system. I am using Emacs 23.1, and apparently w32-symlinks does not work properly in this version. If you have an older version (I hear Emacs 21 works well), then this might work for you. </li>
+</ol>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/website-redesign-and-unification">Website Redesign and Unification</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-09-28T02:22:09-05:00" pubdate data-updated="true">Sep 28<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">      There are still some rough edges, but by far the redesign and unification of <a href="http://zzamboni.org/">zzamboni.org</a> is done. With the same design you can now find my blogs (hosted by posterous.com), my project pages (hosted in github.com project repositories) and some static pages (hosted in my personal github.com pages repository, this includes the root, About and Code pages, as well as the static copy of my old blog <a href="http://zzamboni.org/brt/">BrT</a>, which is the only one that retains its original design). The theme is a variation of Posterous&#8217; &#8220;Paramaibo&#8221;.<p></p>  I&#8217;m still playing with the design, and finishing some pages here and there. But overall things should be good, please let me know if you find anything broken.<p></p>  Kudos to the Posterous and GitHub teams for building such useful, powerful and friendly tools and services.
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/fall-is-in-the-air-the-big-picture">Fall Is in the Air - the Big Picture</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-09-28T00:09:00-05:00" pubdate data-updated="true">Sep 28<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class="posterous_bookmarklet_entry">
+      <div class="p_embed p_image_embed">
+<a href="/images/2010/09/28/fall-is-in-the-air-the-big-picture/15552670-media_httpinapcachebo_vzptD.jpg"><img alt="Media_httpinapcachebo_vzptd" height="333" src="/images/2010/09/28/fall-is-in-the-air-the-big-picture/15552670-media_httpinapcachebo_vzptD.jpg" width="500"></a>
+</div>
+<div class="posterous_quote_citation">via <a href="http://www.boston.com/bigpicture/2010/09/fall_is_in_the_air.html">boston.com</a>
+</div>
+    <p>I love the fall, even more now that I know it won&#8217;t be followed by a crude winter :) Still, I miss some of the Swiss scenery and traditions. Beautiful photos from TBP, as usual.</p>
+</div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/this-is-a-news-website-article-about-a-scient">This Is a News Website Article About a Scientific Finding</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-09-27T22:10:00-05:00" pubdate data-updated="true">Sep 27<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class="posterous_bookmarklet_entry">
+<blockquote class="posterous_short_quote">In the standfirst I will make a fairly obvious pun about the subject matter before posing an inane question I have no intention of really answering: is this an important scientific finding?<br>
+</blockquote>
+<div class="posterous_quote_citation">via <a href="http://www.guardian.co.uk/science/the-lay-scientist/2010/sep/24/1">guardian.co.uk</a>
+</div>
+<p>Brilliant. Reminds me of <a href="http://portal.acm.org/citation.cfm?id=372580&amp;dl=GUIDE&amp;coll=GUIDE&amp;CFID=106357281&amp;CFTOKEN=41163123">The Ultimately Publishable Computer Science Paper of the 90s</a>.</p>
+</div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/dgsca-se-convierte-en-tic">DGSCA Se Convierte en TIC</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-09-27T10:04:00-05:00" pubdate data-updated="true">Sep 27<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class="posterous_bookmarklet_entry">
+      <blockquote class="posterous_long_quote">Por acuerdo del Dr. José Narro Robles, Rector de la Universidad Nacional Autónoma de México, a partir del 27 de septiembre de 2010 la Dirección General de Servicios de Cómputo Académico cambia de denominación a <strong>Dirección General de Cómputo y de Tecnologías de Información y Comunicación,</strong> y el sitio Web de esta dependencia es:<br><a href="http://www.tic.unam.mx/"><img src="http://www.dgsca.unam.mx/imgs/tic/wwwticunammx.jpg" border="0" height="150" alt="tic" width="500"></a>
+</blockquote>
+
+<div class="posterous_quote_citation">via <a href="http://www.dgsca.unam.mx/">dgsca.unam.mx</a>
+</div>
+    <p>El final de una era. Yo comencé mi carrera profesional en DGSCA, por lo que tengo muchos recuerdos asociados con ese nombre. Sería interesante saber qué cambios funcionales vienen asociados con el cambio de nombre.</p>
+</div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/la-unam-cumple-100-anos">La UNAM Cumple 100 Años</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-09-22T12:20:00-05:00" pubdate data-updated="true">Sep 22<span>nd</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class="posterous_bookmarklet_entry">
+<blockquote class="posterous_medium_quote">Si hubiera que reducir a la UNAM a unas cuantas cifras esenciales, tendrían que anotarse, entre otras, las siguientes: 314 mil alumnos, 35 mil académicos, tres mil 500 investigadores, 2 mil edificios, 139 bibliotecas, 56 mil computadoras conectadas en red, 18 museos, otros tantos recintos históricos, un canal de televisión y una estación de radio, una casa editora de miles de libros y de cientos de publicaciones periódicas, así como una Ciudad Universitaria que ha sido declarada por la UNESCO Patrimonio de la Humanidad. Más allá de los activos, en la institución se imparten 85 licenciaturas y operan 40 programas de posgrado, con 83 planes de estudio para maestría y doctorado, así como 34 programas de especialización con 189 orientaciones.</blockquote>
+<div class="posterous_quote_citation">via <a href="http://www.jornada.unam.mx/2010/09/22/index.php?section=opinion&amp;article=002a1edi&amp;partner=rss">jornada.unam.mx</a>
+</div>
+<p>La UNAM tiene aproximadamente el mismo número de estudiantes que empresas como IBM y HP tienen de empleados a nivel mundial.</p>
+<p>Es un orgullo ser egresado de la UNAM. Más allá de los números, puedo decir, sin lugar a dudas, que mi formación en la UNAM, como estudiante y como académico, le dio a mi carrera el rumbo que sigue hasta el momento, y los fundamentos que me han permitido tener una vida profesional exitosa. Goya!</p>
+</div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/cool-googles-logo-today-is-about-mexicos-inde">Cool - Google&#8217;s Logo Today Is About Mexico&#8217;s Independence Bicentenary</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-09-15T09:55:22-05:00" pubdate data-updated="true">Sep 15<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">      <div class="p_embed p_image_embed">
+<img alt="Moz-screenshot-4" height="307" src="/images/2010/09/15/cool-googles-logo-today-is-about-mexicos-inde/15051254-moz-screenshot-4.png" width="359">
+</div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/the-texas-sharpshooter-fallacy-you-are-not-so">The Texas Sharpshooter Fallacy « You Are Not So Smart</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-09-14T02:44:00-05:00" pubdate data-updated="true">Sep 14<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class="posterous_bookmarklet_entry">
+<blockquote class="posterous_short_quote">If you have a human brain, you do this all of the time. Picking out clusters of coincidence is a predictable malfunction of normal human logic.</blockquote>
+<div class="posterous_quote_citation">via <a href="http://youarenotsosmart.com/2010/09/11/the-texas-sharpshooter-fallacy/">youarenotsosmart.com</a>
+</div>
+<p>We see patterns everywhere, our brain is hardwired to do it. Most of them are harmless or even beneficial. The problem is when people start assigning meaning to the patterns, as explanation of whatever they want to believe or to convince other people of (such as &#8220;vaccines cause autism&#8221;, which is <a href="http://blogs.discovermagazine.com/badastronomy/tag/antivax/">completely false</a>).</p>
+</div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/woot-refurbished-coffeenaker-ewww">Woot: Refurbished Coffeenaker - Ewww</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-09-10T13:17:00-05:00" pubdate data-updated="true">Sep 10<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class="posterous_bookmarklet_entry">
+      <blockquote class="posterous_medium_quote">Can you taste other people’s saliva, stomach acid, and tooth enamel  in it? Certainly not. Will you think about it now that we’ve brought it  up? Maybe. But the fact is people buy ‘em so there must be a demand.</blockquote>
+<div class="posterous_quote_citation">via <a href="http://sellout.woot.com/Default.aspx?WootSaleId=15388&amp;ts=1284135902&amp;sig=52c05411ddd4026a">sellout.woot.com</a>
+</div>
+    <p>Do I want to buy one, after reading this? Probably not.</p>
+</div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/cfengine3-lexer-for-pygments">Cfengine3 Lexer for Pygments</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-09-08T21:16:00-05:00" pubdate data-updated="true">Sep 8<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I have written a <a href="http://cfengine.org/">Cfengine3</a> lexer for <a href="http://pygments.org/">Pygments</a>, the open source syntax-highlighter used by <a href="http://gist.github.com/">Gist</a> and many other sites. It seems to work fine on all the cfengine policy files I have tested, but if you find anything that doesn&#8217;t quite work as expected, please let me know. This is my first-ever Pygments lexer, so if you are an expert and can advise me on better ways of doing things, I&#8217;d very much appreciate the feedback too.</p>
+<p></p>  Here&#8217;s how to install it (again, I don&#8217;t know if this is the better or easier way):
+<ol>
+<li>Obtain the Pygments <a href="http://pygments.org/download/">source code</a>.</li>
+<li>Put the <a href="https://raw.github.com/gist/571230/9b28129fde567df4576fb1d48db7e5e6111477a3/pygments_cfengine_lexer.py">pygments_cfengine_lexer.py</a> file into the pygments/lexers/ directory</li>
+<li>run (cd pygments/lexers; python _mapping.py)</li>
+<li>run ./setup.py install</li>
+</ol>
+<p>If you already have Pygments installed, you should follow these instructions:</p>
+<ol>
+<li>Put the <a href="https://raw.github.com/gist/571230/9b28129fde567df4576fb1d48db7e5e6111477a3/pygments_cfengine_lexer.py">pygments_cfengine_lexer.py</a> file in the installed pygments/lexers/ directory (on my Mac, this is /Library/Python/2.6/site-packages/Pygments-1.4-py2.6.egg/pygments/lexers, under Linux it should be something like /usr/lib/python2.6/site-packages/Pygments&#8230;./pygments/lexers)
+</li>
+<li>cd into that directory</li>
+<li>run &#8220;python _mapping.py&#8221;</li>
+
+</ol>
+<p>Then run pygmentize on any .cf file, and it should output properly highlighted code. You can view a sample <a href="http://zzamboni.org/files/cfengine_stdlib.html">here</a>.</p>
+<p></p>  <p><a href="https://gist.github.com/571230">https://gist.github.com/571230</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      <a class="prev" href="/blog/page/17/">&larr; Older</a>
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/blog/page/15/">Newer &rarr;</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/howto-changing-the-available-display-formats">HowTo: Changing the available display formats for Evernote&#8217;s &#8220;Insert Date&#8221; command</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/included-in-the-linuxcon-registration-packet">Included in the #LinuxCon registration packet: a skateboard#</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/letters-of-note-regarding-your-dam-complaint">Letters of Note: Regarding your dam complaint</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/the-cfengine-agent-as-drawn-by-my-6-year-old">The #CFEngine agent, as drawn by my 6-year-old daughter :) </a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/when-a-dragon-mated-the-space-station-ht-bada">When a Dragon mated the space station /ht @BadAstronomer</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Diego Zamboni -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

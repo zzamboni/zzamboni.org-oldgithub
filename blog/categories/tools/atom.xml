@@ -4,7 +4,7 @@
   <title><![CDATA[Category: tools | zzamboni.org]]></title>
   <link href="http://zzamboni.github.com/blog/categories/tools/atom.xml" rel="self"/>
   <link href="http://zzamboni.github.com/"/>
-  <updated>2013-03-24T14:22:46-06:00</updated>
+  <updated>2013-03-24T16:56:31-06:00</updated>
   <id>http://zzamboni.github.com/</id>
   <author>
     <name><![CDATA[Diego Zamboni]]></name>
@@ -23,6 +23,26 @@
 <div class="posterous_quote_citation">via <a href="http://blog.cf-learn.info/cf-cmd-a-command-line-tool-for-running-cfengi">blog.cf-learn.info</a>
 </div>
 <p>A little useful script I wrote for making it easier to test CFEngine code snippets. Follow <a href="http://blog.cf-learn.info/cf-cmd-a-command-line-tool-for-running-cfengi">the link</a> to see the full details.</p>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[How important are the tools you use with GTD?]]></title>
+    <link href="http://zzamboni.github.com/blog/how-important-are-the-tools-you-use-with-gtd"/>
+    <updated>2010-04-22T09:24:46-05:00</updated>
+    <id>http://zzamboni.github.com/blog/how-important-are-the-tools-you-use-with-gtd</id>
+    <content type="html"><![CDATA[<div class="posterous_bookmarklet_entry">
+      <object height="344" width="425"><param name="movie" value="http://www.youtube.com/v/8mt9tJA77KY&amp;hl=en_US&amp;fs=1&amp;rel=0&amp;color1=0x006699&amp;color2=0x54abd6">
+<param name="allowFullScreen" value="true">
+<param name="allowscriptaccess" value="always">
+<embed src="http://www.youtube.com/v/8mt9tJA77KY&amp;hl=en_US&amp;fs=1&amp;rel=0&amp;color1=0x006699&amp;color2=0x54abd6" allowfullscreen="true" type="application/x-shockwave-flash" allowscriptaccess="always" height="344" width="425"></embed></object>
+
+<div class="posterous_quote_citation">via <a href="http://www.gtdtimes.com/2010/04/21/how-important-are-the-tools-you-use-with-gtd/?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+GtdTimes+%28GTD+Times%29&amp;utm_content=Google+Reader">gtdtimes.com</a>
+</div>
+    <p>Short video of David Allen talking about the importance of the GTD tools you choose. Conclusion: the most important thing is that you choose a tool you actually use, because the moment you stop putting your stuff in it, it will stop working.</p>
+<p>Timely for me as I rebuild my GTD toolbox and system this week.</p>
 </div>
 
 ]]></content>
@@ -65,6 +85,22 @@
 <li>If you interrupt the command with Ctrl-C, it will delete the portion copied so far and you'll have to restart the copy from the beginning. If you must interrupt a copy, simply terminate the network connection (it will die with an error, but leave the copied-so-far file) or close the window where the command is running.</li> <li>When you restart it and it asks if you want to overwrite, you must answer "yes". You can also use the /Y flag.</li>
 </ul>
 <p></p>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Must-Have Windows Software (or Windows Programs that I use) - good coders code, great reuse]]></title>
+    <link href="http://zzamboni.github.com/blog/must-have-windows-software-or-windows-program"/>
+    <updated>2010-02-17T10:12:38-06:00</updated>
+    <id>http://zzamboni.github.com/blog/must-have-windows-software-or-windows-program</id>
+    <content type="html"><![CDATA[<div class="posterous_bookmarklet_entry">
+      <blockquote class="posterous_medium_quote">I am not just a Linux enthusiast, I also happen to use Windows quite often. In fact, Windows is my primary desktop from which I connect to all the other boxes and do my work on. During the years of Windows usage, I have accumulated a list of must-have Windows programs that I wouldn’t be able to work without. Some of them are commercial, some are freeware, but that doesn’t matter. What matters is how productive you are with your setup. If you’re really productive on Linux with your own set of tools, it’s perfectly fine and you have done a great job of finding the best tools of trade.</blockquote>
+
+<div class="posterous_quote_citation">via <a href="http://www.catonmat.net/blog/must-have-windows-programs/?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+catonmat+%28good+coders+code%2C+great+reuse%29&amp;utm_content=Google+Reader">catonmat.net</a>
+</div>
+    <p>Having recently moved to Windows as my main desktop OS (out of work requirement, not by wish), I have been trying to find good software that makes it a more pleasant environment. This list has many good recommendations.</p>
 </div>
 
 ]]></content>
