@@ -9,7 +9,7 @@
   <meta name="author" content="Diego Zamboni">
 
   
-  <meta name="description" content="Today I ran into the problem that symlinks created under cygwin using &#8220;ln -s&#8221; are not understood by Windows, and of course Windows &hellip;">
+  <meta name="description" content="Jaime &#8221;Kalapusa&#8221; Margary, who&#8217;s given us realistic Piranha Plants, and Super Mario fungi in the past, now turns his attention to &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -61,6 +61,7 @@
   <li><a href="/code.html">Code</a></li>
   <li><a href="/blog/archives">Archives</a></li>
   <li><a href="/about.html">About</a></li>
+  <li><a href="/contact.html">Contact</a></li>
 </ul>
 
 </nav>
@@ -68,6 +69,60 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/pac-man-spotted-in-the-wild">Pac-Man Spotted in the Wild</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-10-02T21:09:00-05:00" pubdate data-updated="true">Oct 2<span>nd</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class="posterous_bookmarklet_entry">
+      <blockquote class="posterous_long_quote">
+<div><object class="playa" height="332.5" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="500" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="movie" value="http://www.youtube.com/v/JlEKpZuxbco&amp;hl=en&amp;fs=1&amp;fmt=22">
+<param name="allowFullScreen" value="true">
+<param name="allowScriptAccess" value="always">
+<param name="wmode" value="transparent">
+<embed src="http://www.youtube.com/v/JlEKpZuxbco&amp;hl=en&amp;fs=1&amp;fmt=22" pluginspage="http://www.adobe.com/go/getflashplayer" allowfullscreen="true" type="application/x-shockwave-flash" allowscriptaccess="always" wmode="transparent" height="332.5" width="500"></embed></object></div>
+<p>
+<img class="left image340 image_0 embeddedVideoThumbnail" src="http://cache.gawkerassets.com/assets/images/9/2010/09/340x_jlekpzuxbco_01.jpg" alt="Pac-Man Spotted In The Wild" width="340" style="display: none;"> Jaime &#8221;<a href="http://kotaku.com/people/Kalapusa/">Kalapusa</a>&#8221; Margary, who&#8217;s given us realistic <a href="http://kotaku.com/5362183/the-making-of-a-piranha-plant">Piranha Plants</a>, and <a href="http://kotaku.com/5421133/this-super-mario-bros-mushroom-may-be-too-realistic">Super Mario fungi</a> in the past, now turns his attention to Pac-Man, presently soaking in jar of formaldehyde.</p>		<p>Writes Jaime:</p>
+<blockquote class="posterous_medium_quote">
+<p>The idea behind the video is Pac Man&#8217;s final days, free from the maze (kudos if you can guess who&#8217;s castle that is) and eating pellets to his heart&#8217;s content in a glowing pellet forest. His dead, bloated body is found afterwards and then delivered to 8-Bit Labs.</p>
+<p>I researched various biological features like shark eyes, reptilian mouths, obese skin and yellow tones in frogs and grapefruit. I used clay and acrylic, and animated everything in Flash.</p>
+</blockquote>
+</blockquote>
+
+<div class="posterous_quote_citation">via <a href="http://kotaku.com/5648313/pac+man-spotted-in-the-wild">kotaku.com</a>
+</div>
+    <p>Very well done, but ew.</p>
+</div>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -438,59 +493,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/cfengine3-lexer-for-pygments">Cfengine3 Lexer for Pygments</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-09-08T21:16:00-05:00" pubdate data-updated="true">Sep 8<span>th</span>, 2010</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I have written a <a href="http://cfengine.org/">Cfengine3</a> lexer for <a href="http://pygments.org/">Pygments</a>, the open source syntax-highlighter used by <a href="http://gist.github.com/">Gist</a> and many other sites. It seems to work fine on all the cfengine policy files I have tested, but if you find anything that doesn&#8217;t quite work as expected, please let me know. This is my first-ever Pygments lexer, so if you are an expert and can advise me on better ways of doing things, I&#8217;d very much appreciate the feedback too.</p>
-<p></p>  Here&#8217;s how to install it (again, I don&#8217;t know if this is the better or easier way):
-<ol>
-<li>Obtain the Pygments <a href="http://pygments.org/download/">source code</a>.</li>
-<li>Put the <a href="https://raw.github.com/gist/571230/9b28129fde567df4576fb1d48db7e5e6111477a3/pygments_cfengine_lexer.py">pygments_cfengine_lexer.py</a> file into the pygments/lexers/ directory</li>
-<li>run (cd pygments/lexers; python _mapping.py)</li>
-<li>run ./setup.py install</li>
-</ol>
-<p>If you already have Pygments installed, you should follow these instructions:</p>
-<ol>
-<li>Put the <a href="https://raw.github.com/gist/571230/9b28129fde567df4576fb1d48db7e5e6111477a3/pygments_cfengine_lexer.py">pygments_cfengine_lexer.py</a> file in the installed pygments/lexers/ directory (on my Mac, this is /Library/Python/2.6/site-packages/Pygments-1.4-py2.6.egg/pygments/lexers, under Linux it should be something like /usr/lib/python2.6/site-packages/Pygments&#8230;./pygments/lexers)
-</li>
-<li>cd into that directory</li>
-<li>run &#8220;python _mapping.py&#8221;</li>
-
-</ol>
-<p>Then run pygmentize on any .cf file, and it should output properly highlighted code. You can view a sample <a href="http://zzamboni.org/files/cfengine_stdlib.html">here</a>.</p>
-<p></p>  <p><a href="https://gist.github.com/571230">https://gist.github.com/571230</a></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/17/">&larr; Older</a>
@@ -508,6 +510,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/on-the-other-side/">On the other side</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/howto-changing-the-available-display-formats">HowTo: Changing the available display formats for Evernote&#8217;s &#8220;Insert Date&#8221; command</a>
       </li>
     
@@ -521,10 +527,6 @@
     
       <li class="post">
         <a href="/blog/the-cfengine-agent-as-drawn-by-my-6-year-old">The #CFEngine agent, as drawn by my 6-year-old daughter :) </a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/when-a-dragon-mated-the-space-station-ht-bada">When a Dragon mated the space station /ht @BadAstronomer</a>
       </li>
     
   </ul>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: sitenews | zzamboni.org]]></title>
   <link href="http://zzamboni.github.com/blog/categories/sitenews/atom.xml" rel="self"/>
   <link href="http://zzamboni.github.com/"/>
-  <updated>2013-03-24T16:56:31-06:00</updated>
+  <updated>2013-03-25T16:30:20-06:00</updated>
   <id>http://zzamboni.github.com/</id>
   <author>
     <name><![CDATA[Diego Zamboni]]></name>
@@ -12,6 +12,42 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[On the other side]]></title>
+    <link href="http://zzamboni.github.com/blog/on-the-other-side/"/>
+    <updated>2013-03-25T15:57:00-06:00</updated>
+    <id>http://zzamboni.github.com/blog/on-the-other-side</id>
+    <content type="html"><![CDATA[<p>About a year ago,
+<a href="http://blog.posterous.com/big-news">Posterous was acquired by Twitter</a>. A
+month ago, it was announced that it will be
+<a href="http://blog.posterous.com/thanks-from-posterous">completely shut down by April 30th</a>. I'll
+spare you my rant about how the awesome customer service that
+characterized Posterous pre-acquisition completely disappeared after
+the acquisition :)</p>
+
+<p>On a more practical note, Posterous' closing meant finding a new place
+to host my blogs. There are many options (you can find many of them
+described in the
+<a href="http://blog.posthaven.com/the-posterous-migration-guide">posthaven.com migration guide</a>),
+but I decided to go the DIY way and move my blogs to
+<a href="http://octopress.org">Octopress</a>, hosted on
+<a href="http://pages.github.com">GitHub Pages</a>.</p>
+
+<p>I'll post shortly a guide on how I did the migration, but for now I
+just want to post a first "Welcome" message here. If you are reading
+this message, you are in the correct place, whether it's the website
+or the RSS feed (I updated my FeedBurner feed to point to the new
+site, so if you are subscribed to it, you shouldn't have to do
+anything). All the old contents has been migrated, and links to my
+blog posts should work unchanged.</p>
+
+<p>There are still a few rough edges (some pages are still in the old
+site theme), I'm still working on the migration of some parts of the
+site. Please <a href="/contact.html">let me know</a> if you find anything
+broken.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Website redesign and unification]]></title>

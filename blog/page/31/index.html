@@ -9,7 +9,7 @@
   <meta name="author" content="Diego Zamboni">
 
   
-  <meta name="description" content="Update (2008/09/10): Giles Orr kindly pointed out that he is not the author of the bash prompt package I use, I have updated to give proper credit to &hellip;">
+  <meta name="description" content="I am a big fan of the incredibly useful 1Password. The latest beta release (2.8.3.BETA-11) introduces a new keychain format that, among other things &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -61,6 +61,7 @@
   <li><a href="/code.html">Code</a></li>
   <li><a href="/blog/archives">Archives</a></li>
   <li><a href="/about.html">About</a></li>
+  <li><a href="/contact.html">Contact</a></li>
 </ul>
 
 </nav>
@@ -68,6 +69,57 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/synchronizing-1password-data-b">Synchronizing 1Password Data Between Two Local Accounts (Howto)</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-09-29T05:06:09-05:00" pubdate data-updated="true">Sep 29<span>th</span>, 2008</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">I am a big fan of the incredibly useful <a href="http://1password.com/">1Password</a>. The latest beta release (2.8.3.BETA-11) <a href="http://support.agilewebsolutions.com/showthread.php?p=66775">introduces a new keychain format</a> that, among other things, allows 1Password to detect changes made to the file by other programs and reload the changes on the fly. I am using this now to keep my 1P data synchronized between my work and personal accounts on my machine. Here&#8217;s what I did:<p></p>
+<div>
+<ol class="MailOutline">
+<li>In my work account (dza), switch to the AgileKeyChain format by <a href="http://support.agilewebsolutions.com/showthread.php?p=66775">following the instructions</a>.</li>
+<li>Modify the ACL for my ~/Library/Application Support/1Password/ folder to allow my personal account (zamboni) read/write access. I did this using the &#8220;Sharing &amp; Permissions&#8221; section of the Info dialog for the folder, and then choosing &#8220;Apply to enclosed items&#8221; from the cogwheel menu in that same section.</li>
+<li>Switch to my personal account.</li>
+<li>Quit 1Password, run the defaults command from the instructions, restart 1Password.</li>
+<li>Export my existing 1Password data in the &#8220;1Password Interchange file&#8221; format. To do this, choose File -&gt; Export all -&gt; 1Password Interchange File, and save it to a file in my desktop.</li>
+<li>Double click /Users/dza/Library/Application Support/1Password/1Password.agilekeychain and click &#8220;yes&#8221; to start using that file.</li>
+<li>Import the data from step 5: File -&gt; Import, and follow the prompts. Wait for the data to import.</li>
+<li>Switch back to my work account and verify that the imported items are seen there as well.</li>
+</ol>
+<p></p>
+<div>This is incredibly useful. I had been trying to use the <a href="https://my.1password.com/">my1Password</a> service to achieve this, but the service is still not very mature and I had been unsuccessful. With this, I can access my data from both accounts without having to send the data through the network or use any third-party services, which is great.</div>
+<p></p>
+</div>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -319,6 +371,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/on-the-other-side/">On the other side</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/howto-changing-the-available-display-formats">HowTo: Changing the available display formats for Evernote&#8217;s &#8220;Insert Date&#8221; command</a>
       </li>
     
@@ -332,10 +388,6 @@
     
       <li class="post">
         <a href="/blog/the-cfengine-agent-as-drawn-by-my-6-year-old">The #CFEngine agent, as drawn by my 6-year-old daughter :) </a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/when-a-dragon-mated-the-space-station-ht-bada">When a Dragon mated the space station /ht @BadAstronomer</a>
       </li>
     
   </ul>

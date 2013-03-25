@@ -9,7 +9,7 @@
   <meta name="author" content="Diego Zamboni">
 
   
-  <meta name="description" content="  Learning CFEngine 3 Automated system administration for sites of any size By Diego Zamboni via shop.oreilly.com My upcoming book &#8220;Learning &hellip;">
+  <meta name="description" content="Yesterday my external Western Digital disk (which I use for Time Machine, among other things) stopped mounting automatically when I plug it in. This &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -61,6 +61,7 @@
   <li><a href="/code.html">Code</a></li>
   <li><a href="/blog/archives">Archives</a></li>
   <li><a href="/about.html">About</a></li>
+  <li><a href="/contact.html">Contact</a></li>
 </ul>
 
 </nav>
@@ -68,6 +69,89 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/fix-journal-in-an-hfs-file-system">Fix Journal in an HFS+ File System</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-12-15T00:07:00-06:00" pubdate data-updated="true">Dec 15<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Yesterday my external Western Digital disk (which I use for Time Machine, among other things) stopped mounting automatically when I plug it in. This may *cough*definitely*cough*have something to do with me unmounting it forcefully while it was doing a backup, since I was in a hurry.</p>
+<div>Disk Utility reported everything was OK with the disk, but it still failed to mount. Upon poking a bit deeper, I found these messages in the logs:</div>
+<p></p>
+<div>
+<div><span style="font-family: Courier New;">12/14/11 11:49:00.000 PM kernel: jnl: disk2s2: <strong>open: journal magic is bad</strong> (0x0 != 0x4a4e4c78)</span></div>
+</div>
+<div>
+<div><span style="font-family: Courier New;">12/14/11 11:49:00.000 PM kernel: hfs: late jnl init: failed to open/create the journal (retval 0).</span></div>
+</div>
+<div>
+<div><span style="font-family: Courier New;">12/14/11 11:49:00.000 PM kernel: hfs_mounthfsplus: hfs_late_journal_init returned (0)</span></div>
+</div>
+<div>
+<div><span style="font-family: Courier New;">12/14/11 11:49:00.000 PM kernel: hfs_mounthfsplus: encountered errorr (22)</span></div>
+</div>
+<div>
+<div><span style="font-family: Courier New;">12/14/11 11:49:00.000 PM kernel: hfs_mountfs: encountered failure 22 </span></div>
+</div>
+<div>
+<div><span style="font-family: Courier New;">12/14/11 11:49:00.000 PM kernel: hfs_mount: hfs_mountfs returned 22</span></div>
+</div>
+<p></p>
+<div>Aha! Journal error. A bit of Google searching led me to <a href="http://dmunsie.wordpress.com/code/hacks/">this page</a>, where one comment gave me the key:</div>
+<p></p>
+<div>
+<div><span style="font-family: Courier New;">root# mkdir /tmp/disk &amp;&amp; mount_hfs -j /dev/disk2s2 /tmp/disk</span></div>
+</div>
+<div>
+<div><span style="font-family: Courier New;">root# diskutil disableJournal /tmp/disk</span></div>
+</div>
+<div>
+<div><span style="font-family: Courier New;">An error occurred journaling the file system: The underlying task reported failure on exit (-69860)</span></div>
+</div>
+<div>
+<div><span style="font-family: Courier New;">root# diskutil enableJournal /tmp/disk</span></div>
+</div>
+<div>
+<span style="font-family: Courier New;"> </span>
+<div><span style="font-family: Courier New;">Journaling was already enabled for volume Casa on disk2s2</span></div>
+</div>
+<div>
+<div><span style="font-family: Courier New;">root# diskutil unmount /tmp/disk</span></div>
+</div>
+<div>
+<div><span style="font-family: Courier New;">Volume Casa on disk2s2 unmounted</span></div>
+</div>
+<p></p>
+<div>Despite the error in the &#8220;disableJournal&#8221; command, after this sequence the Finder was able to mount the disk, and things seem to be working fine. The trick in the first command is the -j option, since it allows the disk to be mounted (without journaling), so that the disableJournal/enableJournal commands can be issued.</div>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -486,50 +570,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/foxtrots-homage-to-steve-jobs">FoxTrot&#8217;s Homage to Steve Jobs</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-11-07T18:45:00-06:00" pubdate data-updated="true">Nov 7<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><div class="posterous_bookmarklet_entry">
-<div class="p_embed p_image_embed">
-<a href="/images/2011/11/07/foxtrots-homage-to-steve-jobs/34023421-media_httpcdnsvcsc2uc_GxnJq.jpg"><img alt="Media_httpcdnsvcsc2uc_gxnjq" height="352" src="/images/2011/11/07/foxtrots-homage-to-steve-jobs/34023421-media_httpcdnsvcsc2uc_GxnJq.jpg" width="500"></a>
-</div>
-
-<div class="posterous_quote_citation">via <a href="http://www.gocomics.com/foxtrot/">gocomics.com</a>
-</div>
-<p> </p>
-</div>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/6/">&larr; Older</a>
@@ -547,6 +587,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/on-the-other-side/">On the other side</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/howto-changing-the-available-display-formats">HowTo: Changing the available display formats for Evernote&#8217;s &#8220;Insert Date&#8221; command</a>
       </li>
     
@@ -560,10 +604,6 @@
     
       <li class="post">
         <a href="/blog/the-cfengine-agent-as-drawn-by-my-6-year-old">The #CFEngine agent, as drawn by my 6-year-old daughter :) </a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/when-a-dragon-mated-the-space-station-ht-bada">When a Dragon mated the space station /ht @BadAstronomer</a>
       </li>
     
   </ul>

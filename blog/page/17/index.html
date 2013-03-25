@@ -9,7 +9,7 @@
   <meta name="author" content="Diego Zamboni">
 
   
-  <meta name="description" content="Google has launched a new labs project called Google Scribe, which essentially provides an auto-completion service. You type, it autocompletes. The &hellip;">
+  <meta name="description" content="I have written a Cfengine3 lexer for Pygments, the open source syntax-highlighter used by Gist and many other sites. It seems to work fine on all the &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -61,6 +61,7 @@
   <li><a href="/code.html">Code</a></li>
   <li><a href="/blog/archives">Archives</a></li>
   <li><a href="/about.html">About</a></li>
+  <li><a href="/contact.html">Contact</a></li>
 </ul>
 
 </nav>
@@ -68,6 +69,59 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/cfengine3-lexer-for-pygments">Cfengine3 Lexer for Pygments</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-09-08T21:16:00-05:00" pubdate data-updated="true">Sep 8<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I have written a <a href="http://cfengine.org/">Cfengine3</a> lexer for <a href="http://pygments.org/">Pygments</a>, the open source syntax-highlighter used by <a href="http://gist.github.com/">Gist</a> and many other sites. It seems to work fine on all the cfengine policy files I have tested, but if you find anything that doesn&#8217;t quite work as expected, please let me know. This is my first-ever Pygments lexer, so if you are an expert and can advise me on better ways of doing things, I&#8217;d very much appreciate the feedback too.</p>
+<p></p>  Here&#8217;s how to install it (again, I don&#8217;t know if this is the better or easier way):
+<ol>
+<li>Obtain the Pygments <a href="http://pygments.org/download/">source code</a>.</li>
+<li>Put the <a href="https://raw.github.com/gist/571230/9b28129fde567df4576fb1d48db7e5e6111477a3/pygments_cfengine_lexer.py">pygments_cfengine_lexer.py</a> file into the pygments/lexers/ directory</li>
+<li>run (cd pygments/lexers; python _mapping.py)</li>
+<li>run ./setup.py install</li>
+</ol>
+<p>If you already have Pygments installed, you should follow these instructions:</p>
+<ol>
+<li>Put the <a href="https://raw.github.com/gist/571230/9b28129fde567df4576fb1d48db7e5e6111477a3/pygments_cfengine_lexer.py">pygments_cfengine_lexer.py</a> file in the installed pygments/lexers/ directory (on my Mac, this is /Library/Python/2.6/site-packages/Pygments-1.4-py2.6.egg/pygments/lexers, under Linux it should be something like /usr/lib/python2.6/site-packages/Pygments&#8230;./pygments/lexers)
+</li>
+<li>cd into that directory</li>
+<li>run &#8220;python _mapping.py&#8221;</li>
+
+</ol>
+<p>Then run pygmentize on any .cf file, and it should output properly highlighted code. You can view a sample <a href="http://zzamboni.org/files/cfengine_stdlib.html">here</a>.</p>
+<p></p>  <p><a href="https://gist.github.com/571230">https://gist.github.com/571230</a></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -487,51 +541,6 @@ wrong name, or worse, maliciously made fun of your name in front of you.</blockq
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/geektyrant-news-fan-made-superman-doomsdaytra">GeekTyrant - News - Fan Made SUPERMAN: DOOMSDAY Trailer</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-08-30T09:00:16-05:00" pubdate data-updated="true">Aug 30<span>th</span>, 2010</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><div class="posterous_bookmarklet_entry">
-      <blockquote class="posterous_long_quote">
-<p style="text-align: center;"><span class="full-image-block ssNonEditable"><span><img src="http://geektyrant.com/storage/post-images/Doomsday.png?__SQUARESPACE_CACHEVERSION=1283115109784" alt=""></span></span></p>
-
-<p>In this fan-edit you&#8217;ll get to see the movie that I hope the studios bring to the big screen in a future Superman film. Please no more Lex Luthor centered shenanigans or kryptonite BS&#8230; let&#8217;s see Superman face a real threat&#8230;Doomsday!</p>
-</blockquote>
-<div class="posterous_quote_citation">via <a href="http://geektyrant.com/news/2010/8/29/fan-made-superman-doomsday-trailer.html">geektyrant.com</a>
-</div>
-    <p>This would be so awesome. I&#8217;ve always wanted to see Doomsday in a Superman movie.</p>
-</div>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/18/">&larr; Older</a>
@@ -549,6 +558,10 @@ wrong name, or worse, maliciously made fun of your name in front of you.</blockq
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/on-the-other-side/">On the other side</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/howto-changing-the-available-display-formats">HowTo: Changing the available display formats for Evernote&#8217;s &#8220;Insert Date&#8221; command</a>
       </li>
     
@@ -562,10 +575,6 @@ wrong name, or worse, maliciously made fun of your name in front of you.</blockq
     
       <li class="post">
         <a href="/blog/the-cfengine-agent-as-drawn-by-my-6-year-old">The #CFEngine agent, as drawn by my 6-year-old daughter :) </a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/when-a-dragon-mated-the-space-station-ht-bada">When a Dragon mated the space station /ht @BadAstronomer</a>
       </li>
     
   </ul>
