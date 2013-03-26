@@ -4,7 +4,7 @@
   <title><![CDATA[Category: howto | zzamboni.org]]></title>
   <link href="http://zzamboni.github.com/blog/categories/howto/atom.xml" rel="self"/>
   <link href="http://zzamboni.github.com/"/>
-  <updated>2013-03-25T16:30:20-06:00</updated>
+  <updated>2013-03-26T00:46:55-06:00</updated>
   <id>http://zzamboni.github.com/</id>
   <author>
     <name><![CDATA[Diego Zamboni]]></name>
@@ -96,7 +96,92 @@
 <img alt="Vba" height="126" src="http://zzamboni.github.com/images/2011/03/16/automatically-creating-tasks-from-email-in-ou/23077308-vba.png" width="422">
 </div>
 </li>
-<li>Paste the code:<br><script src="https://gist.github.com/868510.js?file=outlook_MakeWaitingForTaskWithAttachmentFromCurrentMessage.bas"></script>
+<li>Paste the code:<br><div><script src='https://gist.github.com/868510.js?file=outlook_MakeWaitingForTaskWithAttachmentFromCurrentMessage.bas'></script>
+<noscript><pre><code>' How to use it: see http://blog.zzamboni.org/automatically-creating-tasks-from-email-in-ou
+' Diego Zamboni, March 16, 2011
+
+' Set the string comparison method to Text (&quot;AAA&quot; = &quot;aaa&quot;).
+Option Compare Text
+
+' Based originally on code from http://www.outlookcode.com/codedetail.aspx?id=959, modified by Diego Zamboni
+Sub MakeWaitingForTaskWithAttachmentFromCurrentMessage(MyMail As Outlook.MailItem)
+    Dim strID As String
+    Dim olNS As Outlook.NameSpace
+    Dim olMail As Outlook.MailItem
+    Dim objTask As Outlook.TaskItem
+    Dim categories As String
+    Dim addRecipient As Boolean
+    Dim regex
+    Dim matches, customSubject, subject
+    
+    ' Configuration options
+    categories = &quot;@WAITING FOR&quot;
+    addRecipient = True
+    
+    strID = MyMail.EntryID
+    Set olNS = Application.GetNamespace(&quot;MAPI&quot;)
+    Set olMail = olNS.GetItemFromID(strID)
+    Set objTask = Application.CreateItem(olTaskItem)
+    objTask.Attachments.Add MyMail
+    Set regex = CreateObject(&quot;vbscript.regexp&quot;)
+    regex.Pattern = &quot;/wf (.*)&quot;
+    regex.IgnoreCase = True
+    regex.Global = True
+    Set matches = regex.Execute(olMail.Body)
+    If matches.Count &lt;&gt; 0 Then
+        customSubject = matches(0).submatches(0)
+    Else
+        customSubject = &quot;&quot;
+    End If
+    If customSubject &lt;&gt; &quot;&quot; Then
+        subject = customSubject
+    Else
+        subject = olMail.subject
+    End If
+    
+    With objTask
+        If addRecipient Then
+            .subject = olMail.Recipients.Item(1) &amp; &quot;: &quot; &amp; subject
+        Else
+            .subject = subject
+        End If
+        .categories = categories
+        .Body = olMail.Body
+    End With
+    objTask.Save
+     
+    Set objTask = Nothing
+    Set olMail = Nothing
+    Set olNS = Nothing
+End Sub
+
+' Wrapper that gets the current item and calls the previous function, to use as a macro
+Sub MakeWaitingForTaskWithAttachmentFromCurrentMessageMacro()
+    Dim curMail As Outlook.MailItem
+    Set curMail = GetCurrentItem()
+    Call MakeWaitingForTaskWithAttachmentFromCurrentMessage(curMail)
+End Sub
+
+    
+' From http://www.outlookcode.com/codedetail.aspx?id=50
+Function GetCurrentItem() As Object
+    Dim objApp As Outlook.Application
+         
+    Set objApp = CreateObject(&quot;Outlook.Application&quot;)
+    On Error Resume Next
+    Select Case TypeName(objApp.ActiveWindow)
+        Case &quot;Explorer&quot;
+            Set GetCurrentItem = objApp.ActiveExplorer.Selection.Item(1)
+        Case &quot;Inspector&quot;
+            Set GetCurrentItem = objApp.ActiveInspector.CurrentItem
+        Case Else
+            ' anything else will result in an error, which is
+            ' why we have the error handler above
+    End Select
+     
+    Set objApp = Nothing
+End Function
+</code></pre></noscript></div>
 </li>
 <li>The code includes both the "script" to use in an email rule (which receives the email message as argument) and a macro (without arguments) so that you can run it manually from the Macros menu (also in the Developer tab). Try it out - select an email message, choose the macro from the Macros menu, and check that a new task in the @WAITING FOR category is created, with the original message as an attachment. </li>
 <li>If needed, modify the category to which the task is assigned (or leave it empty to create an uncategorized task). </li>

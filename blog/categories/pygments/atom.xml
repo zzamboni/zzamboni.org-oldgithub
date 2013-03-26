@@ -4,7 +4,7 @@
   <title><![CDATA[Category: pygments | zzamboni.org]]></title>
   <link href="http://zzamboni.github.com/blog/categories/pygments/atom.xml" rel="self"/>
   <link href="http://zzamboni.github.com/"/>
-  <updated>2013-03-25T16:30:20-06:00</updated>
+  <updated>2013-03-26T00:46:55-06:00</updated>
   <id>http://zzamboni.github.com/</id>
   <author>
     <name><![CDATA[Diego Zamboni]]></name>
@@ -52,7 +52,9 @@
 <p></p>
 
 
-<p>  <p><a href="https://gist.github.com/571230">https://gist.github.com/571230</a></p></p>
+<p>  <p><div><script src='https://gist.github.com/571230.js'></script>
+<noscript><pre><code></code></pre></noscript></div>
+</p></p>
 ]]></content>
   </entry>
   

@@ -144,14 +144,20 @@
 
 
   <div class="entry-content"><p>I <a href="http://blog.zzamboni.org/implementing-single-copy-nirvana-in-cfengine3">recently posted</a> a snippet to perform <a href="http://cfwiki.org/cfwiki/index.php/Singlecopy_Nirvana">hierarchical copying </a>in cfengine3. As I was attempting to integrate this mechanism into <a href="http://github.com/zzamboni/cfengine-copbl">my copy of cfengine&#8217;s COPBL</a>, I realized that no additional functions or body components are needed. Thanks to cfengine3&#8217;s <a href="http://www.cfengine.org/manuals/cf3-reference.html#Loops-and-lists-in-cfengine-3">list expansion</a>, all you need to do is include in the existing copy promise the list containing the desired list of suffixes to try. For example:</p>
-<p><span style=""><p><a href="https://gist.github.com/552848">https://gist.github.com/552848</a></p></span></p>
+<p><span style=""><p><div><script src='https://gist.github.com/552848.js'></script>
+<noscript><pre><code></code></pre></noscript></div>
+</p></span></p>
 <p>Becomes:</p>
 <p></p>
-<p><a href="https://gist.github.com/552849">https://gist.github.com/552849</a></p>
+<p><div><script src='https://gist.github.com/552849.js'></script>
+<noscript><pre><code></code></pre></noscript></div>
+</p>
 <p>While this looks at first sight even longer than the original (and of course, in this case you could just specify <tt>${sys.flavour}</tt> directly in the <tt>copy_from </tt>statement), it is much more flexible. Instead of defining different sections for each class that you want to handle (e.g. suse_9, redhat_5, etc.), the same code is able to copy the corresponding binary directory for any operating system, you just have to put the corresponding <tt>bin.*</tt> directory in your repository.</p>
 <p></p>  Furthermore, without modifying the code, you can provide different binaries for specific hosts, for different domains, or for any other classification you want to impose. Just modify the @suffixes variable, ordering them from the most specific to the most general one:
 <p></p>
-<p><a href="https://gist.github.com/552850">https://gist.github.com/552850</a></p>
+<p><div><script src='https://gist.github.com/552850.js'></script>
+<noscript><pre><code></code></pre></noscript></div>
+</p>
 <p>You can do this without any additional functions, just adding <tt>${suffixes}</tt> in the appropriate place in the copy arguments. The advantage of using a different function as in my previous post (or even better, modifying your existing copy function), is that you can add hierarchical copying without having to modify all copy promises in your policy.</p>
 </div>
   
@@ -284,7 +290,9 @@
   </header>
 
 
-  <div class="entry-content"><p><a href="https://gist.github.com/548981">https://gist.github.com/548981</a></p>
+  <div class="entry-content"><p><div><script src='https://gist.github.com/548981.js'></script>
+<noscript><pre><code></code></pre></noscript></div>
+</p>
 </div>
   
   
@@ -402,7 +410,9 @@
   </header>
 
 
-  <div class="entry-content">Another cfengine snippet in case anyone finds it useful. This can be used to determine which NICs in the host have a certain IP address assigned to it, or match any pattern. <p></p> <p><a href="https://gist.github.com/547095">https://gist.github.com/547095</a></p>
+  <div class="entry-content">Another cfengine snippet in case anyone finds it useful. This can be used to determine which NICs in the host have a certain IP address assigned to it, or match any pattern. <p></p> <p><div><script src='https://gist.github.com/547095.js'></script>
+<noscript><pre><code></code></pre></noscript></div>
+</p>
 </div>
   
   
@@ -438,7 +448,9 @@
   </header>
 
 
-  <div class="entry-content">      Here is a sample implementation in cfengine3 of the technique described in the <a href="http://cfwiki.org/">cfengine wiki</a> as &#8221;<a href="http://cfwiki.org/cfwiki/index.php/Singlecopy_Nirvana">Singlecopy Nirvana</a>&#8221; for cfengine2. Cfengine3 makes the technique more powerful by allowing modularization, so that you can specify both the suffixes to try, and the files to copy using those suffixes, as variables. Also, cf3&#8217;s automatic list expansion allows us to write a single copy statement that will be automatically expanded into all the different values to try.<p></p>  <p><a href="https://gist.github.com/544952">https://gist.github.com/544952</a></p>
+  <div class="entry-content">      Here is a sample implementation in cfengine3 of the technique described in the <a href="http://cfwiki.org/">cfengine wiki</a> as &#8221;<a href="http://cfwiki.org/cfwiki/index.php/Singlecopy_Nirvana">Singlecopy Nirvana</a>&#8221; for cfengine2. Cfengine3 makes the technique more powerful by allowing modularization, so that you can specify both the suffixes to try, and the files to copy using those suffixes, as variables. Also, cf3&#8217;s automatic list expansion allows us to write a single copy statement that will be automatically expanded into all the different values to try.<p></p>  <p><div><script src='https://gist.github.com/544952.js'></script>
+<noscript><pre><code></code></pre></noscript></div>
+</p>
 </div>
   
   
