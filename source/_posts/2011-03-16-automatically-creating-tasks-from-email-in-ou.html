@@ -25,8 +25,7 @@ alias: /automatically-creating-tasks-from-email-in-ou
 <img alt="Vba" height="126" src="/images/2011/03/16/automatically-creating-tasks-from-email-in-ou/23077308-vba.png" width="422">
 </div>
 </li>
-<li>Paste the code:<br><script src="https://gist.github.com/868510.js?file=outlook_MakeWaitingForTaskWithAttachmentFromCurrentMessage.bas"></script>
-</li>
+<li>Paste the code:<br>{% gist 868510 outlook_MakeWaitingForTaskWithAttachmentFromCurrentMessage.bas %}</li>
 <li>The code includes both the "script" to use in an email rule (which receives the email message as argument) and a macro (without arguments) so that you can run it manually from the Macros menu (also in the Developer tab). Try it out - select an email message, choose the macro from the Macros menu, and check that a new task in the @WAITING FOR category is created, with the original message as an attachment. </li>
 <li>If needed, modify the category to which the task is assigned (or leave it empty to create an uncategorized task). </li>
 <li>The code by default adds the recipient of the message to the beginning of the task title, separated by a colon (of the form "recipient: subject"). This makes it easier to see pending items per person (and, if you use the 2Do iPhone app, it automatically groups entries by the text before the colon, which makes it even easier to process. If you don't want this, modify the value of addRecipient to "False".</li>
