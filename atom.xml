@@ -4,7 +4,7 @@
   <title><![CDATA[zzamboni.org]]></title>
   <link href="http://zzamboni.github.com/atom.xml" rel="self"/>
   <link href="http://zzamboni.github.com/"/>
-  <updated>2013-03-26T00:46:55-06:00</updated>
+  <updated>2013-04-14T12:17:18-05:00</updated>
   <id>http://zzamboni.github.com/</id>
   <author>
     <name><![CDATA[Diego Zamboni]]></name>
@@ -12,6 +12,23 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Ignite talks]]></title>
+    <link href="http://zzamboni.github.com/blog/ignite-talks/"/>
+    <updated>2013-04-14T12:13:00-05:00</updated>
+    <id>http://zzamboni.github.com/blog/ignite-talks</id>
+    <content type="html"><![CDATA[<p>I&#8217;m giving an Ignite talk for the first time at
+<a href="http://devopsdays.org/events/2013-paris/program/">DevOps days Paris</a>. It&#8217;s
+an interesting format: a 5-minute talk with 20 auto-advancing slides,
+every 15 seconds. I found
+<a href="http://scottberkun.com/2009/how-to-give-a-great-ignite-talk/">How to Give a great Ignite Talk</a>
+by Scott Berkun very useful, including the accompanying video.</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/rRa1IPkBFbg" frameborder="0" allowfullscreen></iframe>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[On the other side]]></title>
@@ -342,21 +359,6 @@ Included in the #LinuxCon registration packet: a skateboard#
 
 
 <div class="posterous_quote_citation">via <a href="http://tapbots.com/tweetbot">Tweetbot for iPhone</a>
-</div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[The Fantastic Flying Books of Mr. Morris Lessmore (2011) - YouTube]]></title>
-    <link href="http://zzamboni.github.com/blog/the-fantastic-flying-books-of-mr-morris-lessm"/>
-    <updated>2012-02-17T23:50:00-06:00</updated>
-    <id>http://zzamboni.github.com/blog/the-fantastic-flying-books-of-mr-morris-lessm</id>
-    <content type="html"><![CDATA[<div class="posterous_bookmarklet_entry">
-      <iframe allowfullscreen="true" src="http://www.youtube.com/embed/Adzywe9xeIU?wmode=transparent" frameborder="0" height="417" width="500"></iframe>
-
-<div class="posterous_quote_citation">via <a href="http://www.youtube.com/watch?v=Adzywe9xeIU&amp;feature=youtu.be">youtube.com</a>
-</div>
-    <p>Beautiful.</p>
 </div>
 ]]></content>
   </entry>

@@ -9,7 +9,7 @@
   <meta name="author" content="Diego Zamboni">
 
   
-  <meta name="description" content="Yes, those are buildings on fire as they are being swept along with the water. That is one of the most terrifying, horrifying things I have ever &hellip;">
+  <meta name="description" content="Apple released iOS 4.3 a few days ago, and if you follow this topic at all, you have probably already heard all about the Personal Hotspot feature, &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -21,7 +21,7 @@
   <link rel="canonical" href="http://zzamboni.github.com/blog/page/11">
   <link href="/favicon.ico" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="zzamboni.org" type="application/atom+xml">
+  <link href="http://feeds.feedburner.com/IdeallyBlue" rel="alternate" title="zzamboni.org" type="application/atom+xml">
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
@@ -31,6 +31,18 @@
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 
   
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-697520-2']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
 
 </head>
 
@@ -44,7 +56,7 @@
 
 </header>
   <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  <li><a href="http://feeds.feedburner.com/IdeallyBlue" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
   
 </ul>
   
@@ -58,6 +70,7 @@
 <ul class="main-navigation">
   <li><a href="/">Home</a></li>
   <li><a href="/blog">Ideally Blue</a></li>
+  <li><a href="/blog/categories/zznippets/">zznippets</a></li>
   <li><a href="/code.html">Code</a></li>
   <li><a href="/blog/archives">Archives</a></li>
   <li><a href="/about.html">About</a></li>
@@ -69,6 +82,57 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/single-tap-conference-dialing-in-ios-43">Single-tap Conference Dialing in iOS 4.3</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-03-12T17:03:00-06:00" pubdate data-updated="true">Mar 12<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Apple released iOS 4.3 a few days ago, and if you follow this topic at all, you have probably already heard all about the Personal Hotspot feature, AirPlay enhancements, and whatnot. But buried in the notes for this release was a new feature that caught my attention:</p>
+<blockquote class="posterous_short_quote">
+<em>Single tap conference call dialing with a pause to send a passcode</em><br>
+</blockquote>
+<p>I have found almost no mentions of this new feature online (most reviews focus on the &#8220;bigger&#8221; features), so I thought I&#8217;d explore it a little bit.</p>
+<p></p>  <strong>Warning: Unless you spend your days in conference calls (like me), you will probably be bored to tears by this. You&#8217;ve been warned.</strong><p></p>  First, a note about how I use my iPhone in this respect. I have a number of conference calls that I dial often. For these, I have created contacts that include the number to dial, followed by a long-enough pause (inserted through trial-and-error) and then any codes that have to be entered. For example, one such entry might look like this: &#8220;018001234567,,,987654#&#8221;. This gives already single-tap dialing of conference calls. This works for more complex cases. For example, for my own audioconference line, I need to dial the conference code, my moderator code, and a few other things. This entry looks something like this: &#8220;0018001234567,,89786756#,,*,,122334#,1&#8221;. This is very handy and it does everything except for speaking my name at the appropriate point in the sequence (it would be great if I could record it and play it back automatically at the correct moment).<p></p>  So what does the new feature do? It adds a &#8220;wait&#8221; button in addition to the &#8220;pause&#8221; button:<p></p>  <div class="p_embed p_image_embed">
+<a href="/images/2011/03/12/single-tap-conference-dialing-in-ios-43/22894252-IMG_16441.PNG"><img alt="Img_16441" height="750" src="/images/2011/03/12/single-tap-conference-dialing-in-ios-43/22894252-IMG_16441.PNG" width="500"></a>
+</div>
+<p></p>  When you press it, it appears as a semicolon, and the effect is that a button will appear after dialing the part before the semicolon, and a button will appear to dial the following parts. You can insert multiple waits in the number, and each press of the &#8220;dial&#8221; button will advance to the next part of the number:<p></p>  <div class="p_embed p_image_embed">
+<a href="/images/2011/03/12/single-tap-conference-dialing-in-ios-43/22894253-IMG_16451.PNG"><img alt="Img_16451" height="750" src="/images/2011/03/12/single-tap-conference-dialing-in-ios-43/22894253-IMG_16451.PNG" width="500"></a>
+</div>
+<p></p>  So, is this useful? For me, for frequently-dialed conference lines, I prefer my current method, since I don&#8217;t need any manual intervention. However, I think this new feature can be useful to include extension numbers in contacts. This is something I had never figured how to do, and now I can include the extension number in the same contact following a wait.
+<p>
+</p>
+<p>Sadly, this new feature does nothing to make phone numbers included in meeting invitation clickable, so they could be dialed automatically. This would indeed be a welcome addition.</p>
+<p></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -480,45 +544,6 @@ Yet in a city where some of the most prominent buildings have sat vacant for dec
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/42965343">Untitled</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-02-13T16:54:46-06:00" pubdate data-updated="true">Feb 13<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><a href="http://instagr.am/p/Blbza/"><div class="p_embed p_image_embed">
-<a href="/images/2011/02/13/42965343/21520273-media_httpdistillerys_hqgqm.jpg"><img alt="Media_httpdistillerys_hqgqm" height="500" src="/images/2011/02/13/42965343/21520273-media_httpdistillerys_hqgqm.jpg" width="500"></a>
-</div>
-</a>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/12/">&larr; Older</a>
@@ -536,6 +561,10 @@ Yet in a city where some of the most prominent buildings have sat vacant for dec
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/ignite-talks/">Ignite talks</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/on-the-other-side/">On the other side</a>
       </li>
     
@@ -551,14 +580,46 @@ Yet in a city where some of the most prominent buildings have sat vacant for dec
         <a href="/blog/letters-of-note-regarding-your-dam-complaint">Letters of Note: Regarding your dam complaint</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/the-cfengine-agent-as-drawn-by-my-6-year-old">The #CFEngine agent, as drawn by my 6-year-old daughter :) </a>
-      </li>
-    
   </ul>
 </section>
 
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
 
+        github.showRepos({
+            user: 'zzamboni',
+            count: 5,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/111985143340803603560?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
 
 
 

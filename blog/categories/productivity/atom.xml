@@ -4,7 +4,7 @@
   <title><![CDATA[Category: productivity | zzamboni.org]]></title>
   <link href="http://zzamboni.github.com/blog/categories/productivity/atom.xml" rel="self"/>
   <link href="http://zzamboni.github.com/"/>
-  <updated>2013-03-26T00:46:55-06:00</updated>
+  <updated>2013-04-14T12:18:30-05:00</updated>
   <id>http://zzamboni.github.com/</id>
   <author>
     <name><![CDATA[Diego Zamboni]]></name>
@@ -73,9 +73,7 @@
 <p></p>
 
 
-<p><div><script src='https://gist.github.com/753333.js'></script>
-<noscript><pre><code></code></pre></noscript></div>
-</p>
+<p>{% gist 753333  %}</p>
 
 
 <p>This snippet assigns Win-space to open an input box, and uses whatever is typed in it as the task title to the Add-OutlookTask script. The task will be placed without any categories in the task list, so it appears automatically the next time I open my Jello Dashboard inbox. Here it is in action:</p>

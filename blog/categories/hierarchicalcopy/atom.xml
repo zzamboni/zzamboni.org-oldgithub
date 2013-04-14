@@ -4,7 +4,7 @@
   <title><![CDATA[Category: hierarchicalcopy | zzamboni.org]]></title>
   <link href="http://zzamboni.github.com/blog/categories/hierarchicalcopy/atom.xml" rel="self"/>
   <link href="http://zzamboni.github.com/"/>
-  <updated>2013-03-26T00:46:55-06:00</updated>
+  <updated>2013-04-14T12:18:30-05:00</updated>
   <id>http://zzamboni.github.com/</id>
   <author>
     <name><![CDATA[Diego Zamboni]]></name>
@@ -21,9 +21,7 @@
     <content type="html"><![CDATA[<p>I <a href="http://blog.zzamboni.org/implementing-single-copy-nirvana-in-cfengine3">recently posted</a> a snippet to perform <a href="http://cfwiki.org/cfwiki/index.php/Singlecopy_Nirvana">hierarchical copying </a>in cfengine3. As I was attempting to integrate this mechanism into <a href="http://github.com/zzamboni/cfengine-copbl">my copy of cfengine's COPBL</a>, I realized that no additional functions or body components are needed. Thanks to cfengine3's <a href="http://www.cfengine.org/manuals/cf3-reference.html#Loops-and-lists-in-cfengine-3">list expansion</a>, all you need to do is include in the existing copy promise the list containing the desired list of suffixes to try. For example:</p>
 
 
-<p><span style=""><p><div><script src='https://gist.github.com/552848.js'></script>
-<noscript><pre><code></code></pre></noscript></div>
-</p></span></p>
+<p><span style=""><p>{% gist 552848  %}</p></span></p>
 
 
 <p>Becomes:</p>
@@ -32,9 +30,7 @@
 <p></p>
 
 
-<p><div><script src='https://gist.github.com/552849.js'></script>
-<noscript><pre><code></code></pre></noscript></div>
-</p>
+<p>{% gist 552849  %}</p>
 
 
 <p>While this looks at first sight even longer than the original (and of course, in this case you could just specify <tt>${sys.flavour}</tt> directly in the <tt>copy_from </tt>statement), it is much more flexible. Instead of defining different sections for each class that you want to handle (e.g. suse_9, redhat_5, etc.), the same code is able to copy the corresponding binary directory for any operating system, you just have to put the corresponding <tt>bin.*</tt> directory in your repository.</p>
@@ -48,9 +44,7 @@
 <p></p>
 
 
-<p><div><script src='https://gist.github.com/552850.js'></script>
-<noscript><pre><code></code></pre></noscript></div>
-</p>
+<p>{% gist 552850  %}</p>
 
 
 <p>You can do this without any additional functions, just adding <tt>${suffixes}</tt> in the appropriate place in the copy arguments. The advantage of using a different function as in my previous post (or even better, modifying your existing copy function), is that you can add hierarchical copying without having to modify all copy promises in your policy.</p>
@@ -63,9 +57,7 @@
     <link href="http://zzamboni.github.com/blog/implementing-single-copy-nirvana-in-cfengine3"/>
     <updated>2010-08-23T01:56:35-05:00</updated>
     <id>http://zzamboni.github.com/blog/implementing-single-copy-nirvana-in-cfengine3</id>
-    <content type="html"><![CDATA[<pre><code>  Here is a sample implementation in cfengine3 of the technique described in the &lt;a href="http://cfwiki.org/"&gt;cfengine wiki&lt;/a&gt; as "&lt;a href="http://cfwiki.org/cfwiki/index.php/Singlecopy_Nirvana"&gt;Singlecopy Nirvana&lt;/a&gt;" for cfengine2. Cfengine3 makes the technique more powerful by allowing modularization, so that you can specify both the suffixes to try, and the files to copy using those suffixes, as variables. Also, cf3's automatic list expansion allows us to write a single copy statement that will be automatically expanded into all the different values to try.&lt;p&gt;&lt;/p&gt;  &lt;p&gt;<div><script src='https://gist.github.com/544952.js'></script>
-<noscript><pre><code></code></pre></noscript></div>
-&lt;/p&gt;
+    <content type="html"><![CDATA[<pre><code>  Here is a sample implementation in cfengine3 of the technique described in the &lt;a href="http://cfwiki.org/"&gt;cfengine wiki&lt;/a&gt; as "&lt;a href="http://cfwiki.org/cfwiki/index.php/Singlecopy_Nirvana"&gt;Singlecopy Nirvana&lt;/a&gt;" for cfengine2. Cfengine3 makes the technique more powerful by allowing modularization, so that you can specify both the suffixes to try, and the files to copy using those suffixes, as variables. Also, cf3's automatic list expansion allows us to write a single copy statement that will be automatically expanded into all the different values to try.&lt;p&gt;&lt;/p&gt;  &lt;p&gt;{% gist 544952  %}&lt;/p&gt;
 </code></pre>
 ]]></content>
   </entry>

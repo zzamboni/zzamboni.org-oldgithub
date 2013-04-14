@@ -4,7 +4,7 @@
   <title><![CDATA[Category: zznippets | zzamboni.org]]></title>
   <link href="http://zzamboni.github.com/blog/categories/zznippets/atom.xml" rel="self"/>
   <link href="http://zzamboni.github.com/"/>
-  <updated>2013-03-26T00:46:55-06:00</updated>
+  <updated>2013-04-14T12:18:30-05:00</updated>
   <id>http://zzamboni.github.com/</id>
   <author>
     <name><![CDATA[Diego Zamboni]]></name>
@@ -12,6 +12,23 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Ignite talks]]></title>
+    <link href="http://zzamboni.github.com/blog/ignite-talks/"/>
+    <updated>2013-04-14T12:13:00-05:00</updated>
+    <id>http://zzamboni.github.com/blog/ignite-talks</id>
+    <content type="html"><![CDATA[<p>I'm giving an Ignite talk for the first time at
+<a href="http://devopsdays.org/events/2013-paris/program/">DevOps days Paris</a>. It's
+an interesting format: a 5-minute talk with 20 auto-advancing slides,
+every 15 seconds. I found
+<a href="http://scottberkun.com/2009/how-to-give-a-great-ignite-talk/">How to Give a great Ignite Talk</a>
+by Scott Berkun very useful, including the accompanying video.</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/rRa1IPkBFbg" frameborder="0" allowfullscreen></iframe>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Included in the #LinuxCon registration packet: a skateboard#]]></title>
@@ -77,24 +94,6 @@
 <div class="posterous_quote_citation">via <a href="http://blogs.discovermagazine.com/badastronomy/2012/05/25/when-a-dragon-mated-the-space-station/">blogs.discovermagazine.com</a>
 </div>
     <p>Amazing.</p>
-</div>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Earth Day, from 40,000 km up | Bad Astronomy | Discover Magazine]]></title>
-    <link href="http://zzamboni.github.com/blog/earth-day-from-40000-km-up-bad-astronomy-disc"/>
-    <updated>2012-04-22T20:13:00-05:00</updated>
-    <id>http://zzamboni.github.com/blog/earth-day-from-40000-km-up-bad-astronomy-disc</id>
-    <content type="html"><![CDATA[<div class="posterous_bookmarklet_entry">
-      <blockquote class="posterous_long_quote">
-<p style="text-align: center;"><iframe allowfullscreen="" src="http://www.youtube.com/embed/6twFHqJ03_k?fs=1&amp;feature=oembed" frameborder="0" height="343" width="610"></iframe></p>
-<p></p>
-</blockquote>
-<div class="posterous_quote_citation">via <a href="http://blogs.discovermagazine.com/badastronomy/2012/04/22/earth-day-from-40000-km-up/?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+BadAstronomyBlog+%28Bad+Astronomy%29&amp;utm_content=Google+Reader#close=1">blogs.discovermagazine.com</a>
-</div>
-    <p>This video is simply amazing.</p>
 </div>
 
 ]]></content>
