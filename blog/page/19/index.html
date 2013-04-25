@@ -9,7 +9,7 @@
   <meta name="author" content="Diego Zamboni">
 
   
-  <meta name="description" content="Update (2011/09/05): Updated the instructions for cfengine 3.2.0, cygwin 1.7.9, and tested them on a clean cygwin install. Installing the cfengine &hellip;">
+  <meta name="description" content="Here is a sample implementation in cfengine3 of the technique described in the cfengine wiki as &#8221;Singlecopy Nirvana&#8221; for cfengine2. &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -82,6 +82,44 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/implementing-single-copy-nirvana-in-cfengine3">Implementing &#8220;Single-copy Nirvana&#8221; in Cfengine3</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-08-23T01:56:35-05:00" pubdate data-updated="true">Aug 23<span>rd</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">      Here is a sample implementation in cfengine3 of the technique described in the <a href="http://cfwiki.org/">cfengine wiki</a> as &#8221;<a href="http://cfwiki.org/cfwiki/index.php/Singlecopy_Nirvana">Singlecopy Nirvana</a>&#8221; for cfengine2. Cfengine3 makes the technique more powerful by allowing modularization, so that you can specify both the suffixes to try, and the files to copy using those suffixes, as variables. Also, cf3&#8217;s automatic list expansion allows us to write a single copy statement that will be automatically expanded into all the different values to try.<p></p>  <p><div><script src='https://gist.github.com/544952.js'></script>
+<noscript><pre><code></code></pre></noscript></div>
+</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -469,52 +507,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/deploying-multiple-environments-on-heroku-whi">Deploying Multiple Environments on Heroku (While Still Hosting Code on Github)</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-08-13T16:55:21-05:00" pubdate data-updated="true">Aug 13<span>th</span>, 2010</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><div class="posterous_bookmarklet_entry">
-      <blockquote class="posterous_long_quote">
-<p><a href="http://www.flickr.com/photos/tbalthazar/3588391207/"><img class="alignnone" title="Github/Heroku setup" src="http://farm4.static.flickr.com/3320/3588391207_f7556fbce7_o.png" height="203" alt=""></a></p>
-
-<p>In this post, I will explain how I use Github to version my code and Heroku to deploy it, with 2 different environments. You may also read <a href="http://jqr.github.com/2009/04/24/deploy-your-rails-application-in-2-minutes-with-heroku.html">this article that explains how to deploy your application on Heroku</a> and this one that also explain <a href="http://jqr.github.com/2009/04/25/deploying-multiple-environments-on-heroku.html">how to deal with multiple environments</a></p>
-</blockquote>
-
-<div class="posterous_quote_citation">via <a href="http://suitmymind.com/blog/2009/06/02/deploying-multiple-environments-on-heroku-while-still-hosting-code-on-github">suitmymind.com</a>
-</div>
-    <p>Nice article, possibly useful reference in the future.</p>
-</div>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/20/">&larr; Older</a>
@@ -532,6 +524,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/ellen-on-password-security/">Ellen on password security</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/ignite-talks/">Ignite talks</a>
       </li>
     
@@ -547,38 +543,7 @@
         <a href="/blog/included-in-the-linuxcon-registration-packet">Included in the #LinuxCon registration packet: a skateboard#</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/letters-of-note-regarding-your-dam-complaint">Letters of Note: Regarding your dam complaint</a>
-      </li>
-    
   </ul>
-</section>
-
-<section>
-  <h1>GitHub Repos</h1>
-  <ul id="gh_repos">
-    <li class="loading">Status updating&#8230;</li>
-  </ul>
-  
-  <script type="text/javascript">
-    $(document).ready(function(){
-        if (!window.jXHR){
-            var jxhr = document.createElement('script');
-            jxhr.type = 'text/javascript';
-            jxhr.src = '/javascripts/libs/jXHR.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(jxhr, s);
-        }
-
-        github.showRepos({
-            user: 'zzamboni',
-            count: 5,
-            skip_forks: true,
-            target: '#gh_repos'
-        });
-    });
-  </script>
-  <script src="/javascripts/github.js" type="text/javascript"> </script>
 </section>
 
 

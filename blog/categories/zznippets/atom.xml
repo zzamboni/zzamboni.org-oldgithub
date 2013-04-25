@@ -4,7 +4,7 @@
   <title><![CDATA[Category: zznippets | zzamboni.org]]></title>
   <link href="http://zzamboni.github.com/blog/categories/zznippets/atom.xml" rel="self"/>
   <link href="http://zzamboni.github.com/"/>
-  <updated>2013-04-14T12:23:27-05:00</updated>
+  <updated>2013-04-25T14:49:51-05:00</updated>
   <id>http://zzamboni.github.com/</id>
   <author>
     <name><![CDATA[Diego Zamboni]]></name>
@@ -12,6 +12,18 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Ellen on password security]]></title>
+    <link href="http://zzamboni.github.com/blog/ellen-on-password-security/"/>
+    <updated>2013-04-25T14:46:00-05:00</updated>
+    <id>http://zzamboni.github.com/blog/ellen-on-password-security</id>
+    <content type="html"><![CDATA[<p>Hilarious - Ellen on the "Internet Password Minder"</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/Srh_TV_J144" frameborder="0" allowfullscreen></iframe>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Ignite talks]]></title>
@@ -76,24 +88,6 @@ by Scott Berkun very useful, including the accompanying video.</p>
 
 <div class="p_embed p_image_embed">
 <a href="http://zzamboni.github.com/images/2012/07/04/the-cfengine-agent-as-drawn-by-my-6-year-old/42674563-image.jpg"><img alt="Image" height="373" src="http://zzamboni.github.com/images/2012/07/04/the-cfengine-agent-as-drawn-by-my-6-year-old/42674563-image.jpg" width="500"></a>
-</div>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[When a Dragon mated the space station /ht @BadAstronomer]]></title>
-    <link href="http://zzamboni.github.com/blog/when-a-dragon-mated-the-space-station-ht-bada"/>
-    <updated>2012-05-25T11:21:00-05:00</updated>
-    <id>http://zzamboni.github.com/blog/when-a-dragon-mated-the-space-station-ht-bada</id>
-    <content type="html"><![CDATA[<div class="posterous_bookmarklet_entry">
-      <blockquote class="posterous_long_quote">
-<p>At 16:02 UTC, Friday, May 25, 2012, the SpaceX Dragon officially became the first privately-owned commercial spacecraft to be captured by and berthed at the International Space Station. It is (if I’ve done the math correctly) the 114th spacecraft to dock with ISS, including the missions sent up to build the station. It is the first privately-owned commercial spacecraft in history to do so.</p>
-<p><img title="dragon_berth" class="aligncenter size-full wp-image-49626" src="http://blogs.discovermagazine.com/badastronomy/files/2012/05/dragon_berth.jpg" height="350" alt="" width="476"></p>
-</blockquote>
-<div class="posterous_quote_citation">via <a href="http://blogs.discovermagazine.com/badastronomy/2012/05/25/when-a-dragon-mated-the-space-station/">blogs.discovermagazine.com</a>
-</div>
-    <p>Amazing.</p>
 </div>
 
 ]]></content>

@@ -4,7 +4,7 @@
   <title><![CDATA[zzamboni.org]]></title>
   <link href="http://zzamboni.github.com/atom.xml" rel="self"/>
   <link href="http://zzamboni.github.com/"/>
-  <updated>2013-04-14T12:17:18-05:00</updated>
+  <updated>2013-04-25T14:48:00-05:00</updated>
   <id>http://zzamboni.github.com/</id>
   <author>
     <name><![CDATA[Diego Zamboni]]></name>
@@ -12,6 +12,18 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Ellen on password security]]></title>
+    <link href="http://zzamboni.github.com/blog/ellen-on-password-security/"/>
+    <updated>2013-04-25T14:46:00-05:00</updated>
+    <id>http://zzamboni.github.com/blog/ellen-on-password-security</id>
+    <content type="html"><![CDATA[<p>Hilarious - Ellen on the &#8220;Internet Password Minder&#8221;</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/Srh_TV_J144" frameborder="0" allowfullscreen></iframe>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Ignite talks]]></title>
@@ -343,22 +355,6 @@ Included in the #LinuxCon registration packet: a skateboard#
 <div class="posterous_quote_citation">via <a href="http://www.npr.org/blogs/krulwich/2012/02/24/147367644/six-legged-giant-finds-secret-hideaway-hides-for-80-years?sc=fb&amp;cc=fp">npr.org</a>
 </div>
     <p>Amazing story.</p>
-</div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[A punto de comenzar. Torneo de #TaeKwonDo en Querétaro]]></title>
-    <link href="http://zzamboni.github.com/blog/a-punto-de-comenzar-torneo-de-taekwondo-en-qu"/>
-    <updated>2012-02-18T09:50:08-06:00</updated>
-    <id>http://zzamboni.github.com/blog/a-punto-de-comenzar-torneo-de-taekwondo-en-qu</id>
-    <content type="html"><![CDATA[<p></p>
-<div class="p_embed p_image_embed">
-<a href="http://zzamboni.github.com/images/2012/02/18/a-punto-de-comenzar-torneo-de-taekwondo-en-qu/38058956-image.jpg"><img alt="Image" height="373" src="http://zzamboni.github.com/images/2012/02/18/a-punto-de-comenzar-torneo-de-taekwondo-en-qu/38058956-image.jpg" width="500"></a>
-</div>
-
-
-<div class="posterous_quote_citation">via <a href="http://tapbots.com/tweetbot">Tweetbot for iPhone</a>
 </div>
 ]]></content>
   </entry>
