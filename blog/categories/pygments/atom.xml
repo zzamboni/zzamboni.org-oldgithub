@@ -4,7 +4,7 @@
   <title><![CDATA[Category: pygments | zzamboni.org]]></title>
   <link href="http://zzamboni.github.com/blog/categories/pygments/atom.xml" rel="self"/>
   <link href="http://zzamboni.github.com/"/>
-  <updated>2013-12-02T09:48:08-06:00</updated>
+  <updated>2014-03-24T10:57:37-06:00</updated>
   <id>http://zzamboni.github.com/</id>
   <author>
     <name><![CDATA[Diego Zamboni]]></name>
@@ -21,10 +21,12 @@
     <content type="html"><![CDATA[<p>I have written a <a href="http://cfengine.org/">Cfengine3</a> lexer for <a href="http://pygments.org/">Pygments</a>, the open source syntax-highlighter used by <a href="http://gist.github.com/">Gist</a> and many other sites. It seems to work fine on all the cfengine policy files I have tested, but if you find anything that doesn't quite work as expected, please let me know. This is my first-ever Pygments lexer, so if you are an expert and can advise me on better ways of doing things, I'd very much appreciate the feedback too.</p>
 
 
-<p></p>
 
 
-<p>  Here's how to install it (again, I don't know if this is the better or easier way):</p>
+<p><strong>Update: Since version 1.5, Pygments includes this lexer. If you are using 1.5 or later, you already have the CFEngine lexer. You can sometimes find a newer version of the lexer in <a href="https://bitbucket.org/zzamboni/pygments-main/src/7304e4759ae65343d89a51359ca538912519cc31/pygments/lexers/other.py?at=default#cl-2532">my fork of the Pygments project</a> (updates are infrequent, only when there are changes in the CFEngine language).</strong></p>
+
+
+<p><strike><p></p>  Here's how to install it (again, I don't know if this is the better or easier way):</p>
 
 <ol>
 <li>Obtain the Pygments <a href="http://pygments.org/download/">source code</a>.</li>
@@ -46,15 +48,10 @@
 </ol>
 
 
+<p></strike></p>
+
 <p>Then run pygmentize on any .cf file, and it should output properly highlighted code. You can view a sample <a href="http://zzamboni.org/files/cfengine_stdlib.html">here</a>.</p>
 
-
-<p></p>
-
-
-<p>  <p><div><script src='https://gist.github.com/571230.js'></script>
-<noscript><pre><code></code></pre></noscript></div>
-</p></p>
 ]]></content>
   </entry>
   
