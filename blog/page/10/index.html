@@ -389,13 +389,13 @@
 </div>
 </li>
 <li>Paste the code:<br><div><script src='https://gist.github.com/868510.js?file=outlook_MakeWaitingForTaskWithAttachmentFromCurrentMessage.bas'></script>
-<noscript><pre><code>' How to use it: see http://blog.zzamboni.org/automatically-creating-tasks-from-email-in-ou
-' Diego Zamboni, March 16, 2011
+<noscript><pre><code>&#39; How to use it: see http://blog.zzamboni.org/automatically-creating-tasks-from-email-in-ou
+&#39; Diego Zamboni, March 16, 2011
 
-' Set the string comparison method to Text (&quot;AAA&quot; = &quot;aaa&quot;).
+&#39; Set the string comparison method to Text (&quot;AAA&quot; = &quot;aaa&quot;).
 Option Compare Text
 
-' Based originally on code from http://www.outlookcode.com/codedetail.aspx?id=959, modified by Diego Zamboni
+&#39; Based originally on code from http://www.outlookcode.com/codedetail.aspx?id=959, modified by Diego Zamboni
 Sub MakeWaitingForTaskWithAttachmentFromCurrentMessage(MyMail As Outlook.MailItem)
     Dim strID As String
     Dim olNS As Outlook.NameSpace
@@ -406,7 +406,7 @@ Sub MakeWaitingForTaskWithAttachmentFromCurrentMessage(MyMail As Outlook.MailIte
     Dim regex
     Dim matches, customSubject, subject
     
-    ' Configuration options
+    &#39; Configuration options
     categories = &quot;@WAITING FOR&quot;
     addRecipient = True
     
@@ -447,7 +447,7 @@ Sub MakeWaitingForTaskWithAttachmentFromCurrentMessage(MyMail As Outlook.MailIte
     Set olNS = Nothing
 End Sub
 
-' Wrapper that gets the current item and calls the previous function, to use as a macro
+&#39; Wrapper that gets the current item and calls the previous function, to use as a macro
 Sub MakeWaitingForTaskWithAttachmentFromCurrentMessageMacro()
     Dim curMail As Outlook.MailItem
     Set curMail = GetCurrentItem()
@@ -455,7 +455,7 @@ Sub MakeWaitingForTaskWithAttachmentFromCurrentMessageMacro()
 End Sub
 
     
-' From http://www.outlookcode.com/codedetail.aspx?id=50
+&#39; From http://www.outlookcode.com/codedetail.aspx?id=50
 Function GetCurrentItem() As Object
     Dim objApp As Outlook.Application
          
@@ -467,8 +467,8 @@ Function GetCurrentItem() As Object
         Case &quot;Inspector&quot;
             Set GetCurrentItem = objApp.ActiveInspector.CurrentItem
         Case Else
-            ' anything else will result in an error, which is
-            ' why we have the error handler above
+            &#39; anything else will result in an error, which is
+            &#39; why we have the error handler above
     End Select
      
     Set objApp = Nothing
@@ -645,8 +645,8 @@ End Function
 <iframe src="http://www.oreilly.com/authors/widgets/356.html" height="400px" scrolling="no" frameborder="0"></iframe>
 </section>
 <section>
-<a href="http://www.dpbolvw.net/click-7084911-11625298" target="_top">
-<img src="http://www.lduhtrp.net/image-7084911-11625298" width="120" height="240" alt="oreilly.com Cyber Monday Sale" border="0"/></a>
+<a href="http://www.jdoqocy.com/click-7084911-11789165" target="_top">
+	<img src="http://www.awltovhc.com/image-7084911-11789165" width="200" height="200" alt="Save 50% on all Ebooks and Videos to celebrate Day Against DRM" border="0"/></a>
 </section>
 <section>
 <h1>Proud to be</h1>
