@@ -4,7 +4,7 @@
   <title><![CDATA[Category: keyboard | zzamboni.org]]></title>
   <link href="http://zzamboni.github.com/blog/categories/keyboard/atom.xml" rel="self"/>
   <link href="http://zzamboni.github.com/"/>
-  <updated>2014-07-01T13:17:29-05:00</updated>
+  <updated>2014-07-03T00:33:46-05:00</updated>
   <id>http://zzamboni.github.com/</id>
   <author>
     <name><![CDATA[Diego Zamboni]]></name>
@@ -31,9 +31,7 @@
 
 
 <div>
-<div><p><div><script src='https://gist.github.com/1400862.js'></script>
-<noscript><pre><code></code></pre></noscript></div>
-</p></div>
+<div><p>{% gist 1400862  %}</p></div>
 </div>
 
 
