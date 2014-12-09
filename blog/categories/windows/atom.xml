@@ -4,7 +4,7 @@
   <title><![CDATA[Category: windows | zzamboni.org]]></title>
   <link href="http://zzamboni.github.com/blog/categories/windows/atom.xml" rel="self"/>
   <link href="http://zzamboni.github.com/"/>
-  <updated>2014-09-23T16:27:49-05:00</updated>
+  <updated>2014-12-08T23:38:12-08:00</updated>
   <id>http://zzamboni.github.com/</id>
   <author>
     <name><![CDATA[Diego Zamboni]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Overhauling my GTD system under Windows]]></title>
     <link href="http://zzamboni.github.com/blog/overhauling-my-gtd-system-under-windows"/>
-    <updated>2011-03-14T00:09:00-06:00</updated>
+    <updated>2011-03-13T23:09:00-07:00</updated>
     <id>http://zzamboni.github.com/blog/overhauling-my-gtd-system-under-windows</id>
     <content type="html"><![CDATA[<p>As you may know, I'm a reluctant switcher from Mac to Windows. I am also a fan of <a href="http://en.wikipedia.org/wiki/Getting_Things_Done">GTD</a>. I had been using <a href="http://jello-dashboard.net/">Jello Dashboard</a> (JD) to implement GTD under Outlook. JD is a very nice system, the developer is friendly and responsive, and I had even written several patches to adapt it to my way of working. I was even in the process of drafting a series of blog posts titled "My GTD under Outlook setup".</p>
 
@@ -56,7 +56,7 @@
   <entry>
     <title type="html"><![CDATA[Installing latex2html under Win7 with cygwin]]></title>
     <link href="http://zzamboni.github.com/blog/installing-latex2html-under-win7-with-cygwin"/>
-    <updated>2011-01-19T15:28:00-06:00</updated>
+    <updated>2011-01-19T13:28:00-08:00</updated>
     <id>http://zzamboni.github.com/blog/installing-latex2html-under-win7-with-cygwin</id>
     <content type="html"><![CDATA[<div class="posterous_bookmarklet_entry">
       <blockquote class="posterous_short_quote">I got latex2html to install on the latest cygwin, however to get the
@@ -74,7 +74,7 @@ a UNIX.</blockquote>
   <entry>
     <title type="html"><![CDATA[LogParser, Event Logs, and Vista - Neil Carpenter's Blog - Site Home - TechNet Blogs]]></title>
     <link href="http://zzamboni.github.com/blog/logparser-event-logs-and-vista-neil-carpenter"/>
-    <updated>2011-01-19T12:33:00-06:00</updated>
+    <updated>2011-01-19T10:33:00-08:00</updated>
     <id>http://zzamboni.github.com/blog/logparser-event-logs-and-vista-neil-carpenter</id>
     <content type="html"><![CDATA[<div class="posterous_bookmarklet_entry">
       <blockquote class="posterous_long_quote">
@@ -96,7 +96,7 @@ a UNIX.</blockquote>
   <entry>
     <title type="html"><![CDATA[Setting up a global hotkey to add tasks to Outlook]]></title>
     <link href="http://zzamboni.github.com/blog/setting-up-a-global-hotkey-to-add-tasks-to-ou"/>
-    <updated>2010-12-23T12:14:00-06:00</updated>
+    <updated>2010-12-23T10:14:00-08:00</updated>
     <id>http://zzamboni.github.com/blog/setting-up-a-global-hotkey-to-add-tasks-to-ou</id>
     <content type="html"><![CDATA[<p>One thing I missed since I moved from a Mac (using The Hit List for GTD) to Outlook (using Jello Dashboard for GTD) was the availability of a global hot key that I could use to bring up a text entry box which I could use to quickly add things into my electronic Inbox, for later processing.</p>
 
@@ -145,7 +145,7 @@ a UNIX.</blockquote>
   <entry>
     <title type="html"><![CDATA[Making cygwin, Windows and emacs understand the same symlinks]]></title>
     <link href="http://zzamboni.github.com/blog/making-cygwin-windows-and-emacs-understand-th"/>
-    <updated>2010-09-28T09:39:00-05:00</updated>
+    <updated>2010-09-28T07:39:00-07:00</updated>
     <id>http://zzamboni.github.com/blog/making-cygwin-windows-and-emacs-understand-th</id>
     <content type="html"><![CDATA[<p>Today I ran into the problem that symlinks created under cygwin using "ln -s" are not understood by Windows, and of course Windows shortcuts are seen by cygwin as regular files. Happily, this is a <strong>(semi-)</strong>solved problem. For reference, this is what needs to be done:</p>
 

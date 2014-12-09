@@ -4,7 +4,7 @@
   <title><![CDATA[Category: sitenews | zzamboni.org]]></title>
   <link href="http://zzamboni.github.com/blog/categories/sitenews/atom.xml" rel="self"/>
   <link href="http://zzamboni.github.com/"/>
-  <updated>2014-09-23T16:27:49-05:00</updated>
+  <updated>2014-12-08T23:38:12-08:00</updated>
   <id>http://zzamboni.github.com/</id>
   <author>
     <name><![CDATA[Diego Zamboni]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[On the other side]]></title>
     <link href="http://zzamboni.github.com/blog/on-the-other-side/"/>
-    <updated>2013-03-25T15:57:00-06:00</updated>
+    <updated>2013-03-25T15:57:00-07:00</updated>
     <id>http://zzamboni.github.com/blog/on-the-other-side</id>
     <content type="html"><![CDATA[<p>About a year ago,
 <a href="http://blog.posterous.com/big-news">Posterous was acquired by Twitter</a>. A
@@ -52,7 +52,7 @@ broken.</p>
   <entry>
     <title type="html"><![CDATA[Website redesign and unification]]></title>
     <link href="http://zzamboni.github.com/blog/website-redesign-and-unification"/>
-    <updated>2010-09-28T02:22:09-05:00</updated>
+    <updated>2010-09-28T00:22:09-07:00</updated>
     <id>http://zzamboni.github.com/blog/website-redesign-and-unification</id>
     <content type="html"><![CDATA[<pre><code>  There are still some rough edges, but by far the redesign and unification of &lt;a href="http://zzamboni.org/"&gt;zzamboni.org&lt;/a&gt; is done. With the same design you can now find my blogs (hosted by posterous.com), my project pages (hosted in github.com project repositories) and some static pages (hosted in my personal github.com pages repository, this includes the root, About and Code pages, as well as the static copy of my old blog &lt;a href="http://zzamboni.org/brt/"&gt;BrT&lt;/a&gt;, which is the only one that retains its original design). The theme is a variation of Posterous' "Paramaibo".&lt;p&gt;&lt;/p&gt;  I'm still playing with the design, and finishing some pages here and there. But overall things should be good, please let me know if you find anything broken.&lt;p&gt;&lt;/p&gt;  Kudos to the Posterous and GitHub teams for building such useful, powerful and friendly tools and services.
 </code></pre>
@@ -62,7 +62,7 @@ broken.</p>
   <entry>
     <title type="html"><![CDATA[Updated server and service setup]]></title>
     <link href="http://zzamboni.github.com/blog/updated-server-and-service-setup"/>
-    <updated>2010-08-16T14:58:00-05:00</updated>
+    <updated>2010-08-16T12:58:00-07:00</updated>
     <id>http://zzamboni.github.com/blog/updated-server-and-service-setup</id>
     <content type="html"><![CDATA[<p>(a friend asked me about my online setup, and I wrote the text below. Then I realized it would also make an interesting blog post, and I just copied and pasted it, with minimal editing, into an email to posterous. This is why I love posterous, it makes posting so easy) </p>
 

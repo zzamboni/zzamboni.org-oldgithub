@@ -4,7 +4,7 @@
   <title><![CDATA[Category: configurationmanagement | zzamboni.org]]></title>
   <link href="http://zzamboni.github.com/blog/categories/configurationmanagement/atom.xml" rel="self"/>
   <link href="http://zzamboni.github.com/"/>
-  <updated>2014-09-23T16:27:49-05:00</updated>
+  <updated>2014-12-08T23:38:12-08:00</updated>
   <id>http://zzamboni.github.com/</id>
   <author>
     <name><![CDATA[Diego Zamboni]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[The State of Open Source System Automation]]></title>
     <link href="http://zzamboni.github.com/blog/the-state-of-open-source-system-automation"/>
-    <updated>2010-08-26T01:55:58-05:00</updated>
+    <updated>2010-08-25T23:55:58-07:00</updated>
     <id>http://zzamboni.github.com/blog/the-state-of-open-source-system-automation</id>
     <content type="html"><![CDATA[<div class="posterous_bookmarklet_entry">
       <blockquote class="posterous_short_quote">The days of DIY system administration are rapidly coming to a close. Why? Because the open source tools available are just too good not to use. Presenting Bcfg2, Cfengine, Chef and Puppet.</blockquote>

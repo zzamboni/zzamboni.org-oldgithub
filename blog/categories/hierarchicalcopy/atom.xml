@@ -4,7 +4,7 @@
   <title><![CDATA[Category: hierarchicalcopy | zzamboni.org]]></title>
   <link href="http://zzamboni.github.com/blog/categories/hierarchicalcopy/atom.xml" rel="self"/>
   <link href="http://zzamboni.github.com/"/>
-  <updated>2014-09-23T16:27:49-05:00</updated>
+  <updated>2014-12-08T23:38:12-08:00</updated>
   <id>http://zzamboni.github.com/</id>
   <author>
     <name><![CDATA[Diego Zamboni]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Hierarchical copying with cfengine3]]></title>
     <link href="http://zzamboni.github.com/blog/hierarchical-copying-with-cfengine3"/>
-    <updated>2010-08-27T00:28:00-05:00</updated>
+    <updated>2010-08-26T22:28:00-07:00</updated>
     <id>http://zzamboni.github.com/blog/hierarchical-copying-with-cfengine3</id>
     <content type="html"><![CDATA[<p>I <a href="http://blog.zzamboni.org/implementing-single-copy-nirvana-in-cfengine3">recently posted</a> a snippet to perform <a href="http://cfwiki.org/cfwiki/index.php/Singlecopy_Nirvana">hierarchical copying </a>in cfengine3. As I was attempting to integrate this mechanism into <a href="http://github.com/zzamboni/cfengine-copbl">my copy of cfengine's COPBL</a>, I realized that no additional functions or body components are needed. Thanks to cfengine3's <a href="http://www.cfengine.org/manuals/cf3-reference.html#Loops-and-lists-in-cfengine-3">list expansion</a>, all you need to do is include in the existing copy promise the list containing the desired list of suffixes to try. For example:</p>
 
@@ -61,7 +61,7 @@
   <entry>
     <title type="html"><![CDATA[Implementing "single-copy nirvana" in cfengine3]]></title>
     <link href="http://zzamboni.github.com/blog/implementing-single-copy-nirvana-in-cfengine3"/>
-    <updated>2010-08-23T01:56:35-05:00</updated>
+    <updated>2010-08-22T23:56:35-07:00</updated>
     <id>http://zzamboni.github.com/blog/implementing-single-copy-nirvana-in-cfengine3</id>
     <content type="html"><![CDATA[<pre><code>  Here is a sample implementation in cfengine3 of the technique described in the &lt;a href="http://cfwiki.org/"&gt;cfengine wiki&lt;/a&gt; as "&lt;a href="http://cfwiki.org/cfwiki/index.php/Singlecopy_Nirvana"&gt;Singlecopy Nirvana&lt;/a&gt;" for cfengine2. Cfengine3 makes the technique more powerful by allowing modularization, so that you can specify both the suffixes to try, and the files to copy using those suffixes, as variables. Also, cf3's automatic list expansion allows us to write a single copy statement that will be automatically expanded into all the different values to try.&lt;p&gt;&lt;/p&gt;  &lt;p&gt;<div><script src='https://gist.github.com/544952.js'></script>
 <noscript><pre><code></code></pre></noscript></div>

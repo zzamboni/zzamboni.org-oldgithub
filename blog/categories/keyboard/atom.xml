@@ -4,7 +4,7 @@
   <title><![CDATA[Category: keyboard | zzamboni.org]]></title>
   <link href="http://zzamboni.github.com/blog/categories/keyboard/atom.xml" rel="self"/>
   <link href="http://zzamboni.github.com/"/>
-  <updated>2014-09-23T16:27:49-05:00</updated>
+  <updated>2014-12-08T23:38:12-08:00</updated>
   <id>http://zzamboni.github.com/</id>
   <author>
     <name><![CDATA[Diego Zamboni]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Remapping Mac modifier keys on Emacs 23.3]]></title>
     <link href="http://zzamboni.github.com/blog/remapping-mac-modifier-keys-on-emacs-233"/>
-    <updated>2011-11-27T01:47:00-06:00</updated>
+    <updated>2011-11-26T23:47:00-08:00</updated>
     <id>http://zzamboni.github.com/blog/remapping-mac-modifier-keys-on-emacs-233</id>
     <content type="html"><![CDATA[<p>I just switched from <a href="http://homepage.mac.com/zenitani/emacs-e.html">Carbon Emacs</a> (which is old Emacs 22.x) to <a href="http://vgoulet.act.ulaval.ca/en/emacs/mac">Emacs for OS X Modified</a> on my Mac (which is a Cocoa app, and Emacs 23.3).</p>
 

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: vba | zzamboni.org]]></title>
   <link href="http://zzamboni.github.com/blog/categories/vba/atom.xml" rel="self"/>
   <link href="http://zzamboni.github.com/"/>
-  <updated>2014-09-23T16:27:49-05:00</updated>
+  <updated>2014-12-08T23:38:12-08:00</updated>
   <id>http://zzamboni.github.com/</id>
   <author>
     <name><![CDATA[Diego Zamboni]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Automatically creating tasks from email in Outlook]]></title>
     <link href="http://zzamboni.github.com/blog/automatically-creating-tasks-from-email-in-ou"/>
-    <updated>2011-03-16T01:54:00-06:00</updated>
+    <updated>2011-03-16T00:54:00-07:00</updated>
     <id>http://zzamboni.github.com/blog/automatically-creating-tasks-from-email-in-ou</id>
     <content type="html"><![CDATA[<p><span style="font-size: x-small;"><em><strong>Please note:</strong> I am no longer using Windows nor Outlook, so unfortunately I cannot offer any help with problems you encounter using these scripts and techniques.</em></span></p>
 
@@ -160,7 +160,7 @@ End Function
   <entry>
     <title type="html"><![CDATA[How to digitally sign a macro project - Outlook]]></title>
     <link href="http://zzamboni.github.com/blog/how-to-digitally-sign-a-macro-project-outlook"/>
-    <updated>2011-03-13T00:16:00-06:00</updated>
+    <updated>2011-03-12T22:16:00-08:00</updated>
     <id>http://zzamboni.github.com/blog/how-to-digitally-sign-a-macro-project-outlook</id>
     <content type="html"><![CDATA[<div class="posterous_bookmarklet_entry">
       <blockquote class="posterous_long_quote"><div>
