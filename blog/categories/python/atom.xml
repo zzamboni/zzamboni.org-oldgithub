@@ -4,7 +4,7 @@
   <title><![CDATA[Category: python | zzamboni.org]]></title>
   <link href="http://zzamboni.github.com/blog/categories/python/atom.xml" rel="self"/>
   <link href="http://zzamboni.github.com/"/>
-  <updated>2014-12-08T23:43:00-08:00</updated>
+  <updated>2015-03-02T10:58:49-06:00</updated>
   <id>http://zzamboni.github.com/</id>
   <author>
     <name><![CDATA[Diego Zamboni]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Cfengine3 lexer for Pygments]]></title>
     <link href="http://zzamboni.github.com/blog/cfengine3-lexer-for-pygments"/>
-    <updated>2010-09-08T19:16:00-07:00</updated>
+    <updated>2010-09-08T21:16:00-05:00</updated>
     <id>http://zzamboni.github.com/blog/cfengine3-lexer-for-pygments</id>
     <content type="html"><![CDATA[<p>I have written a <a href="http://cfengine.org/">Cfengine3</a> lexer for <a href="http://pygments.org/">Pygments</a>, the open source syntax-highlighter used by <a href="http://gist.github.com/">Gist</a> and many other sites. It seems to work fine on all the cfengine policy files I have tested, but if you find anything that doesn't quite work as expected, please let me know. This is my first-ever Pygments lexer, so if you are an expert and can advise me on better ways of doing things, I'd very much appreciate the feedback too.</p>
 

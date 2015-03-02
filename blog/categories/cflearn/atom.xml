@@ -4,7 +4,7 @@
   <title><![CDATA[Category: cflearn | zzamboni.org]]></title>
   <link href="http://zzamboni.github.com/blog/categories/cflearn/atom.xml" rel="self"/>
   <link href="http://zzamboni.github.com/"/>
-  <updated>2014-12-08T23:43:00-08:00</updated>
+  <updated>2015-03-02T10:58:49-06:00</updated>
   <id>http://zzamboni.github.com/</id>
   <author>
     <name><![CDATA[Diego Zamboni]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[CFEngine posts moving to cf-learn.info]]></title>
     <link href="http://zzamboni.github.com/blog/cfengine-posts-moving-to-cf-learninfo"/>
-    <updated>2012-01-04T11:16:00-08:00</updated>
+    <updated>2012-01-04T13:16:00-06:00</updated>
     <id>http://zzamboni.github.com/blog/cfengine-posts-moving-to-cf-learninfo</id>
     <content type="html"><![CDATA[<div><span>I have been blogging <a href="http://blog.zzamboni.org/tag/cfengine">about CFEngine</a> here for a while (it's my most frequent tag). As of now, I'm starting to post all CFEngine-related posts to <a href="http://blog.cf-learn.info/">http://blog.cf-learn.info/</a>, which is part of <a href="http://cf-learn.info/"></a><a href="http://cf-learn.info/">the web site for my book "Learning CFEngine 3"</a>. In this way, I intend to group all CFEngine-related content over there. I will still cross-post relevant things here, but if you want to stay fully up to date on my CFEngine writings, please subscribe over there as well.</span></div>
 
@@ -32,7 +32,7 @@
   <entry>
     <title type="html"><![CDATA[New website for "Learning CFEngine 3"]]></title>
     <link href="http://zzamboni.github.com/blog/new-website-for-learning-cfengine-3"/>
-    <updated>2011-12-15T00:22:00-08:00</updated>
+    <updated>2011-12-15T02:22:00-06:00</updated>
     <id>http://zzamboni.github.com/blog/new-website-for-learning-cfengine-3</id>
     <content type="html"><![CDATA[<p>I'm happy to announce that the website for my book is now live at <a href="http://cf-learn.info/">http://cf-learn.info/</a>. </p>
 

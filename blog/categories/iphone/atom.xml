@@ -4,7 +4,7 @@
   <title><![CDATA[Category: iphone | zzamboni.org]]></title>
   <link href="http://zzamboni.github.com/blog/categories/iphone/atom.xml" rel="self"/>
   <link href="http://zzamboni.github.com/"/>
-  <updated>2014-12-08T23:43:00-08:00</updated>
+  <updated>2015-03-02T10:58:49-06:00</updated>
   <id>http://zzamboni.github.com/</id>
   <author>
     <name><![CDATA[Diego Zamboni]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[All the apps on my iPhone]]></title>
     <link href="http://zzamboni.github.com/blog/all-the-apps-on-my-iphone"/>
-    <updated>2011-10-31T09:19:00-07:00</updated>
+    <updated>2011-10-31T10:19:00-06:00</updated>
     <id>http://zzamboni.github.com/blog/all-the-apps-on-my-iphone</id>
     <content type="html"><![CDATA[<p>I’m doing some cleanup and reorganization, and captured my current app setup as a reference point. Here they are.</p>
 
@@ -53,7 +53,7 @@
   <entry>
     <title type="html"><![CDATA[Single-tap conference dialing in iOS 4.3]]></title>
     <link href="http://zzamboni.github.com/blog/single-tap-conference-dialing-in-ios-43"/>
-    <updated>2011-03-12T15:03:00-08:00</updated>
+    <updated>2011-03-12T17:03:00-06:00</updated>
     <id>http://zzamboni.github.com/blog/single-tap-conference-dialing-in-ios-43</id>
     <content type="html"><![CDATA[<p>Apple released iOS 4.3 a few days ago, and if you follow this topic at all, you have probably already heard all about the Personal Hotspot feature, AirPlay enhancements, and whatnot. But buried in the notes for this release was a new feature that caught my attention:</p>
 

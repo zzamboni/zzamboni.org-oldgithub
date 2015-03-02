@@ -4,7 +4,7 @@
   <title><![CDATA[Category: evernote | zzamboni.org]]></title>
   <link href="http://zzamboni.github.com/blog/categories/evernote/atom.xml" rel="self"/>
   <link href="http://zzamboni.github.com/"/>
-  <updated>2014-12-08T23:43:00-08:00</updated>
+  <updated>2015-03-02T10:58:49-06:00</updated>
   <id>http://zzamboni.github.com/</id>
   <author>
     <name><![CDATA[Diego Zamboni]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[HowTo: Changing the available display formats for Evernote's "Insert Date" command]]></title>
     <link href="http://zzamboni.github.com/blog/howto-changing-the-available-display-formats"/>
-    <updated>2012-11-13T21:00:30-08:00</updated>
+    <updated>2012-11-13T23:00:30-06:00</updated>
     <id>http://zzamboni.github.com/blog/howto-changing-the-available-display-formats</id>
     <content type="html"><![CDATA[<p>Evernote introduced some time ago an "Insert Date" keyboard shortcut, which is very handy. However, the options for the format of the inserted date seemed limited (only four options). I finally learned how this works, and how to change it on the Mac. The formats offered are those that are configured in the "Languages &amp; Text" preferences panel. If you go to "Region" and then click the "Customize button" in the Dates part of the panel, you will see and be able to customize the formats for short, medium, long and full date representations. Those are the options that are offered to you by Evernote. Just change them to whatever you want, and they will be available for selection. What I specifically wanted to do was to use the YYYY-MM-DD format, so I changed it to the following:<p></p></p>
 

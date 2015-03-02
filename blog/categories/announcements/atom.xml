@@ -4,7 +4,7 @@
   <title><![CDATA[Category: announcements | zzamboni.org]]></title>
   <link href="http://zzamboni.github.com/blog/categories/announcements/atom.xml" rel="self"/>
   <link href="http://zzamboni.github.com/"/>
-  <updated>2014-12-08T23:43:00-08:00</updated>
+  <updated>2015-03-02T10:58:49-06:00</updated>
   <id>http://zzamboni.github.com/</id>
   <author>
     <name><![CDATA[Diego Zamboni]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[CFEngine talks at PICC'12 conference]]></title>
     <link href="http://zzamboni.github.com/blog/cfengine-talks-at-picc12-conference"/>
-    <updated>2012-04-27T06:30:32-07:00</updated>
+    <updated>2012-04-27T08:30:32-05:00</updated>
     <id>http://zzamboni.github.com/blog/cfengine-talks-at-picc12-conference</id>
     <content type="html"><![CDATA[<p>There will be several CFEngine-related classes and talks at the <a href="http://www.picconf.org/">PICC'12 conference</a> (Professional IT Community Conference) on May 11-12th, in New Jersey. I will be talking about using CFEngine as part of your security infrastructure. My colleague Joe Netzel will be talking about migration from CFEngine 2 to CFEngine 3, so if you are using CF2 and have been considering (or dreading) the migration, make sure to come by! Aleksey Tsalolikhin will give an introductory class to CFEngine. And Mark Burgess will give a class not related to CFEngine, but to the perils and skills needed to survive as a technical person in the "business world".<p></p></p>
 
@@ -39,7 +39,7 @@
   <entry>
     <title type="html"><![CDATA[Learning CFEngine 3 has been released]]></title>
     <link href="http://zzamboni.github.com/blog/blog-learning-cfengine-3"/>
-    <updated>2012-03-24T00:23:00-07:00</updated>
+    <updated>2012-03-24T01:23:00-06:00</updated>
     <id>http://zzamboni.github.com/blog/blog-learning-cfengine-3</id>
     <content type="html"><![CDATA[<div class="posterous_bookmarklet_entry">
 <blockquote class="posterous_long_quote">
@@ -59,7 +59,7 @@
   <entry>
     <title type="html"><![CDATA[CFEngine posts moving to cf-learn.info]]></title>
     <link href="http://zzamboni.github.com/blog/cfengine-posts-moving-to-cf-learninfo"/>
-    <updated>2012-01-04T11:16:00-08:00</updated>
+    <updated>2012-01-04T13:16:00-06:00</updated>
     <id>http://zzamboni.github.com/blog/cfengine-posts-moving-to-cf-learninfo</id>
     <content type="html"><![CDATA[<div><span>I have been blogging <a href="http://blog.zzamboni.org/tag/cfengine">about CFEngine</a> here for a while (it's my most frequent tag). As of now, I'm starting to post all CFEngine-related posts to <a href="http://blog.cf-learn.info/">http://blog.cf-learn.info/</a>, which is part of <a href="http://cf-learn.info/"></a><a href="http://cf-learn.info/">the web site for my book "Learning CFEngine 3"</a>. In this way, I intend to group all CFEngine-related content over there. I will still cross-post relevant things here, but if you want to stay fully up to date on my CFEngine writings, please subscribe over there as well.</span></div>
 
@@ -75,7 +75,7 @@
   <entry>
     <title type="html"><![CDATA[New website for "Learning CFEngine 3"]]></title>
     <link href="http://zzamboni.github.com/blog/new-website-for-learning-cfengine-3"/>
-    <updated>2011-12-15T00:22:00-08:00</updated>
+    <updated>2011-12-15T02:22:00-06:00</updated>
     <id>http://zzamboni.github.com/blog/new-website-for-learning-cfengine-3</id>
     <content type="html"><![CDATA[<p>I'm happy to announce that the website for my book is now live at <a href="http://cf-learn.info/">http://cf-learn.info/</a>. </p>
 
@@ -107,7 +107,7 @@
   <entry>
     <title type="html"><![CDATA["Introduction to CFEngine 3 Nova" webinar]]></title>
     <link href="http://zzamboni.github.com/blog/introduction-to-cfengine-3-nova-webinar"/>
-    <updated>2011-10-25T20:53:13-07:00</updated>
+    <updated>2011-10-25T22:53:13-05:00</updated>
     <id>http://zzamboni.github.com/blog/introduction-to-cfengine-3-nova-webinar</id>
     <content type="html"><![CDATA[<p>A new version of <a href="https://cfengine.com/nova">CFEngine 3 Nova</a> was released today, and to go with it, there will be a free webinar called "<a href="http://info.cfengine.com/NewNovaWebinar_Introduction-to-Nova_Registration.html">Introduction to CFEngine 3 Nova</a>" on November 2nd. It will be presented by one of the members of the core CFEngine team, and it will be a great opportunity to learn more about the new and improved capabilities in this release. If you are interested in CFEngine and maybe thinking of going the commercial route, or you need more information to decide, make sure to attend!<p></p></p>
 

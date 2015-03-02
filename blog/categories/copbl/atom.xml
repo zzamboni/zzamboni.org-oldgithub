@@ -4,7 +4,7 @@
   <title><![CDATA[Category: copbl | zzamboni.org]]></title>
   <link href="http://zzamboni.github.com/blog/categories/copbl/atom.xml" rel="self"/>
   <link href="http://zzamboni.github.com/"/>
-  <updated>2014-12-08T23:43:00-08:00</updated>
+  <updated>2015-03-02T10:58:49-06:00</updated>
   <id>http://zzamboni.github.com/</id>
   <author>
     <name><![CDATA[Diego Zamboni]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Editing whitespace-separated config files with cfengine]]></title>
     <link href="http://zzamboni.github.com/blog/editing-whitespace-separated-config-files-wit"/>
-    <updated>2010-08-24T23:48:41-07:00</updated>
+    <updated>2010-08-25T01:48:41-05:00</updated>
     <id>http://zzamboni.github.com/blog/editing-whitespace-separated-config-files-wit</id>
     <content type="html"><![CDATA[<p><div><script src='https://gist.github.com/548981.js'></script>
 <noscript><pre><code></code></pre></noscript></div>
@@ -28,7 +28,7 @@
   <entry>
     <title type="html"><![CDATA[cfengine Community Open Promise Body Library on GitHub]]></title>
     <link href="http://zzamboni.github.com/blog/cfengine-community-open-body-promise-library"/>
-    <updated>2010-08-24T23:37:00-07:00</updated>
+    <updated>2010-08-25T01:37:00-05:00</updated>
     <id>http://zzamboni.github.com/blog/cfengine-community-open-body-promise-library</id>
     <content type="html"><![CDATA[<p>I have created a <a href="http://github.com/zzamboni/cfengine-copbl">copy of the cfengine COPBL on GitHub</a> , where I will use it as a playground for changes and additions. This is in no way endorsed by cfengine - it is just my personal copy. But if you use GitHub and want to use it, go ahead, I will try to keep it updated with respect to <a href="http://www.cfengine.org/pages/develop">the original subversion repository</a> , although it will include my changes too. </p>
 

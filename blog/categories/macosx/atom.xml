@@ -4,7 +4,7 @@
   <title><![CDATA[Category: macosx | zzamboni.org]]></title>
   <link href="http://zzamboni.github.com/blog/categories/macosx/atom.xml" rel="self"/>
   <link href="http://zzamboni.github.com/"/>
-  <updated>2014-12-08T23:43:00-08:00</updated>
+  <updated>2015-03-02T10:58:49-06:00</updated>
   <id>http://zzamboni.github.com/</id>
   <author>
     <name><![CDATA[Diego Zamboni]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Changing "message:" protocol handler from Sparrow back to Mail.app]]></title>
     <link href="http://zzamboni.github.com/blog/changing-message-protocol-handler-from-sparro"/>
-    <updated>2012-01-25T07:54:07-08:00</updated>
+    <updated>2012-01-25T09:54:07-06:00</updated>
     <id>http://zzamboni.github.com/blog/changing-message-protocol-handler-from-sparro</id>
     <content type="html"><![CDATA[<p>After using <a href="http://www.sparrowmailapp.com/">Sparrow</a> for a while, I have decided to switch back to Mail.app. However, even after setting my default email client to Mail.app, all my message: links (for example, from messages dragged from Mail.app into <a href="http://culturedcode.com/things/">Things</a>) were opening in Sparrow.<p></p></p>
 
@@ -54,7 +54,7 @@
   <entry>
     <title type="html"><![CDATA[Fix journal in an HFS+ file system]]></title>
     <link href="http://zzamboni.github.com/blog/fix-journal-in-an-hfs-file-system"/>
-    <updated>2011-12-14T22:07:00-08:00</updated>
+    <updated>2011-12-15T00:07:00-06:00</updated>
     <id>http://zzamboni.github.com/blog/fix-journal-in-an-hfs-file-system</id>
     <content type="html"><![CDATA[<p>Yesterday my external Western Digital disk (which I use for Time Machine, among other things) stopped mounting automatically when I plug it in. This may *cough*definitely*cough*have something to do with me unmounting it forcefully while it was doing a backup, since I was in a hurry.</p>
 

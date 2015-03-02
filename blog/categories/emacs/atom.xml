@@ -4,7 +4,7 @@
   <title><![CDATA[Category: emacs | zzamboni.org]]></title>
   <link href="http://zzamboni.github.com/blog/categories/emacs/atom.xml" rel="self"/>
   <link href="http://zzamboni.github.com/"/>
-  <updated>2014-12-08T23:43:00-08:00</updated>
+  <updated>2015-03-02T10:58:49-06:00</updated>
   <id>http://zzamboni.github.com/</id>
   <author>
     <name><![CDATA[Diego Zamboni]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Remapping Mac modifier keys on Emacs 23.3]]></title>
     <link href="http://zzamboni.github.com/blog/remapping-mac-modifier-keys-on-emacs-233"/>
-    <updated>2011-11-26T23:47:00-08:00</updated>
+    <updated>2011-11-27T01:47:00-06:00</updated>
     <id>http://zzamboni.github.com/blog/remapping-mac-modifier-keys-on-emacs-233</id>
     <content type="html"><![CDATA[<p>I just switched from <a href="http://homepage.mac.com/zenitani/emacs-e.html">Carbon Emacs</a> (which is old Emacs 22.x) to <a href="http://vgoulet.act.ulaval.ca/en/emacs/mac">Emacs for OS X Modified</a> on my Mac (which is a Cocoa app, and Emacs 23.3).</p>
 
@@ -55,7 +55,7 @@
   <entry>
     <title type="html"><![CDATA[Emulate vi's % command (jump to matching parenthesis) in Emacs]]></title>
     <link href="http://zzamboni.github.com/blog/emulate-vis-command-jump-to-matching-parenthe"/>
-    <updated>2010-08-18T14:09:18-07:00</updated>
+    <updated>2010-08-18T16:09:18-05:00</updated>
     <id>http://zzamboni.github.com/blog/emulate-vis-command-jump-to-matching-parenthe</id>
     <content type="html"><![CDATA[<p><div><script src='https://gist.github.com/536198.js'></script>
 <noscript><pre><code></code></pre></noscript></div>
@@ -67,7 +67,7 @@
   <entry>
     <title type="html"><![CDATA[Installing AucTeX on EmacsW32 on Win7/64bit]]></title>
     <link href="http://zzamboni.github.com/blog/installing-auctex-on-emacsw32-on-win764bit"/>
-    <updated>2010-08-17T00:36:05-07:00</updated>
+    <updated>2010-08-17T02:36:05-05:00</updated>
     <id>http://zzamboni.github.com/blog/installing-auctex-on-emacsw32-on-win764bit</id>
     <content type="html"><![CDATA[<pre><code>  Today I had to install AucTeX to use on my Win7/64 machine under EmacsW32. I found the basic instructions here: &lt;a href="http://www.sturmnet.org/blog/2007/09/01/installing-auctex-in-emacsw32"&gt;http://www.sturmnet.org/blog/2007/09/01/installing-auctex-in-emacsw32&lt;/a&gt;, but I had to modify them a bit (in particular, I am using tetex installed from cygwin instead of MiKTeX). Here are the commands I used:&lt;p&gt;&lt;/p&gt;  &lt;tt&gt;$  mkdir -p /usr/local/share/texmf&lt;br&gt; $ ./configure --prefix='c:/Program Files (x86)/Emacs/emacs' --with-texmf-dir='/usr/local/share/texmf' --with-lispdir='c:/Program Files (x86)/Emacs/emacs/site-lisp'&lt;br&gt; $  make&lt;br&gt; $  make install&lt;/tt&gt;&lt;p&gt;&lt;/p&gt;  I then added the following lines to my &lt;tt&gt;C:\Program Files (x86)\Emacs\site-lisp\site-start.el&lt;/tt&gt; file:&lt;p&gt;&lt;/p&gt;  &lt;tt&gt;(load "auctex.el" nil t t)&lt;br&gt; (load "preview-latex.el" nil t t)&lt;br&gt; (eval-after-load 'info&lt;br&gt;        '(add-to-list 'Info-directory-list "c:/Program Files/Emacs/share/info"))&lt;br&gt; (setq TeX-auto-save t)&lt;br&gt; (setq TeX-parse-self t)&lt;/tt&gt;&lt;p&gt;&lt;/p&gt;  Everything seems to be working properly, even preview-mode.
 </code></pre>
