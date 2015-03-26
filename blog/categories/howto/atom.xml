@@ -4,7 +4,7 @@
   <title><![CDATA[Category: howto | zzamboni.org]]></title>
   <link href="http://zzamboni.github.com/blog/categories/howto/atom.xml" rel="self"/>
   <link href="http://zzamboni.github.com/"/>
-  <updated>2015-03-02T10:58:49-06:00</updated>
+  <updated>2015-03-26T01:10:27-07:00</updated>
   <id>http://zzamboni.github.com/</id>
   <author>
     <name><![CDATA[Diego Zamboni]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[HowTo: Changing the available display formats for Evernote's "Insert Date" command]]></title>
     <link href="http://zzamboni.github.com/blog/howto-changing-the-available-display-formats"/>
-    <updated>2012-11-13T23:00:30-06:00</updated>
+    <updated>2012-11-13T21:00:30-08:00</updated>
     <id>http://zzamboni.github.com/blog/howto-changing-the-available-display-formats</id>
     <content type="html"><![CDATA[<p>Evernote introduced some time ago an "Insert Date" keyboard shortcut, which is very handy. However, the options for the format of the inserted date seemed limited (only four options). I finally learned how this works, and how to change it on the Mac. The formats offered are those that are configured in the "Languages &amp; Text" preferences panel. If you go to "Region" and then click the "Customize button" in the Dates part of the panel, you will see and be able to customize the formats for short, medium, long and full date representations. Those are the options that are offered to you by Evernote. Just change them to whatever you want, and they will be available for selection. What I specifically wanted to do was to use the YYYY-MM-DD format, so I changed it to the following:<p></p></p>
 
@@ -45,7 +45,7 @@
   <entry>
     <title type="html"><![CDATA[Installing cfengine on Mac OS X]]></title>
     <link href="http://zzamboni.github.com/blog/installing-cfengine-320b3-on-mac-os-x-107"/>
-    <updated>2011-08-05T02:31:00-05:00</updated>
+    <updated>2011-08-05T00:31:00-07:00</updated>
     <id>http://zzamboni.github.com/blog/installing-cfengine-320b3-on-mac-os-x-107</id>
     <content type="html"><![CDATA[<p><a href="http://cfengine.com/">Cfengine</a> (tested 3.2.0) installs easily on OS X (tested 10.7), given that it's Unix. One problem I encountered was that it does not compile with the bundled version of Berkeley DB (it recognizes it during configure, but produces compilation errors). The solution is to use some other DB engine. I chose Tokyo Cabinet. Using <a href="http://mxcl.github.com/homebrew/">homebrew</a>, the process is simple</p>
 
@@ -67,7 +67,7 @@
   <entry>
     <title type="html"><![CDATA[Automatically creating tasks from email in Outlook]]></title>
     <link href="http://zzamboni.github.com/blog/automatically-creating-tasks-from-email-in-ou"/>
-    <updated>2011-03-16T01:54:00-06:00</updated>
+    <updated>2011-03-16T00:54:00-07:00</updated>
     <id>http://zzamboni.github.com/blog/automatically-creating-tasks-from-email-in-ou</id>
     <content type="html"><![CDATA[<p><span style="font-size: x-small;"><em><strong>Please note:</strong> I am no longer using Windows nor Outlook, so unfortunately I cannot offer any help with problems you encounter using these scripts and techniques.</em></span></p>
 
@@ -211,7 +211,7 @@ End Function
   <entry>
     <title type="html"><![CDATA[Making cygwin, Windows and emacs understand the same symlinks]]></title>
     <link href="http://zzamboni.github.com/blog/making-cygwin-windows-and-emacs-understand-th"/>
-    <updated>2010-09-28T09:39:00-05:00</updated>
+    <updated>2010-09-28T07:39:00-07:00</updated>
     <id>http://zzamboni.github.com/blog/making-cygwin-windows-and-emacs-understand-th</id>
     <content type="html"><![CDATA[<p>Today I ran into the problem that symlinks created under cygwin using "ln -s" are not understood by Windows, and of course Windows shortcuts are seen by cygwin as regular files. Happily, this is a <strong>(semi-)</strong>solved problem. For reference, this is what needs to be done:</p>
 
@@ -234,7 +234,7 @@ End Function
   <entry>
     <title type="html"><![CDATA[Storing CFEngine configuration in CVS]]></title>
     <link href="http://zzamboni.github.com/blog/storing-cfengine-configuration-in-cvs"/>
-    <updated>2010-09-07T14:17:00-05:00</updated>
+    <updated>2010-09-07T12:17:00-07:00</updated>
     <id>http://zzamboni.github.com/blog/storing-cfengine-configuration-in-cvs</id>
     <content type="html"><![CDATA[<div class="posterous_bookmarklet_entry">
       <div class="p_embed p_image_embed">

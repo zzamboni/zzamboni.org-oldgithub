@@ -4,7 +4,7 @@
   <title><![CDATA[Category: windowsxp | zzamboni.org]]></title>
   <link href="http://zzamboni.github.com/blog/categories/windowsxp/atom.xml" rel="self"/>
   <link href="http://zzamboni.github.com/"/>
-  <updated>2015-03-02T10:58:49-06:00</updated>
+  <updated>2015-03-26T01:10:27-07:00</updated>
   <id>http://zzamboni.github.com/</id>
   <author>
     <name><![CDATA[Diego Zamboni]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Starting VirtualCenter automatically when it fails to start]]></title>
     <link href="http://zzamboni.github.com/blog/starting-virtualcenter-automatically-when-it"/>
-    <updated>2010-05-03T13:13:42-05:00</updated>
+    <updated>2010-05-03T11:13:42-07:00</updated>
     <id>http://zzamboni.github.com/blog/starting-virtualcenter-automatically-when-it</id>
     <content type="html"><![CDATA[<div class="posterous_bookmarklet_entry">
       <blockquote class="posterous_long_quote">Create a .bat file with following script:<p>
@@ -44,7 +44,7 @@ Set script to run on boot.</p>
   <entry>
     <title type="html"><![CDATA[Installing Windows XP in Vmware ESX - "Setup did not find any hard disk drives installed in your computer." | TechHead.co.uk]]></title>
     <link href="http://zzamboni.github.com/blog/installing-windows-xp-in-vmware-esx-setup-did"/>
-    <updated>2010-04-07T15:20:18-05:00</updated>
+    <updated>2010-04-07T13:20:18-07:00</updated>
     <id>http://zzamboni.github.com/blog/installing-windows-xp-in-vmware-esx-setup-did</id>
     <content type="html"><![CDATA[<div class="posterous_bookmarklet_entry">
       <blockquote class="posterous_long_quote">

@@ -4,7 +4,7 @@
   <title><![CDATA[zzamboni.org]]></title>
   <link href="http://zzamboni.github.com/atom.xml" rel="self"/>
   <link href="http://zzamboni.github.com/"/>
-  <updated>2015-03-02T10:58:49-06:00</updated>
+  <updated>2015-03-26T01:10:27-07:00</updated>
   <id>http://zzamboni.github.com/</id>
   <author>
     <name><![CDATA[Diego Zamboni]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Ellen on password security]]></title>
     <link href="http://zzamboni.github.com/blog/ellen-on-password-security/"/>
-    <updated>2013-04-25T14:46:00-05:00</updated>
+    <updated>2013-04-25T14:46:00-07:00</updated>
     <id>http://zzamboni.github.com/blog/ellen-on-password-security</id>
     <content type="html"><![CDATA[<p>Hilarious - Ellen on the &#8220;Internet Password Minder&#8221;</p>
 
@@ -28,7 +28,7 @@
   <entry>
     <title type="html"><![CDATA[Ignite talks]]></title>
     <link href="http://zzamboni.github.com/blog/ignite-talks/"/>
-    <updated>2013-04-14T12:13:00-05:00</updated>
+    <updated>2013-04-14T12:13:00-07:00</updated>
     <id>http://zzamboni.github.com/blog/ignite-talks</id>
     <content type="html"><![CDATA[<p>I&#8217;m giving an Ignite talk for the first time at
 <a href="http://devopsdays.org/events/2013-paris/program/">DevOps days Paris</a>. It&#8217;s
@@ -45,7 +45,7 @@ by Scott Berkun very useful, including the accompanying video.</p>
   <entry>
     <title type="html"><![CDATA[On the other side]]></title>
     <link href="http://zzamboni.github.com/blog/on-the-other-side/"/>
-    <updated>2013-03-25T15:57:00-06:00</updated>
+    <updated>2013-03-25T15:57:00-07:00</updated>
     <id>http://zzamboni.github.com/blog/on-the-other-side</id>
     <content type="html"><![CDATA[<p>About a year ago,
 <a href="http://blog.posterous.com/big-news">Posterous was acquired by Twitter</a>. A
@@ -81,7 +81,7 @@ broken.</p>
   <entry>
     <title type="html"><![CDATA[HowTo: Changing the available display formats for Evernote's "Insert Date" command]]></title>
     <link href="http://zzamboni.github.com/blog/howto-changing-the-available-display-formats"/>
-    <updated>2012-11-13T23:00:30-06:00</updated>
+    <updated>2012-11-13T21:00:30-08:00</updated>
     <id>http://zzamboni.github.com/blog/howto-changing-the-available-display-formats</id>
     <content type="html"><![CDATA[Evernote introduced some time ago an &#8220;Insert Date&#8221; keyboard shortcut, which is very handy. However, the options for the format of the inserted date seemed limited (only four options). I finally learned how this works, and how to change it on the Mac. The formats offered are those that are configured in the &#8220;Languages &amp; Text&#8221; preferences panel. If you go to &#8220;Region&#8221; and then click the &#8220;Customize button&#8221; in the Dates part of the panel, you will see and be able to customize the formats for short, medium, long and full date representations. Those are the options that are offered to you by Evernote. Just change them to whatever you want, and they will be available for selection. What I specifically wanted to do was to use the YYYY-MM-DD format, so I changed it to the following:<p></p>
 <div>
@@ -100,7 +100,7 @@ broken.</p>
   <entry>
     <title type="html"><![CDATA[Included in the #LinuxCon registration packet: a skateboard#]]></title>
     <link href="http://zzamboni.github.com/blog/included-in-the-linuxcon-registration-packet"/>
-    <updated>2012-08-27T23:46:49-05:00</updated>
+    <updated>2012-08-27T21:46:49-07:00</updated>
     <id>http://zzamboni.github.com/blog/included-in-the-linuxcon-registration-packet</id>
     <content type="html"><![CDATA[<p></p>
 <div class="p_embed p_image_embed">
@@ -116,7 +116,7 @@ Included in the #LinuxCon registration packet: a skateboard#
   <entry>
     <title type="html"><![CDATA[Letters of Note: Regarding your dam complaint]]></title>
     <link href="http://zzamboni.github.com/blog/letters-of-note-regarding-your-dam-complaint"/>
-    <updated>2012-07-12T12:59:00-05:00</updated>
+    <updated>2012-07-12T10:59:00-07:00</updated>
     <id>http://zzamboni.github.com/blog/letters-of-note-regarding-your-dam-complaint</id>
     <content type="html"><![CDATA[<div class="posterous_bookmarklet_entry">
       <blockquote class="posterous_medium_quote">I would like to challenge you to attempt to emulate their dam project any dam time and/or any dam place you choose. I believe I can safely state there is no dam way you could ever match their dam skills, their dam resourcefulness, their dam ingenuity, their dam persistence, their dam determination and/or their dam work ethic.</blockquote>
@@ -130,7 +130,7 @@ Included in the #LinuxCon registration packet: a skateboard#
   <entry>
     <title type="html"><![CDATA[The #CFEngine agent, as drawn by my 6-year-old daughter :) ]]></title>
     <link href="http://zzamboni.github.com/blog/the-cfengine-agent-as-drawn-by-my-6-year-old"/>
-    <updated>2012-07-04T15:30:13-05:00</updated>
+    <updated>2012-07-04T13:30:13-07:00</updated>
     <id>http://zzamboni.github.com/blog/the-cfengine-agent-as-drawn-by-my-6-year-old</id>
     <content type="html"><![CDATA[<p></p>
 <div class="p_embed p_image_embed">
@@ -142,7 +142,7 @@ Included in the #LinuxCon registration packet: a skateboard#
   <entry>
     <title type="html"><![CDATA[When a Dragon mated the space station /ht @BadAstronomer]]></title>
     <link href="http://zzamboni.github.com/blog/when-a-dragon-mated-the-space-station-ht-bada"/>
-    <updated>2012-05-25T11:21:00-05:00</updated>
+    <updated>2012-05-25T09:21:00-07:00</updated>
     <id>http://zzamboni.github.com/blog/when-a-dragon-mated-the-space-station-ht-bada</id>
     <content type="html"><![CDATA[<div class="posterous_bookmarklet_entry">
       <blockquote class="posterous_long_quote">
@@ -159,7 +159,7 @@ Included in the #LinuxCon registration packet: a skateboard#
   <entry>
     <title type="html"><![CDATA[CFEngine talks at PICC'12 conference]]></title>
     <link href="http://zzamboni.github.com/blog/cfengine-talks-at-picc12-conference"/>
-    <updated>2012-04-27T08:30:32-05:00</updated>
+    <updated>2012-04-27T06:30:32-07:00</updated>
     <id>http://zzamboni.github.com/blog/cfengine-talks-at-picc12-conference</id>
     <content type="html"><![CDATA[There will be several CFEngine-related classes and talks at the <a href="http://www.picconf.org/">PICC&#8217;12 conference</a> (Professional IT Community Conference) on May 11-12th, in New Jersey. I will be talking about using CFEngine as part of your security infrastructure. My colleague Joe Netzel will be talking about migration from CFEngine 2 to CFEngine 3, so if you are using CF2 and have been considering (or dreading) the migration, make sure to come by! Aleksey Tsalolikhin will give an introductory class to CFEngine. And Mark Burgess will give a class not related to CFEngine, but to the perils and skills needed to survive as a technical person in the &#8220;business world&#8221;.<p></p>
 <div>If you are coming to the conference, we look forward to seeing you there!<br><ul>
@@ -180,7 +180,7 @@ Included in the #LinuxCon registration packet: a skateboard#
   <entry>
     <title type="html"><![CDATA[Earth Day, from 40,000 km up | Bad Astronomy | Discover Magazine]]></title>
     <link href="http://zzamboni.github.com/blog/earth-day-from-40000-km-up-bad-astronomy-disc"/>
-    <updated>2012-04-22T20:13:00-05:00</updated>
+    <updated>2012-04-22T18:13:00-07:00</updated>
     <id>http://zzamboni.github.com/blog/earth-day-from-40000-km-up-bad-astronomy-disc</id>
     <content type="html"><![CDATA[<div class="posterous_bookmarklet_entry">
       <blockquote class="posterous_long_quote">
@@ -197,7 +197,7 @@ Included in the #LinuxCon registration packet: a skateboard#
   <entry>
     <title type="html"><![CDATA[Publishing with iBooks Author - O'Reilly Media]]></title>
     <link href="http://zzamboni.github.com/blog/publishing-with-ibooks-author-oreilly-media"/>
-    <updated>2012-04-16T17:05:00-05:00</updated>
+    <updated>2012-04-16T15:05:00-07:00</updated>
     <id>http://zzamboni.github.com/blog/publishing-with-ibooks-author-oreilly-media</id>
     <content type="html"><![CDATA[<div class="posterous_bookmarklet_entry">
 <blockquote class="posterous_long_quote">
@@ -216,7 +216,7 @@ Included in the #LinuxCon registration packet: a skateboard#
   <entry>
     <title type="html"><![CDATA[Bezos Expeditions | F-1 Engine Recovery]]></title>
     <link href="http://zzamboni.github.com/blog/bezos-expeditions-f-1-engine-recovery"/>
-    <updated>2012-04-03T23:30:00-05:00</updated>
+    <updated>2012-04-03T21:30:00-07:00</updated>
     <id>http://zzamboni.github.com/blog/bezos-expeditions-f-1-engine-recovery</id>
     <content type="html"><![CDATA[<div class="posterous_bookmarklet_entry">
       <blockquote class="posterous_long_quote">
@@ -233,7 +233,7 @@ Included in the #LinuxCon registration packet: a skateboard#
   <entry>
     <title type="html"><![CDATA[GitHub: Instantly Beautiful Project Pages]]></title>
     <link href="http://zzamboni.github.com/blog/instantly-beautiful-project-pages"/>
-    <updated>2012-04-03T23:15:00-05:00</updated>
+    <updated>2012-04-03T21:15:00-07:00</updated>
     <id>http://zzamboni.github.com/blog/instantly-beautiful-project-pages</id>
     <content type="html"><![CDATA[<div class="posterous_bookmarklet_entry">
 <blockquote class="posterous_long_quote">Ever pushed a new project to GitHub and wished you had the time or talent to make a beautiful page for it? Stop wishing. We&#8217;re proud to present <strong>the new GitHub Page Generator</strong>.</blockquote>
@@ -247,7 +247,7 @@ Included in the #LinuxCon registration packet: a skateboard#
   <entry>
     <title type="html"><![CDATA[Purdue at Night]]></title>
     <link href="http://zzamboni.github.com/blog/purdue-at-night"/>
-    <updated>2012-03-26T00:01:14-06:00</updated>
+    <updated>2012-03-25T23:01:14-07:00</updated>
     <id>http://zzamboni.github.com/blog/purdue-at-night</id>
     <content type="html"><![CDATA[I am at Purdue to give a CFEngine talk and visit some old colleagues, here are some photos I took during a night walk right after checking into my hotel. I graduated in 2001, and the last time I visited was almost 10 years ago. Time really flies, there are many new things in campus (including the shiny new Computer Science Building, which I had never seen), but so many others remain unchanged. It&#8217;s awesome to be back.<p></p>
 <div class="p_embed p_image_embed">
@@ -262,7 +262,7 @@ Included in the #LinuxCon registration packet: a skateboard#
   <entry>
     <title type="html"><![CDATA[Learning CFEngine 3 has been released]]></title>
     <link href="http://zzamboni.github.com/blog/blog-learning-cfengine-3"/>
-    <updated>2012-03-24T01:23:00-06:00</updated>
+    <updated>2012-03-24T00:23:00-07:00</updated>
     <id>http://zzamboni.github.com/blog/blog-learning-cfengine-3</id>
     <content type="html"><![CDATA[<div class="posterous_bookmarklet_entry">
 <blockquote class="posterous_long_quote">
@@ -281,7 +281,7 @@ Included in the #LinuxCon registration packet: a skateboard#
   <entry>
     <title type="html"><![CDATA[Analytics put to a good cause]]></title>
     <link href="http://zzamboni.github.com/blog/analytics-put-to-a-good-cause"/>
-    <updated>2012-03-15T17:05:57-06:00</updated>
+    <updated>2012-03-15T16:05:57-07:00</updated>
     <id>http://zzamboni.github.com/blog/analytics-put-to-a-good-cause</id>
     <content type="html"><![CDATA[Well, here&#8217;s a good use of web analytics. From LinkedIn:<br><div>
 <br class="Apple-interchange-newline"><blockquote type="cite"><div style="">
@@ -295,7 +295,7 @@ Included in the #LinuxCon registration packet: a skateboard#
   <entry>
     <title type="html"><![CDATA[A dog's gotta do what a dog's gotta doo doo | The Sun |News]]></title>
     <link href="http://zzamboni.github.com/blog/a-dogs-gotta-do-what-a-dogs-gotta-doo-doo-the"/>
-    <updated>2012-03-13T17:29:00-06:00</updated>
+    <updated>2012-03-13T16:29:00-07:00</updated>
     <id>http://zzamboni.github.com/blog/a-dogs-gotta-do-what-a-dogs-gotta-doo-doo-the</id>
     <content type="html"><![CDATA[<div class="posterous_bookmarklet_entry">
 <script src="http://player.ooyala.com/iframe.js#ec=BjMmtyMzrkTu6hbD7I_rPYIaDCGXPx2F&pbid=NDcyOWI0M2YyMDdkN2YwODU5Mzc5MDUz" height="400px"></script>
@@ -309,7 +309,7 @@ Included in the #LinuxCon registration packet: a skateboard#
   <entry>
     <title type="html"><![CDATA[github/gitignore]]></title>
     <link href="http://zzamboni.github.com/blog/githubgitignore"/>
-    <updated>2012-03-12T09:10:00-06:00</updated>
+    <updated>2012-03-12T08:10:00-07:00</updated>
     <id>http://zzamboni.github.com/blog/githubgitignore</id>
     <content type="html"><![CDATA[<div class="posterous_bookmarklet_entry">
       <blockquote class="posterous_short_quote">A collection of useful .gitignore templates</blockquote>
@@ -324,7 +324,7 @@ Included in the #LinuxCon registration packet: a skateboard#
   <entry>
     <title type="html"><![CDATA[Heart Stop Beating | Jeremiah Zagar on Vimeo]]></title>
     <link href="http://zzamboni.github.com/blog/heart-stop-beating-jeremiah-zagar-on-vimeo"/>
-    <updated>2012-03-02T13:03:00-06:00</updated>
+    <updated>2012-03-02T11:03:00-08:00</updated>
     <id>http://zzamboni.github.com/blog/heart-stop-beating-jeremiah-zagar-on-vimeo</id>
     <content type="html"><![CDATA[<div class="posterous_bookmarklet_entry">
       <iframe src="http://player.vimeo.com/video/33741794?portrait=0" frameborder="0" height="283" width="500"></iframe>
@@ -339,7 +339,7 @@ Included in the #LinuxCon registration packet: a skateboard#
   <entry>
     <title type="html"><![CDATA[Six-Legged Giant Finds Secret Hideaway, Hides For 80 Years : Krulwich Wonders... : NPR]]></title>
     <link href="http://zzamboni.github.com/blog/six-legged-giant-finds-secret-hideaway-hides"/>
-    <updated>2012-03-02T00:11:00-06:00</updated>
+    <updated>2012-03-01T22:11:00-08:00</updated>
     <id>http://zzamboni.github.com/blog/six-legged-giant-finds-secret-hideaway-hides</id>
     <content type="html"><![CDATA[<div class="posterous_bookmarklet_entry">
       <blockquote class="posterous_long_quote">

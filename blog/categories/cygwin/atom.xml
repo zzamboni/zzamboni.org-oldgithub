@@ -4,7 +4,7 @@
   <title><![CDATA[Category: cygwin | zzamboni.org]]></title>
   <link href="http://zzamboni.github.com/blog/categories/cygwin/atom.xml" rel="self"/>
   <link href="http://zzamboni.github.com/"/>
-  <updated>2015-03-02T10:58:49-06:00</updated>
+  <updated>2015-03-26T01:10:27-07:00</updated>
   <id>http://zzamboni.github.com/</id>
   <author>
     <name><![CDATA[Diego Zamboni]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Installing latex2html under Win7 with cygwin]]></title>
     <link href="http://zzamboni.github.com/blog/installing-latex2html-under-win7-with-cygwin"/>
-    <updated>2011-01-19T15:28:00-06:00</updated>
+    <updated>2011-01-19T13:28:00-08:00</updated>
     <id>http://zzamboni.github.com/blog/installing-latex2html-under-win7-with-cygwin</id>
     <content type="html"><![CDATA[<div class="posterous_bookmarklet_entry">
       <blockquote class="posterous_short_quote">I got latex2html to install on the latest cygwin, however to get the
@@ -34,7 +34,7 @@ a UNIX.</blockquote>
   <entry>
     <title type="html"><![CDATA[Making cygwin, Windows and emacs understand the same symlinks]]></title>
     <link href="http://zzamboni.github.com/blog/making-cygwin-windows-and-emacs-understand-th"/>
-    <updated>2010-09-28T09:39:00-05:00</updated>
+    <updated>2010-09-28T07:39:00-07:00</updated>
     <id>http://zzamboni.github.com/blog/making-cygwin-windows-and-emacs-understand-th</id>
     <content type="html"><![CDATA[<p>Today I ran into the problem that symlinks created under cygwin using "ln -s" are not understood by Windows, and of course Windows shortcuts are seen by cygwin as regular files. Happily, this is a <strong>(semi-)</strong>solved problem. For reference, this is what needs to be done:</p>
 
@@ -57,7 +57,7 @@ a UNIX.</blockquote>
   <entry>
     <title type="html"><![CDATA[Installing cfengine on Windows 7 under cygwin]]></title>
     <link href="http://zzamboni.github.com/blog/installing-cfengine-on-windows-7-under-cygwin"/>
-    <updated>2010-08-23T00:14:00-05:00</updated>
+    <updated>2010-08-22T22:14:00-07:00</updated>
     <id>http://zzamboni.github.com/blog/installing-cfengine-on-windows-7-under-cygwin</id>
     <content type="html"><![CDATA[<p><strong>Update (2011/09/05): Updated the instructions for cfengine 3.2.0, cygwin 1.7.9, and tested them on a clean cygwin install.</strong></p>
 

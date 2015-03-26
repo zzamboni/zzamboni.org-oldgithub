@@ -4,7 +4,7 @@
   <title><![CDATA[Category: security | zzamboni.org]]></title>
   <link href="http://zzamboni.github.com/blog/categories/security/atom.xml" rel="self"/>
   <link href="http://zzamboni.github.com/"/>
-  <updated>2015-03-02T10:58:49-06:00</updated>
+  <updated>2015-03-26T01:10:27-07:00</updated>
   <id>http://zzamboni.github.com/</id>
   <author>
     <name><![CDATA[Diego Zamboni]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA["Security in the Third Wave of IT Engineering"]]></title>
     <link href="http://zzamboni.github.com/blog/security-in-the-third-wave-of-it-engineering"/>
-    <updated>2011-11-24T17:56:00-06:00</updated>
+    <updated>2011-11-24T15:56:00-08:00</updated>
     <id>http://zzamboni.github.com/blog/security-in-the-third-wave-of-it-engineering</id>
     <content type="html"><![CDATA[<p>Today I gave a presentation at UNAM's 2011 Computer Security Conference in Mexico City. Below you will find my presentation (done using prezi.com, follow <a href="http://prezi.com/s3vthi4fbz5q/security-in-the-third-wave-of-it-engineering/">this link</a> if you can't see it below). You can also get the <a href="http://dl.dropbox.com/u/869/zamboni_congreso2011.pdf">PDF version</a>.</p>
 
@@ -58,7 +58,7 @@
   <entry>
     <title type="html"><![CDATA[Layer 8: The exception IS the rule]]></title>
     <link href="http://zzamboni.github.com/blog/layer-8-the-exception-is-the-rule"/>
-    <updated>2010-07-09T10:55:00-05:00</updated>
+    <updated>2010-07-09T08:55:00-07:00</updated>
     <id>http://zzamboni.github.com/blog/layer-8-the-exception-is-the-rule</id>
     <content type="html"><![CDATA[<div class="posterous_bookmarklet_entry">
 <blockquote class="posterous_medium_quote">Whenever you look at a firewall rule, half the time you’re going to be asking yourself, “Why is that there?  Did *I* put it there?  Do we still need it?”  It would sure be nice if the explanation were right there, as a comment that could be version-tracked, exported into nice reports, searched on, and placed in a standard format that would be compatible with other exception entries in other tools.  (Kind of like a syslog for exceptions.)  It would be nice if you could mark a scanner finding as, “We KNOW it’s there.  We’re not going to fix it.  Just for these two machines, STOP REPORTING ON THIS.”)</blockquote>
@@ -73,7 +73,7 @@
   <entry>
     <title type="html"><![CDATA[Rugged software]]></title>
     <link href="http://zzamboni.github.com/blog/a-meme-is-born"/>
-    <updated>2010-02-17T10:03:00-06:00</updated>
+    <updated>2010-02-17T08:03:00-08:00</updated>
     <id>http://zzamboni.github.com/blog/a-meme-is-born</id>
     <content type="html"><![CDATA[<div class="posterous_bookmarklet_entry">
 <blockquote>

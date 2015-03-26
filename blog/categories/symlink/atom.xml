@@ -4,7 +4,7 @@
   <title><![CDATA[Category: symlink | zzamboni.org]]></title>
   <link href="http://zzamboni.github.com/blog/categories/symlink/atom.xml" rel="self"/>
   <link href="http://zzamboni.github.com/"/>
-  <updated>2015-03-02T10:58:49-06:00</updated>
+  <updated>2015-03-26T01:10:27-07:00</updated>
   <id>http://zzamboni.github.com/</id>
   <author>
     <name><![CDATA[Diego Zamboni]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Making cygwin, Windows and emacs understand the same symlinks]]></title>
     <link href="http://zzamboni.github.com/blog/making-cygwin-windows-and-emacs-understand-th"/>
-    <updated>2010-09-28T09:39:00-05:00</updated>
+    <updated>2010-09-28T07:39:00-07:00</updated>
     <id>http://zzamboni.github.com/blog/making-cygwin-windows-and-emacs-understand-th</id>
     <content type="html"><![CDATA[<p>Today I ran into the problem that symlinks created under cygwin using "ln -s" are not understood by Windows, and of course Windows shortcuts are seen by cygwin as regular files. Happily, this is a <strong>(semi-)</strong>solved problem. For reference, this is what needs to be done:</p>
 

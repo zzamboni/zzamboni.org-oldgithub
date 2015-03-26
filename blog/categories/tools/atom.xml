@@ -4,7 +4,7 @@
   <title><![CDATA[Category: tools | zzamboni.org]]></title>
   <link href="http://zzamboni.github.com/blog/categories/tools/atom.xml" rel="self"/>
   <link href="http://zzamboni.github.com/"/>
-  <updated>2015-03-02T10:58:49-06:00</updated>
+  <updated>2015-03-26T01:10:27-07:00</updated>
   <id>http://zzamboni.github.com/</id>
   <author>
     <name><![CDATA[Diego Zamboni]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[cf-cmd: A command-line tool for running CFEngine snippets]]></title>
     <link href="http://zzamboni.github.com/blog/cf-cmd-a-command-line-tool-for-running-cfengi"/>
-    <updated>2011-12-27T19:41:00-06:00</updated>
+    <updated>2011-12-27T17:41:00-08:00</updated>
     <id>http://zzamboni.github.com/blog/cf-cmd-a-command-line-tool-for-running-cfengi</id>
     <content type="html"><![CDATA[<div class="posterous_bookmarklet_entry">
 <blockquote class="posterous_short_quote">After building the typical "test bundle" scaffolding in an editor for the hundredth time, I decided to do something about it. The result is the cf-cmd command.</blockquote>
@@ -31,7 +31,7 @@
   <entry>
     <title type="html"><![CDATA[How important are the tools you use with GTD?]]></title>
     <link href="http://zzamboni.github.com/blog/how-important-are-the-tools-you-use-with-gtd"/>
-    <updated>2010-04-22T09:24:46-05:00</updated>
+    <updated>2010-04-22T07:24:46-07:00</updated>
     <id>http://zzamboni.github.com/blog/how-important-are-the-tools-you-use-with-gtd</id>
     <content type="html"><![CDATA[<div class="posterous_bookmarklet_entry">
       <object height="344" width="425"><param name="movie" value="http://www.youtube.com/v/8mt9tJA77KY&amp;hl=en_US&amp;fs=1&amp;rel=0&amp;color1=0x006699&amp;color2=0x54abd6">
@@ -51,7 +51,7 @@
   <entry>
     <title type="html"><![CDATA[Know your tools ]]></title>
     <link href="http://zzamboni.github.com/blog/know-your-tools"/>
-    <updated>2010-04-22T02:01:36-05:00</updated>
+    <updated>2010-04-22T00:01:36-07:00</updated>
     <id>http://zzamboni.github.com/blog/know-your-tools</id>
     <content type="html"><![CDATA[<p>I recently had to copy a very large file (&gt;4GB) from a remote Windows share to my Windows 7 machine, over a very finicky connection (frequently-failing VPN over a slow Internet connection). A GUI copy didn't work because the connection dropped frequently. I tried <a href="http://www.freedownloadmanager.org/">Free Download Manager</a>, which was the recommended tool for the download, but surprisingly, it wasn't always able to restart the download after connectivity dropped.<p></p></p>
 
@@ -93,7 +93,7 @@
   <entry>
     <title type="html"><![CDATA[Must-Have Windows Software (or Windows Programs that I use) - good coders code, great reuse]]></title>
     <link href="http://zzamboni.github.com/blog/must-have-windows-software-or-windows-program"/>
-    <updated>2010-02-17T10:12:38-06:00</updated>
+    <updated>2010-02-17T08:12:38-08:00</updated>
     <id>http://zzamboni.github.com/blog/must-have-windows-software-or-windows-program</id>
     <content type="html"><![CDATA[<div class="posterous_bookmarklet_entry">
       <blockquote class="posterous_medium_quote">I am not just a Linux enthusiast, I also happen to use Windows quite often. In fact, Windows is my primary desktop from which I connect to all the other boxes and do my work on. During the years of Windows usage, I have accumulated a list of must-have Windows programs that I wouldn’t be able to work without. Some of them are commercial, some are freeware, but that doesn’t matter. What matters is how productive you are with your setup. If you’re really productive on Linux with your own set of tools, it’s perfectly fine and you have done a great job of finding the best tools of trade.</blockquote>

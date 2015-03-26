@@ -4,7 +4,7 @@
   <title><![CDATA[Category: gtd | zzamboni.org]]></title>
   <link href="http://zzamboni.github.com/blog/categories/gtd/atom.xml" rel="self"/>
   <link href="http://zzamboni.github.com/"/>
-  <updated>2015-03-02T10:58:49-06:00</updated>
+  <updated>2015-03-26T01:10:27-07:00</updated>
   <id>http://zzamboni.github.com/</id>
   <author>
     <name><![CDATA[Diego Zamboni]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Automatically creating tasks from email in Outlook]]></title>
     <link href="http://zzamboni.github.com/blog/automatically-creating-tasks-from-email-in-ou"/>
-    <updated>2011-03-16T01:54:00-06:00</updated>
+    <updated>2011-03-16T00:54:00-07:00</updated>
     <id>http://zzamboni.github.com/blog/automatically-creating-tasks-from-email-in-ou</id>
     <content type="html"><![CDATA[<p><span style="font-size: x-small;"><em><strong>Please note:</strong> I am no longer using Windows nor Outlook, so unfortunately I cannot offer any help with problems you encounter using these scripts and techniques.</em></span></p>
 
@@ -160,7 +160,7 @@ End Function
   <entry>
     <title type="html"><![CDATA[Overhauling my GTD system under Windows]]></title>
     <link href="http://zzamboni.github.com/blog/overhauling-my-gtd-system-under-windows"/>
-    <updated>2011-03-14T00:09:00-06:00</updated>
+    <updated>2011-03-13T23:09:00-07:00</updated>
     <id>http://zzamboni.github.com/blog/overhauling-my-gtd-system-under-windows</id>
     <content type="html"><![CDATA[<p>As you may know, I'm a reluctant switcher from Mac to Windows. I am also a fan of <a href="http://en.wikipedia.org/wiki/Getting_Things_Done">GTD</a>. I had been using <a href="http://jello-dashboard.net/">Jello Dashboard</a> (JD) to implement GTD under Outlook. JD is a very nice system, the developer is friendly and responsive, and I had even written several patches to adapt it to my way of working. I was even in the process of drafting a series of blog posts titled "My GTD under Outlook setup".</p>
 
@@ -200,7 +200,7 @@ End Function
   <entry>
     <title type="html"><![CDATA[Setting up a global hotkey to add tasks to Outlook]]></title>
     <link href="http://zzamboni.github.com/blog/setting-up-a-global-hotkey-to-add-tasks-to-ou"/>
-    <updated>2010-12-23T12:14:00-06:00</updated>
+    <updated>2010-12-23T10:14:00-08:00</updated>
     <id>http://zzamboni.github.com/blog/setting-up-a-global-hotkey-to-add-tasks-to-ou</id>
     <content type="html"><![CDATA[<p>One thing I missed since I moved from a Mac (using The Hit List for GTD) to Outlook (using Jello Dashboard for GTD) was the availability of a global hot key that I could use to bring up a text entry box which I could use to quickly add things into my electronic Inbox, for later processing.</p>
 
@@ -249,7 +249,7 @@ End Function
   <entry>
     <title type="html"><![CDATA[GTD tip: clean up physical clutter using ziploc bags]]></title>
     <link href="http://zzamboni.github.com/blog/gtd-tip-clean-up-physical-clutter-using-ziplo"/>
-    <updated>2010-12-20T17:46:34-06:00</updated>
+    <updated>2010-12-20T15:46:34-08:00</updated>
     <id>http://zzamboni.github.com/blog/gtd-tip-clean-up-physical-clutter-using-ziplo</id>
     <content type="html"><![CDATA[<p>If you are like me, you carry in your backpack, bag or briefcase all sorts of physical stuff, other than documents, papers or magazines. You know the type: phone chargers, USB cables, power adapters, network cables, USB sticks and other small gadgets or accessories. Over time these things accumulate and it becomes harder and harder to find them and to keep them organized. <p></p> I have been using a low-tech tool for organizing these things: ziploc bags. I now carry two large ziploc bags in my backpack, labeled "frequent use" and "infrequent use". The first one has the things that I would most likely need to use every time I sit down to work: my iPhone USB cable, my laptop power adapter, etc. The other one includes all other things that I need every once in a while so I want to have them handy, but I don't need them every day. This includes a USB cable for my camera, a two-to-three prong adapter for when I find myself in old buildings that don't have grounded outlets, a couple of USB sticks, etc. <p></p> I find that this simple tip helps me keep the physical clutter under control, and makes it easy to review things periodically to check if I still need everything I'm carrying around.</p>
 ]]></content>
@@ -258,7 +258,7 @@ End Function
   <entry>
     <title type="html"><![CDATA[GTD Tip: one-key opening of INBOX notebook in OneNote]]></title>
     <link href="http://zzamboni.github.com/blog/gtd-tip-one-key-opening-of-inbox-notebook-in"/>
-    <updated>2010-09-05T17:15:13-05:00</updated>
+    <updated>2010-09-05T15:15:13-07:00</updated>
     <id>http://zzamboni.github.com/blog/gtd-tip-one-key-opening-of-inbox-notebook-in</id>
     <content type="html"><![CDATA[<pre><code>  One of the most useful applications I have discovered since I had to switch to Windows as my main OS is OneNote, a really great note-taking application which I use for pretty much every data-storing and note-taking need. I use a OneNote notebook as part of my GTD inbox. Today's very simple tip is how to assign a keystroke for opening my Inbox notebook from anywhere in the system. Here are the steps:&lt;br&gt;&lt;ol&gt;
 </code></pre>

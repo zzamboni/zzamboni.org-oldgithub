@@ -4,7 +4,7 @@
   <title><![CDATA[Category: networking | zzamboni.org]]></title>
   <link href="http://zzamboni.github.com/blog/categories/networking/atom.xml" rel="self"/>
   <link href="http://zzamboni.github.com/"/>
-  <updated>2015-03-02T10:58:49-06:00</updated>
+  <updated>2015-03-26T01:10:27-07:00</updated>
   <id>http://zzamboni.github.com/</id>
   <author>
     <name><![CDATA[Diego Zamboni]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Know your tools ]]></title>
     <link href="http://zzamboni.github.com/blog/know-your-tools"/>
-    <updated>2010-04-22T02:01:36-05:00</updated>
+    <updated>2010-04-22T00:01:36-07:00</updated>
     <id>http://zzamboni.github.com/blog/know-your-tools</id>
     <content type="html"><![CDATA[<p>I recently had to copy a very large file (&gt;4GB) from a remote Windows share to my Windows 7 machine, over a very finicky connection (frequently-failing VPN over a slow Internet connection). A GUI copy didn't work because the connection dropped frequently. I tried <a href="http://www.freedownloadmanager.org/">Free Download Manager</a>, which was the recommended tool for the download, but surprisingly, it wasn't always able to restart the download after connectivity dropped.<p></p></p>
 

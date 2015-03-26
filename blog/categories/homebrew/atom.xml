@@ -4,7 +4,7 @@
   <title><![CDATA[Category: homebrew | zzamboni.org]]></title>
   <link href="http://zzamboni.github.com/blog/categories/homebrew/atom.xml" rel="self"/>
   <link href="http://zzamboni.github.com/"/>
-  <updated>2015-03-02T10:58:49-06:00</updated>
+  <updated>2015-03-26T01:10:27-07:00</updated>
   <id>http://zzamboni.github.com/</id>
   <author>
     <name><![CDATA[Diego Zamboni]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Installing cfengine on Mac OS X]]></title>
     <link href="http://zzamboni.github.com/blog/installing-cfengine-320b3-on-mac-os-x-107"/>
-    <updated>2011-08-05T02:31:00-05:00</updated>
+    <updated>2011-08-05T00:31:00-07:00</updated>
     <id>http://zzamboni.github.com/blog/installing-cfengine-320b3-on-mac-os-x-107</id>
     <content type="html"><![CDATA[<p><a href="http://cfengine.com/">Cfengine</a> (tested 3.2.0) installs easily on OS X (tested 10.7), given that it's Unix. One problem I encountered was that it does not compile with the bundled version of Berkeley DB (it recognizes it during configure, but produces compilation errors). The solution is to use some other DB engine. I chose Tokyo Cabinet. Using <a href="http://mxcl.github.com/homebrew/">homebrew</a>, the process is simple</p>
 

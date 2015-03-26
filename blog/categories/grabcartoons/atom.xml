@@ -4,7 +4,7 @@
   <title><![CDATA[Category: grabcartoons | zzamboni.org]]></title>
   <link href="http://zzamboni.github.com/blog/categories/grabcartoons/atom.xml" rel="self"/>
   <link href="http://zzamboni.github.com/"/>
-  <updated>2015-03-02T10:58:49-06:00</updated>
+  <updated>2015-03-26T01:10:27-07:00</updated>
   <id>http://zzamboni.github.com/</id>
   <author>
     <name><![CDATA[Diego Zamboni]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Grabcartoons v2.7]]></title>
     <link href="http://zzamboni.github.com/blog/grabcartoons-v27"/>
-    <updated>2010-08-19T15:22:28-05:00</updated>
+    <updated>2010-08-19T13:22:28-07:00</updated>
     <id>http://zzamboni.github.com/blog/grabcartoons-v27</id>
     <content type="html"><![CDATA[<pre><code>  Last night I made a new release of my comic aggregator script, &lt;a href="http://zzamboni.org/grabcartoons/"&gt;grabcartoons&lt;/a&gt;. You can fetch it from it brand new &lt;a href="http://zzamboni.org/grabcartoons/"&gt;web page&lt;/a&gt;, now hosted by &lt;a href="http://github.com/zzamboni/grabcartoons/"&gt;github.com&lt;/a&gt; instead of sourceforge.net.
 </code></pre>
