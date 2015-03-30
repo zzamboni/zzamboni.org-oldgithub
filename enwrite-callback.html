@@ -5,11 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Callback page for enwrite - zzamboni.org</title>
+  <title>enwrite authentication - zzamboni.org</title>
   <meta name="author" content="Diego Zamboni">
 
   
-  <meta name="description" content="Callback Page for Enwrite Mar 30th, 2015 var QueryString = function () { // This function is anonymous, is executed immediately and // the return &hellip;">
+  <meta name="description" content="Enwrite Authentication Mar 30th, 2015 // Code from http://stackoverflow.com/a/979995/5562
+var QueryString = function () { // This function is &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -84,7 +85,7 @@
 <article role="article">
   
   <header>
-    <h1 class="entry-title">Callback Page for Enwrite</h1>
+    <h1 class="entry-title">Enwrite Authentication</h1>
     <p class="meta">
 
 
@@ -101,6 +102,7 @@
   </header>
   
   <script>
+// Code from http://stackoverflow.com/a/979995/5562
 var QueryString = function () {
   // This function is anonymous, is executed immediately and 
   // the return value is assigned to QueryString!
@@ -125,39 +127,16 @@ var QueryString = function () {
 } ();
 </script>
 
-<h1>Authentication for enwrite</h1>
-
 <script>
 query = QueryString;
 if (query.oauth_verifier) {
-   document.write("<p>Please enter this verification code into enwrite: " + query.oauth_verifier + "</p>");
+   document.write("<p>Please enter this verification code into enwrite: <b>" + query.oauth_verifier + "</b></p>");
 } else {
-   document.write("<p>You cannot access this page directly. Please run enwrite and open the authentication URL provided.</p>");
+   document.write("<p>You cannot access this page directly. Please run `enwrite --auth` and open the authentication URL provided. You will be redirected here after authentication.</p>");
 }
 </script>
 
 
-  
-    <footer>
-      <p class="meta">
-        
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2015-03-30T14:52:00-07:00" pubdate data-updated="true">Mar 30<span>th</span>, 2015</time>
-        
-      </p>
-      
-    </footer>
   
 </article>
 
